@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1 active">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat()">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Carousel -->
+    <div class="container">
+        <div id = "carousel1" class="carousel slide" data-ride = "carousel">
+            <ul class="carousel-indicators">
+                <li data-target = "#carousel1" data-slide-to = "0" class = "active"></li>
+                <li data-target = "#carousel1" data-slide-to = "1"></li>
+                <li data-target = "#carousel1" data-slide-to = "2"></li>
+                <li data-target = "#carousel1" data-slide-to = "3"></li>
+                <li data-target = "#carousel1" data-slide-to = "4"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/z5276162616914_0a5fe50641b66e8388b753b7da199280.jpg"alt="" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/banh-su-kem.jpg" alt="" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/cách-làm-bánh-bông-lan-bằng-lò-nướng.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/cách-làm-cupcake-kem-tươi-banner-768x441.jpg" alt="" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/BanhCuonKemNuiPhuSi2.jpg" alt="" width="100%">
+                </div>
+            </div>
+
+            <a href="#carousel1" class="carousel-control-prev" data-slide = "prev">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#carousel1" class="carousel-control-next" data-slide = "next">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Start Content -->
+    <!-- Start Courses -->
+    <div class="container px-0">
+        <h1 class = "text-center text-secondary mt-5 mb-5 text-violet">Các khóa học của Savoury Days</h1>
+        <div class="frame-course">
+            <div class="row">
+                <div class="col-md-3 mb-sm-4 mb-lg-3 mb-4">
+                    <div class="course">
+                        <div class="course-item">
+                            <a class="course-hover" href="../html/cupcake_muffin.html">
+                                <div class="course-head">
+                                    <div class="headline">
+                                        Cupcake - Muffin
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="mask">
+                                </div>
+                            </a>
+                            <img class="course-img" src="../img/Cupcake.jpg" width="100%">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">
+                                <a href="../html/cupcake_muffin.html" class = "text-dark">Cupcake - Muffin&nbsp;&nbsp;</a>
+                                <br>
+                                <span class = "text-dark">Giá: </span>
+                                <span class="text-dark font-weight-bold">765,000 đ</span>
+                                <span class="nor text-dark">850,000 đ</span>
+                                <div class="btn-book mt-2">
+                                    <a href="../html/cupcake_muffin.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2"></i>Đăng ký</a>
+                                    <a href="../html/cupcake_muffin.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2"></i>Đăng ký khóa học</a>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-sm-4 mb-lg-3 mb-4">
+                    <div class="course">
+                        <div class="course-item">
+                            <a class="course-hover" href="../html/custard_pudding.html">
+                                <div class="course-head">
+                                    <div class="headline">
+                                        Custard - Pudding
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="mask">
+                                </div>
+                            </a>
+                            <img class="course-img" src="../img/custard-pudding/PuddingXoaiChoco-150x150.jpg" width="100%">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">
+                                <a href="../html/custard_pudding.html" class = "text-dark">Custard - Pudding</a>
+                                <br>
+                                <span class = "text-dark">Giá: </span>
+                                <span class="text-dark font-weight-bold">300,000 đ</span>
+                                <span class="nor text-dark">450,000 đ</span>
+                                <div class="btn-book mt-2">
+                                    <a href="../html/custard_pudding.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2"></i>Đăng ký</a>
+                                    <a href="../html/custard_pudding.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2"></i>Đăng ký khóa học</a>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-sm-4 mb-lg-3 mb-4">
+                    <div class="course">
+                        <div class="course-item">
+                            <a class="course-hover" href="../html/sponge_foam-cake.html">
+                                <div class="course-head">
+                                    <div class="headline">
+                                        Sponge - Foam cake
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="mask">
+                                </div>
+                            </a>
+                            <img class="course-img" src="../img/sponge_foam-cake/Foam-cake.jpg" width="100%">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">
+                                <a href="../html/sponge_foam-cake.html" class = "text-dark">Sponge - Foam cake</a>
+                                <br>
+                                <span class = "text-dark">Giá: </span>
+                                <span class="text-dark font-weight-bold">600,000 đ</span>
+                                <span class="nor text-dark">720,000 đ</span>
+                                <div class="btn-book mt-2">
+                                    <a href="../html/sponge_foam-cake.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2"></i>Đăng ký</a>
+                                    <a href="../html/sponge_foam-cake.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2"></i>Đăng ký khóa học</a>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-sm-4 mb-lg-3 mb-4">
+                    <div class="course">
+                        <div class="course-item">
+                            <a class="course-hover" href="../html/cookies_bars_candy.html">
+                                <div class="course-head">
+                                    <div class="headline">
+                                        Cookies - Bars - Candy
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="mask">
+                                </div>
+                            </a>
+                            <img class="course-img" src="../img//Cookie-Candy.jpg" width="100%">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">
+                                <a href="../html/cookies_bars_candy.html" class = "text-dark">Cookies - Bars - Candy</a>
+                                <br>
+                                <span class = "text-dark">Giá: </span>
+                                <span class="text-dark font-weight-bold">400,000 đ</span>
+                                <span class="nor text-dark">570,000 đ</span>
+                                <div class="btn-book mt-2">
+                                    <a href="../html/cookies_bars_candy.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2"></i>Đăng ký</a>
+                                    <a href="../html/cookies_bars_candy.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2"></i>Đăng ký khóa học</a>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Courses -->
+    
+    <!-- Start Nav tabs Recipes -->
+    <div class="container">
+        <h1 class = "text-center text-secondary mt-5 mb-5 text-violet">Các công thức của Savoury Days</h1>
+        <ul class="nav nav-tabs text-center justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#tab1">Tất cả</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab2">Butter cake</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab3">Pie - Tart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab4">Bánh Á - Việt Nam</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab5">Pastry</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab6">Pancake - Crepe</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+
+            <!-- Tab all -->
+            <div id="tab1" class="container tab-pane fade show active"><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/heavenly_chocolate_mousse.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Heavenly Chocolate
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/butter_cake/HeavenlyChocoCake1-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/heavenly_chocolate_mousse.html">Heavenly Chocolate</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/heavenly_chocolate_mousse.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/heavenly_chocolate_mousse.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/cupcake_kem_pho-mai.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Cupcake kem phô-mai
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/butter_cake/cupcake-bo-pho-mat-ml-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/cupcake_kem_pho-mai.html">Cupcake kem phô-mai</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/cupcake_kem_pho-mai.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/cupcake_kem_pho-mai.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/crepe_tiramisu.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh Crepe Tiramisu
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pancake_crepe/tiramisu-crepe-ml-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/crepe_tiramisu.html">Bánh Crepe Tiramisu                                    </a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/crepe_tiramisu.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/crepe_tiramisu.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh_bao.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh bao nhân thịt
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/banhA_VN/banh-bao-nhan-thit.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh_bao.html">Bánh bao nhân thịt</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/banh_bao.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/banh_bao.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh_flan.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh Flan
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/banhA_VN/cach-lam-banh-flan-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh_flan.html">Bánh Flannnnnnnnnnn</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/banh_flan.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/banh_flan.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/su_kem_hong_tra.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Su kem hồng trà trân châu
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pastry/cách-làm-su-kem-hong-tra-300x300 (1).jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/su_kem_hong_tra.html">Su kem hồng trà trân châu</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/su_kem_hong_tra.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/su_kem_hong_tra.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/crepe_tra_xanh.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Crepe trà xanh ngàn lớp
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pancake_crepe/crepe-ngan-lop-tra-xanh-ml-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/crepe_tra_xanh.html">Crepe trà xanh ngàn lớp</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/crepe_tra_xanh.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/crepe_tra_xanh.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/chocolate_banana_cheesecake.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Chocolate banana
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/butter_cake/CheeseCakeChuoi1-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/chocolate_banana_cheesecake.html">Chocolate banana</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/chocolate_banana_cheesecake.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/chocolate_banana_cheesecake.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="btn-book mt-2 text-center mb-5">
+                            <a href="#" class = "btn border tat-ca text-center text-light bg-pink-bold">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab all -->
+
+            <!-- Tab Butter cake -->
+            <div id="tab2" class="container tab-pane fade show"><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/heavenly_chocolate_mousse.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Heavenly Chocolate
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/butter_cake/HeavenlyChocoCake1-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/heavenly_chocolate_mousse.html">Heavenly Chocolate</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/heavenly_chocolate_mousse.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/heavenly_chocolate_mousse.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/cupcake_kem_pho-mai.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Cupcake kem phô-mai
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/butter_cake/cupcake-bo-pho-mat-ml-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/cupcake_kem_pho-mai.html">Cupcake kem phô-mai</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/cupcake_kem_pho-mai.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/cupcake_kem_pho-mai.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/bong_lan_bo_chanh.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh bông lan bơ chanh
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/butter_cake/bánh-bông-lan-bơ-chanh-menu-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/bong_lan_bo_chanh.html">Bánh bông lan bơ chanh</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/bong_lan_bo_chanh.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/bong_lan_bo_chanh.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/chocolate_banana_cheesecake.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Chocolate banana
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/butter_cake/CheeseCakeChuoi1-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/chocolate_banana_cheesecake.html">Chocolate banana</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/chocolate_banana_cheesecake.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/chocolate_banana_cheesecake.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="btn-book mt-2 text-center mb-5">
+                            <a href="../html/butter-cake.html" class = "btn border tat-ca text-center text-light bg-pink-bold">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab Butter cake -->
+
+            <!-- Tab Pie - Tart -->
+            <div id="tab3" class="container tab-pane fade show"><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/pie_tao.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh táo
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pie_tart/ApplePie-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/pie_tao.html">Bánh táo</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/pie_tao.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/pie_tao.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/fruit_tart.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Fruit tart
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pie_tart/FruitTart1-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/fruit_tart.html">Fruit tart</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/fruit_tart.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/fruit_tart.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/tart_trung.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Tart trứng Hồng Kông
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pie_tart/cách-làm-tart-trứng-menu-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/tart_trung.html">Tart trứng Hồng Kông</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/tart_trung.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/tart_trung.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/tart_trung_vo_xu.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Tart trứng vỏ ngàn lớp
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pie_tart/TartTrung-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/tart_trung_vo_xu.html">Tart trứng vỏ ngàn lớp</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/tart_trung_vo_xu.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/tart_trung_vo_xu.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="btn-book mt-2 text-center mb-5">
+                            <a href="../html/pie_tart.html" class = "btn border tat-ca text-center text-light bg-pink-bold">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab Pie - Tart -->
+
+            <!-- Tab Bánh Á - Việt Nam -->
+            <div id="tab4" class="container tab-pane fade show"><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh_flan.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh Flan
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/banhA_VN/cach-lam-banh-flan-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh_flan.html">Bánh Flannnnnnnnnnn</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/banh_flan.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/banh_flan.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh_bo_hap_la_dua.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh bò hấp lá dứa
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/banhA_VN/IMG_6949-200-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh_bo_hap_la_dua.html">Bánh bò hấp lá dứa</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/banh_bo_hap_la_dua.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/banh_bo_hap_la_dua.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh_bao.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh bao nhân thịt
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/banhA_VN/banh-bao-nhan-thit.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh_bao.html">Bánh bao nhân thịt</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/banh_bao.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/banh_bao.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh_mi.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh mì Việt Nam
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/banhA_VN/BanhMiVNPhan21-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh_mi.html">Bánh mì Việt Nam</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/banh_mi.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/banh_mi.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="btn-book mt-2 text-center mb-5">
+                            <a href="../html/banhA_VN.html" class = "btn border tat-ca text-center text-light bg-pink-bold">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab Bánh Á - Việt Nam -->
+
+            <!-- Tab Pastry -->
+            <div id="tab5" class="container tab-pane fade show"><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/su_kem_hong_tra.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Su kem hồng trà trân châu
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pastry/cách-làm-su-kem-hong-tra-300x300 (1).jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/su_kem_hong_tra.html">Su kem hồng trà trân châu</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/su_kem_hong_tra.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/su_kem_hong_tra.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/su_kem_yen_mach.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Su kem vỏ xù yến mạch
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pastry/cách-làm-su-kem-vỏ-giòn-yến-mạch-square-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/su_kem_yen_mach.html">Su kem vỏ xù yến mạch</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/su_kem_yen_mach.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/su_kem_yen_mach.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/craquelin.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Su kem Craquelin
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pastry/Craqueline-ml-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/craquelin.html">Su kem Craquelin</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/craquelin.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/craquelin.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/eclair.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Eclair Mousse chanh leo
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pastry/EclairMousseChanh1-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/eclair.html">Eclair Mousse chanh leo</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/eclair.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/eclair.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="btn-book mt-2 text-center mb-5">
+                            <a href="../html/pastry.html" class = "btn border tat-ca text-center text-light bg-pink-bold">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab Pastry -->
+
+            <!-- Tab Pancake - Crepe -->
+            <div id="tab6" class="container tab-pane fade show"><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/hotteok.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Hotteok Hàn Quốc
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pancake_crepe/hotteok-recipe-cách-lam-pancake-kiểu-Hàn-menu-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/hotteok.html">Hotteok Hàn Quốc</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/hotteok.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/hotteok.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/crepe_xoai.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Crepe xoài ngàn lớp
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pancake_crepe/cách-làm-bánh-crepe-xoài-menu-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/crepe_xoai.html">Crepe xoài ngàn lớp</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/crepe_xoai.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/crepe_xoai.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/crepe_tra_xanh.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Crepe trà xanh ngàn lớp
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pancake_crepe/crepe-ngan-lop-tra-xanh-ml-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/crepe_tra_xanh.html">Crepe trà xanh ngàn lớp</a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/crepe_tra_xanh.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/crepe_tra_xanh.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/crepe_tiramisu.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh Crepe Tiramisu
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/pancake_crepe/tiramisu-crepe-ml-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/crepe_tiramisu.html">Bánh Crepe Tiramisu                                    </a>
+                                    <div class="btn-book mt-2">
+                                        <a href="../html/crepe_tiramisu.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                        <a href="../html/crepe_tiramisu.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="btn-book mt-2 text-center mb-5">
+                            <a href="../html/pancake_crepe.html" class = "btn border tat-ca text-center text-light bg-pink-bold">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab Pancake - Crepe -->
+        </div>
+    </div>
+    <!-- End Nav tabs -->
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

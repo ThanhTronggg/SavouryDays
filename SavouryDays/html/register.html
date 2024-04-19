@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+    <style>
+    </style>
+    <script>
+        function KiemTraHoTen() {
+            var regex = /^([A-Z]{1}[a-z]{0,}\s){1,6}[A-Z]{1}[a-z]{0,}$/
+            var chuoi = document.getElementById("txtHoten").value.trim();
+            if(chuoi == "") {
+                document.getElementById("suggest-hoten").innerHTML = "Phải nhập họ và tên của bạn"
+                return false;
+            }
+            var kq = regex.test(chuoi);
+            if (kq) {
+                document.getElementById("suggest-hoten").innerHTML = "<br>";
+                return true;
+            } else {
+                document.getElementById("suggest-hoten").innerHTML = "Họ và tên phải viết in hoa chữ cái đầu"
+                return false;
+            }
+        }
+
+        function KiemTraEmail() {
+            var regex = /^[a-zA-Z]{1}\w{0,}@\w{0,}.com$/
+            var chuoi = document.getElementById("txtEmail").value.trim();
+            if (chuoi == "") {
+                document.getElementById("suggest-email").innerHTML = "Phải nhập Email"
+                return false
+            }
+            var kq = regex.test(chuoi);
+            if (kq) {
+                document.getElementById("suggest-email").innerHTML = "<br>";
+                return true;
+            }
+            else {
+                document.getElementById("suggest-email").innerHTML = "Email phải có @ và kết thúc .com";
+                return false;
+            }
+        }
+
+        function KiemTraUsername() {
+            var regex = /^[a-z0-9_-]{3,16}$/;
+            var chuoi = document.getElementById("txtUsername").value.trim();
+            if(chuoi == "") {
+                document.getElementById("suggest-username").innerHTML = "Phải nhập tên đăng nhập"
+                return false;
+            }
+            var kq = regex.test(chuoi);
+            if (kq) {
+                document.getElementById("suggest-username").innerHTML = "<br>";
+            } else {
+                document.getElementById("suggest-username").innerHTML = "Chuỗi chỉ bao gồm chữ thường từ a-z, 0-9, _ và -"
+                return false;
+            }
+            var tk = localStorage.getItem(chuoi);
+            tk = JSON.parse(tk);
+            if(tk != null) {
+                document.getElementById("suggest-username").innerHTML = "Tên đăng nhập đã tồn tại"
+                return false;
+            }
+            else {
+                document.getElementById("suggest-username").innerHTML = "<br>";
+                return true;
+            }
+        }
+
+        function KiemTraPassword() {
+            var regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
+            var chuoi = document.getElementById("txtPw").value.trim();
+            if(chuoi == "") {
+                document.getElementById("suggest-password").innerHTML = "Phải nhập mật khẩu"
+                return false;
+            }
+            var kq = regex.test(chuoi);
+            if (kq) {
+                document.getElementById("suggest-password").innerHTML = "<br>";
+                return true;
+            } else {
+                document.getElementById("suggest-password").innerHTML = "Mật khẩu chỉ chứa 1 chữ cái, 1 số và 1 kí tự đặc biệt"
+                return false;
+            }
+        }
+
+        function KiemTraPassword2() {
+            var chuoi = document.getElementById("txtPw").value.trim();
+            var chuoi2 = document.getElementById("txtPw2").value.trim();
+            if(chuoi != chuoi2) {
+                document.getElementById("suggest-password2").innerHTML = "Mật khẩu phải giống với mật khẩu đã nhập"
+                return false;
+            }
+            else {
+                document.getElementById("suggest-password2").innerHTML = "<br>";
+                return true;
+            }
+        }
+
+        function KiemTraDangKy() {
+            if(KiemTraHoTen() && KiemTraEmail() && KiemTraUsername() && KiemTraPassword() && KiemTraPassword2()) {
+                var ten = document.getElementById("txtHoten").value.trim();
+                var email = document.getElementById("txtEmail").value.trim();
+                var username = document.getElementById("txtUsername").value.trim();
+                var password = document.getElementById("txtPw").value.trim();
+                var tk = {ten: ten, email: email, username: username, password: password}
+                localStorage.setItem(username, JSON.stringify(tk))
+                alert("Đăng ký tài khoản thành công!")
+                document.getElementById("txtHoten").value = ""
+                document.getElementById("txtEmail").value = ""
+                document.getElementById("txtUsername").value = ""
+                document.getElementById("txtPw").value = ""
+                document.getElementById("txtPw2").value = ""
+            }
+            else {
+                alert("Bạn phải nhập tất cả thông tin")
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold active" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container mb-4 px-0 pt-2">
+        <div class="frame-register pt-2">
+            <img src="../img/mat-troi.png" id = "sun" alt="">
+            <img src="../img/may.png" id = "cloud" alt="">
+            <img src="../img/cut-the-rope2.png" id = "cut-the-rope2"alt="">
+            <img src="../img/cut-the-rope.png" id = "cut-the-rope"alt="">
+            <h1 class = "text-dark text-center mb-5 mt-3">Đăng ký tài khoản</h1>
+            <form action="">
+                <div class="row mt-4">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-3">
+                        <label for="txtHoten" class = "text-dark">Họ và tên:</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class = "form-control input1" onblur="return KiemTraHoTen()" id="txtHoten">
+                        <span id="suggest-hoten" class = "text-dark"><br></span>
+                    </div>
+                    <div class="col-md-2">
+                        
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-3">
+                        <label for="txtEmail" class = "text-dark">Địa chỉ email:</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="email" class = "form-control input1" onblur="return KiemTraEmail()" id="txtEmail">
+                        <span id="suggest-email" class = "text-dark"><br></span>
+                    </div>
+                    <div class="col-md-2">
+                        
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-3">
+                        <label for="txtUsername" class = "text-dark">Tên đăng nhập:</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class = "form-control input1" onblur="return KiemTraUsername()" id="txtUsername">
+                        <span id="suggest-username" class = "text-dark"><br></span>
+                    </div>
+                    <div class="col-md-2">
+                        
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-3">
+                        <label for="txtPw" class = "text-dark">Mật khẩu:</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="password" class = "form-control input1" onblur="return KiemTraPassword()" id="txtPw">
+                        <span id="suggest-password" class = "text-dark"><br></span>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-3">
+                        <label for="txtPw2" class = "text-dark">Nhập lại mật khẩu:</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="password" class = "form-control input1" onblur="return KiemTraPassword2()" id="txtPw2">
+                        <span id="suggest-password2" class = "text-dark"><br></span>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <p class = "text-center" id = "suggest">Bạn đã có tài khoản? Đăng nhập <strong><a class = "text-dark" id = "link-reg" href="../html/login.html">tại đây</a></strong></p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <button type="button" class="btn btn-custom" onclick="KiemTraDangKy()"><span><i class="fas fa-user-plus"></i></span> Đăng ký</button>
+                    </div>
+                </div>                
+            </form>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>
