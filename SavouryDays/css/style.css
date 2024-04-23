@@ -525,6 +525,10 @@
     text-align: justify;
 }
 
+/* .guide a{
+    color: #D76BA4 !important;
+} */
+
 .guide label {
     font-size: 21px;
 }
@@ -553,7 +557,7 @@
 
 .frame-register {
     width: 1150px;
-    height: 790px;
+    height: 890px;
     background-image: linear-gradient(#F6AAC4, #B799FF);
     box-shadow: 4px 5px 9px rgba(0,0,0,0.27);
     border-radius: 10px;
@@ -583,7 +587,7 @@ label {
     font-size: 30px;
 }
 
-#suggest, #suggest-username, #suggest-password, #suggest-hoten, #suggest-email, #suggest-password2 {
+#suggest, #suggest-username, #suggest-password, #suggest-hoten, #suggest-email, #suggest-password2, #suggest-ngay-sinh {
     font-size: 20px;
 }
 
@@ -610,16 +614,44 @@ label {
 
 #cut-the-rope2 {
     position: absolute;
-    width: 130px;
+    width: 150px;
     top: 340px;
-    left: 0px;
+    left: 10px;
 }
 
 #cut-the-rope {
     position: absolute;
-    width: 130px;
+    width: 150px;
     top: 340px;
-    right: 0px;
+    right: 10px;
+}
+
+#cut-the-rope3 {
+    position: absolute;
+    width: 170px;
+    top: 270px;
+    left: 10px;
+}
+
+#cut-the-rope4 {
+    position: absolute;
+    width: 150px;
+    top: 720px;
+    right: 10px;
+}
+
+#cut-the-rope5 {
+    position: absolute;
+    width: 150px;
+    top: 725px;
+    left: 10px;
+}
+
+#cut-the-rope6 {
+    position: absolute;
+    width: 170px;
+    top: 280px;
+    right: 10px;
 }
 
 #link-reg {

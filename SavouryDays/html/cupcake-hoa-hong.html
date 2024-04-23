@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách làm cupcake sữa kem xoài</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item active">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('cupcake-hoa-hong.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-3">Cách làm cupcake sữa kem xoài</h1>
+        <img src="../img/cupcake-muffin/cupcake-hoa-hong/CupcakeHoaHong1-600x345.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p>Mình bẩm sinh là một đứa rất bảo thủ, cho nên từ trước đến nay mình vẫn luôn kiên định với một suy nghĩ “không có cái gọi là cupcake cơ bản” :D vì bản thân cupcake tự nó không phải là một loại bánh có công thức riêng như kiểu Pound Cake, Genoise hay Chiffon… Cupcake đơn giản chỉ là bánh bông lan hay gateaux được đựng trong khuôn cỡ cái cốc nên gọi là Cupcake vậy thôi (điều này mình có nói trong một bài cũ trên Savoury Days rùi nhỉ).</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cupcake-muffin/cupcake-hoa-hong/1.jpg" width="50%"></a></p>
+            <p>Nhưng mà mình vẫn muốn viết bài này – và giới thiệu một công thức gọi là “Cupcake cơ bản” :) Lý do chỉ bởi vì mình nghĩ nó sẽ có ích cho nhiều người, đặc biệt là các bạn đang học làm bánh. Vì mình cũng biết là Cupcakes là loại bánh rất được ưa chuộng nhờ vẻ bề ngoài “xinh ơi là xinh” ấy :) Cho nên nếu có một công thức tốt và dễ làm thì chắc sẽ rất.. tốt, nhỉ ;)</p>
+            <p>Theo mình thấy từ các food blog và diễn đàn về làm bánh khác thì đa phần các công thức mà mọi người gọi là “Cupcake cơ bản” là P<a href="http://www.savourydays.com/?p=1072">ound cake</a> hoặc <a href="http://www.savourydays.com/?p=736">Butter cake</a>. Cả hai công thức này mình đều đã giới thiệu trên Savoury Days, đã có nhiều bạn thử và phản hồi rất tích cực. Trong bài này mình giới thiệu thêm một công thức nữa, từ một trong những “thần tượng bánh trái” của mình là Rose Levy Beranbaum – người được mệnh danh là “bà hoàng của đồ tráng miệng” và là tác giả của cuốn “The Cake Bible” (Kinh thánh bánh ngọt). Công thức của bà ngoài việc thường rất chính xác ra thì còn có thêm nhiều thử nghiệm và bổ sung mới so với các công thức truyền thống nên mình rất rất thích. Một ví dụ điển hình cho sự “mới” này là công thức <a href="http://www.savourydays.com/?p=1014">Bánh bông lan kem tươi (whipped cream cupcake)</a> mà mình đã giới thiệu trên Savoury Days cách đây ít lâu và được rất nhiều chị em khen ngợi ;)</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cupcake-muffin/cupcake-hoa-hong/2.jpg" width="50%"></a></p>
+            <p>Một lý do khác để mình chọn giới thiệu công thức này làm công thức Cupcake cơ bản là công thức này rất nhanh và dễ làm. Với các loại bánh sử dụng nhiều bơ (High-Fat Cake) thì có hai cách trộn bột thường được dùng nhất là <strong><em><a href="http://www.savourydays.com/?p=729">creaming method</a></em></strong> (đánh bông bơ &amp; đường rồi trộn trứng, cuối cùng là cho xen kẽ bột và chất lỏng như sữa, nước quả) và <strong><em>two stage method</em></strong> (trộn các nguyên liệu khô như bột, đường.. trước rồi cho bơ, đánh hòa quyện đều, cuối cùng là cho chất lỏng như trứng sữa). Từ trước đến giờ thì mình chủ yếu là dùng creaming method, một phần là do quen tay, một phần là do cảm thấy yên tâm với cách này hơn. Nhưng sau khi làm cupcake theo công thức này thì mình bắt đầu thấy thích two stage method nhiều hơn, không chỉ vì sự nhanh gọn của nó mà bánh ra lò cũng rất ổn, mềm và và thơm ngậy, khi ăn thì thấy đúng kiểu “melt-in-the-mouth” :) Ngoài ra bánh này khi nướng xong thì phần mặt bánh khá phẳng chứ không bị nổi vồng nhiều, cho nên việc trang trí cũng dễ hơn.</p>
+            <p><span class = "text-pink-2"><strong>Ghi chú bổ sung: </strong><em>Mặc dù two-stage method cho bánh mềm và cảm thấy rõ vị bơ hơn, nhưng bánh làm từ phương pháp này thường không được tơi xốp như bánh làm bằng creaming method mà đặc và ẩm hơn. Sau khi mình up công thức lên thì có một số bạn thắc mắc là bánh có vẻ nặng và ẩm, đấy là đặc điểm bánh vậy chứ không phải là sai sót chỗ nào đâu :) Chỉ có điều mình để ý thì thấy là ở Việt Nam mọi người có vẻ thích các công thức bông xốp tơi mềm hơn. Nếu thích kiểu bông xốp thì creaming method sẽ thích hợp hơn, và một vài công thức “tiêu chuẩn” mà mình thấy rất hợp cho cupcake là&nbsp;<strong>P<a href="http://www.savourydays.com/?p=1072"><span class = "text-pink-2">ound cake</span></a></strong>,&nbsp;<strong><a href="http://www.savourydays.com/?p=736"><span class = "text-pink-2">Butter cake</span></a></strong>, hoặc&nbsp;<strong><a href="http://www.savourydays.com/?p=1014"><span class = "text-pink-2">Bánh bông lan kem tươi (whipped cream cupcake)</span></a></strong>&nbsp;. Mình thêm phần ghi chú này để các bạn tiện lựa chọn tùy theo khẩu vị của bản thân nhé :)&nbsp;</em></span></p>
+            <p>Về Cupcakes thì trước đây mình cũng có viết một bài ngăn ngắn về loại bánh này rùi, bạn nào cần thì có thể tham khảo thêm ở <a href="http://www.savourydays.com/?p=736">ĐÂY</a> nha. Trong bài này có lẽ mình chia sẻ thêm một chút nữa về khuôn Cupcakes thôi.</p>
+            <p>Khuôn Cupcakes rất đa dạng, những loại chính là khuôn kim loại dạng khay có lỗ, khuôn silicon dạng khay có lỗ và khuôn silicon rời. Ở nhà mình thì mọi người đôi khi dùng cả cốc nhôm làm flan/kem caramel để nướng nữa, cũng không sao cả. Điều quan trọng là cả nhà nhớ mua cốc giấy vừa với khuôn và thường cốc giấy rất mỏng nên luôn cần khuôn đi kèm cup giấy để giữ cho bột không bị chảy làm hỏng cup giấy (một số loại cup giấy cứng có thể đủ vững để chứa bột thì không nhất thiết phải có khuôn đi &nbsp;kèm).</p>
+            <p>Về kích cỡ khuôn, nhìn chung mình thấy Cupcake nhỏ sẽ xinh và dễ ăn hơn là Cupcake lớn. Vì Cupcake thường có các loại kem trang trí đi kèm như kem bơ, kem tươi, kem pho-mát… cho nên Cupcake nhỏ cũng giúp bớt ngấy khi ăn hơn. Có hai loại khuôn mà mình nghĩ là kích thước tương đối ổn cho cupcake là khuôn có đường kính miệng khoảng 5-6cm, cao từ 3-4 cm. Loại thứ hai là khuôn Cupcake mini, đường kính miệng khoảng 3-4cm, cao 2-3cm. Khuôn có đường kính to, từ 6-7cm trở lên thì thích hợp cho Muffins hơn là Cupcakes.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cupcake-muffin/cupcake-hoa-hong/3.jpg" width="50%"></a></p>
+            </strong></em></p>
+            <p><strong>Nguyên liệu (12 cupcakes cỡ đường kính 5cm, cao 3-4cm)</strong></p>
+            <ul>
+            <li><em>1 quả trứng (50 gram không tính vỏ)</em></li>
+            <li><em>80 gram sữa chua nguyên chất không đường (dùng sữa chua như Vinamilk thì tốt hơn là sữa chua tự làm)</em></li>
+            <li><em>85 gram bơ nhạt&nbsp;</em></li>
+            <li><em>1 teaspoon (5ml) vanilla extract</em></li>
+            <li><em>85 gram bột mỳ thường/ bột mỳ đa dụng (all purpose flour/ plain flour)</em></li>
+            <li><em>15 gram bột ngô (corn starch)</em></li>
+            <li><em>65 gram đường kính trắng</em></li>
+            <li><em>1/4 teaspoon bột nở (baking powder)</em></li>
+            <li><em>1/4 teaspoon muối nở (baking soda)</em></li>
+            <li><em>1/8 teaspoon muối&nbsp;</em></li>
+            </ul>
+            <p><strong>* Lưu ý:&nbsp;</strong><strong><em>Trứng, sữa và bơ nếu để trong tủ lạnh thì để ra ngoài cho hết lạnh trước khi làm bánh</em></strong><em><strong>&nbsp;<a title="Rose cupcakes by LinhTrang9185, on Flickr" href="http://www.flickr.com/photos/55490207@N05/6464947427/"><br>
+            </a></strong></em></p>
+            <p><span id="more-1398"></span></p>
+            <p><strong>Cách làm</strong></p>
+            <p>1. Vặn lò nướng 170 độ C. Lót 12 cup giấy vào khuôn.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cupcake-muffin/cupcake-hoa-hong/4.jpg" width="50%"></a></p>
+            <p>2. Trộn trứng, vanilla và 1/4 số sữa chua (20gram) đến khi vừa hòa quyện (hình 1)</p>
+            <p>3. Rây bột mỳ, bột ngô, bột nở, muối nở, đường và muối vào âu trộn bột. Để máy ở tốc độ thấp, trộn đều trong khoảng 30 giây (hình 2).</p>
+            <p>4. Cho bơ và phần sữa chua còn lại (60gram) vào âu bột, để máy ở tốc độ thấp trộn đến khi vừa hòa quyện. Chuyển máy lên tốc độ vừa, đánh thêm 1.5 phút nữa. Vét thành và đáy âu (hình 3-4-5).</p>
+            <p>5. Chia hỗn hợp trứng và sữa chua ở (2) thành 2 phần, đổ vào âu (hình 6). Để máy ở tốc độ vừa, đánh cho hòa quyện sau mỗi lần thêm trứng (mỗi lần đánh khoảng 30 giây). Vét thành và đáy âu.</p>
+            <p>6. Chia hỗn hợp bột vào các khuôn, chỉ đổ đầy tối đa là ¾ khuôn. Với lượng bột trong công thức, mình đổ được 12 cup giấy, mỗi cup 30gram bột.</p>
+            <p>* <strong>Về việc chia bột vào khuôn: </strong><em>Thật ra viết ghi chú về việc này thì hơi buồn cười vì chỉ là cho bột vào khuôn thôi mà, có gì cần phải lưu ý đâu nhỉ? :) Hồi xưa mình cũng nghĩ vậy, và thường thì mình dùng 2 cái thìa con, một thìa xúc bột, một thìa gạt bột rơi vào khuôn. Bột tất nhiên là sẽ được chia vào hết khuôn, nhưng nhược điểm là do đong bằng mắt nên thường không đều. Chia bột không đều thì về sau này bánh sẽ không được đều nhau, và cũng có thể ảnh hưởng đến độ chín của từng cái bánh nữa. Gần đây thì mình dùng cân và cảm thấy yên tâm &amp; nhanh hơn cách đong bằng mắt nhiều. Mình dùng khuôn silicon rời nên đong như trong hình. Nếu các bạn dùng khuôn 12 hoặc 24 lỗ dạng khay liền thì có thể đặt cả khay lên cân và chia bột vào khuôn.&nbsp;</em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cupcake-muffin/cupcake-hoa-hong/5.jpg" width="50%"></a></p>
+            <p>7. Nướng bánh ở chính giữa lò, nhiệt độ 170 độ C trong khoảng 25 – 30 phút. Thử bánh chín bằng cách cắm một que tăm vào chính giữa bánh, nếu rút lên thấy tăm sạch và khô là bánh đã chín. Ngoài ra, khi ấn nhẹ lên giữa mặt bánh thì bánh sẽ phồng trở lại ngay, nếu có vết lõm tức là bánh chưa chín.</p>
+            <p><strong>* Lưu ý: <em>Nhiệt độ &amp; thời gian nướng có thể thay đổi tùy theo từng lò và kích thước khuôn sử dụng. &nbsp;</em></strong></p>
+            <p>8. Bánh chín lấy ra khỏi lò, để bánh nguội trong khuôn trong khoảng 5 phút rồi lấy ra để nguội hẳn trên rack.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cupcake-muffin/cupcake-hoa-hong/6.jpg" width="50%"></a></p>
+            <p>Về kem trang trí bánh thì kem mình dùng cho bánh trong hình là kem bơ sữa tươi. Công thức là</p>
+            <ul>
+            <li><em>100gram bơ nhạt&nbsp;</em></li>
+            <li><em>40ml sữa tươi không đường (nếu có đường thì bớt lượng đường trong công thức cho vừa miệng)</em></li>
+            <li><em>25gram đường (<strong>bơ sữa để ở nhiệt độ phòng</strong>).</em></li>
+            </ul>
+            <p>Cách làm rất đơn giản, đầu tiên là đánh bông bơ với đường rồi từ từ cho sữa, đánh đến hòa quyện. Sữa mỗi lần mình chỉ cho 1 thìa canh (1 tablespoon = 15ml), đánh cho quyện thành kem mịn nhuyễn rồi mới cho tiếp.</p>
+            <p>Có một vài ghi chú là :</p>
+            <p>1. Với kem bơ không đánh quá nhiều và quá bông, sẽ tạo bọt khí và gây ra hiện tượng kem bị rỗ khi trang trí</p>
+            <p>2. Một vài công thức có tỉ lệ bơ : sữa là 1: 1, nhưng mình làm thử một vài lần thì chỉ dùng tối đa đến 50gram sữa thôi, nên mình nghĩ có lẽ tỉ lệ này thay đổi tùy loại bơ mà các bạn sử dụng. Khi làm các bạn cho sữa từng thìa một đến khi nào cảm thấy kem vừa ý thì dừng lại, không nhất thiết phải theo tỉ lệ quy định trong công thức.</p>
+            <p>Đây là chắc là công thức kem bơ đơn giản &amp; dễ làm nhất, ăn cũng thơm, ngon và mát mặc dù vẫn hơi ngấy – nhưng cũng có thể là do mình vốn thích kem tươi (whipped cream) hơn là kem bơ nên thấy vậy. Ưu điểm của kem bơ là trang trí và bắt các loại hình hoa lá.. dễ. Hoa hồng ở trong hình là mình dùng tip 1M của Wilton (hình dưới), ở nhà mình hình như gọi cái này là đui sao lớn thì phải.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cupcake-muffin/cupcake-hoa-hong/7.jpg" width="50%"></a></p>
+            <p>Dùng đui loại này có 2 kiểu trang trí Cupcakes cực dễ và đẹp. Kiểu hoa hồng như trong hình của mình thì các bạn giữ túi kem thẳng đứng, bắt đầu từ chính giữa bánh, để đầu đui gần cách mặt bánh một chút, bóp nhẹ để tạo phần nhụy rồi kéo ra ngoài và chạy thành 1 hoặc 2 vòng quanh bánh. Kiểu thứ hai cũng giữ túi kem thẳng đứng nhưng chạy vòng tròn từ ngoài vào trong, kiểu bắt này sẽ tạo kem kiểu tháp. Còn nhiều cách trang trí Cupcakes khác nữa, mẫu trên mạng thì vô vàn, đôi khi ngồi tập pha màu kem bơ và “nghịch” một chút với các loại đui bắt kem để tạo ra các kiểu trang trí Cupcakes khác nhau cũng hay :)</p>
+            <p>Chúc các bạn luôn có những chiếc bánh Cupcakes ngon và đẹp nhé ;)</p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+     <!-- Start Footer -->
+     <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

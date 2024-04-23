@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tart trứng ngàn lớp</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item active">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('tart_trung_vo_xu.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-5">TART TRỨNG VỎ NGÀN LỚP</h1>
+        <img src="../img/pie_tart/tart_trung/TartTrung1.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p>Đầu tiên là vì đợt này mình rất rất rất bận cho nên bài hôm nay được viết theo kiểu gạch đầu dòng, không có mở bài kết bài như mọi khi, mong cả nhà thông cảm nhé.a</p>
+            <p>Tiếp theo là các bạn có thể sẽ thấy công thức tart trứng này của mình rất dài, quá dài, nếu so với các công thức tart trứng khác. Lý do là bởi vì mình đã mất đến hơn 3 tuần để làm thử và chọn công thức, nên ngoài hướng dẫn ra thì mình có ghi thêm một số kinh nghiệm mà mình rút ra trong quá trình thử nữa (cũng vì lí do này nên bài viết này mới được cộp mác “Nhật kí học làm bánh” ).</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/pie_tart/tart_trung/8079217902_83ab00cef1_z.jpg" width="50%"></a></p>
+            <p>Với phần vỏ tart, mình đã thử với các cách làm theo kiểu creaming method (đánh bông bơ đường, rồi trộn trứng & bột), cách làm kiểu vỏ tart/ pie truyền thống (trộn tất cả các nguyên liệu rồi cán), và cách làm kiểu bột ngàn lớp, thì thấy rằng hai cách làm đầu tiên cho ra vỏ tart giống kiểu bánh quy, làm rất nhanh và dễ nhưng không phải kiểu mình thích. Vỏ tart mà mình thích là kiểu giòn xốp của bột ngàn lớp. Tuy nhiên, khi thử với bột ngàn lớp truyền thống (puff pastry) thì mình thấy là cũng không được ngon vì bột nở quá nhiều, chèn cả vào phần nhân, và bơ cũng chảy ra rất nhiều, làm cho bánh bị ngấy. Cho nên cuối cùng mình chọn cách làm giống vỏ bánh trung thu ngàn lớp, nhưng có chỉnh sửa một chút cho phù hợp. Cũng vì lí do này mà cán vỏ tart trứng tuy vẫn là bột ngàn lớp nhưng dễ hơn cán bột ngàn lớp truyền thống rất nhiều. Ngoài ra, có một điểm nữa là mình để ý thấy phần tiếp xúc giữa nhân và vỏ thường bị thấm ướt nên khó chín hơn phần vỏ ngoài, cho nên giải pháp của mình là nướng sơ phần vỏ trước rồi mới cho nhân vào nướng.</p>
+            <p>Với phần nhân, mình thích nhân tart trứng mềm và thơm, nhưng không phải kiểu mềm như bánh flan (caramel) mà mềm kiểu kem trứng custard, hơi sền sệt, ăn vào thấy ngọt thơm và béo ngậy. Cho nên phần nhân của mình có hơi phức tạp hơn các công thức khác một chút, vì cần phải quấy cho phần kem trứng hơi chín trước khi nướng, nhưng mình cảm thấy rất hài lòng với nhân trứng này. Hi vọng các bạn cũng sẽ thích.</p>
+            <p><span class = "text-pink-2"><strong>Nguyên liệu</strong></span></p>
+            <p><strong>* Phần vỏ bánh</strong></p>
+            <p><strong>Bột dầu</strong></p>
+            <ul>
+            <li><em>45 gram bơ nhạt (bơ không có muối/ unsalted butter – lạnh, còn nguyên khối)</em></li>
+            <li><em>50 gram bột mì đa dụng</em></li>
+            <li><em>2 thìa café nước rất lạnh (phần thêm vào, có thể không dùng nhưng nên chuẩn bị trước)</em></li>
+            </ul>
+            <p>(*) Có thể thay bơ bằng magarine nếu magarine ở dạng tảng/ khối, không thay bơ bằng dầu ăn</p>
+            <p><strong>Bột nước</strong></p>
+            <ul>
+                <li><em>100 gram bột mì đa dụng (bột mì có hàm lượng protein khoảng 11%)</em></li>
+                <li><em>50 gram sữa tươi không đường – để lạnh</em></li>
+                <li><em>20 gram đường</em></li>
+                <li><em>20 gram dầu ăn (dầu thực vật, không dùng dầu Olive)</em></li>
+                <li><em>1 gram muối</em></li>
+            </ul>
+            <p><strong>* Phần nhân trứng </strong></p>
+            <ul>
+                <li><em>150 gram sữa tươi không đường</em></li>
+                <li><em>100 gram kem tươi (whipping cream – có thể dùng light hoặc heavy cream)</em></li>
+                <li><em>3 lòng đỏ trứng (20gram/lòng đỏ)</em></li>
+                <li><em>50 gram đường (có thể tăng hoặc giảm tùy khẩu vị)</em></li>
+                <li><em>25 gram bột ngô (corn starch) – hoặc thay bằng bột mì đa dụng</em></li>
+                <li><em>3/4 thìa café vanilla dạng lỏng (có thể thay bằng vani bột)</em></li>
+                <li><em>2 gram muối</em></li>
+            </ul>
+            <p>(*) Nếu không có kem tươi thì có thể thay bằng sữa tươi, tuy nhiên dùng kem tươi thì ngon hơn nhiều</p>
+            <p><span class = "text-pink-2"><strong>Dụng cụ </strong></span></p>
+            <ul>
+                <li><em>Cân </em></li>
+                <li><em>Một miếng giấy nến hoặc nilon bọc thực phẩm </em></li>
+                <li><em>Âu trộn và phới lồng đánh trứng</em></li>
+                <li><em>Spatula hoặc thìa cán cứng </em></li>
+                <li><em>Mặt phẳng để cán bột, cây cán bột & dao sắc để cắt bột </em></li>
+                <li><em>Nồi để đun sữa & kem trứng </em></li>
+                <li><em>Lò nướng (*) </em></li>
+                <li><em>12 khuôn cupcake cỡ vừa (khuôn của mình đường kính miệng 6cm, cao 3cm) (*)</em></li>
+            </ul>
+            <p>(*) <strong>Ghi chú:</strong></p>
+            <p>– Lò nướng thông thường cần có chế độ 2 lửa & chỉnh được nhiệt độ & thời gian nướng. Mình không có kinh nghiệm nướng bằng các dụng cụ khác như nồi nướng, lò vi sóng, nồi cơm điện… nên cũng không chắc có thể làm được với các dụng cụ này không</p>
+            <p>– Khuôn bánh các bạn có thể dùng khuôn tart, nhưng với dạng đế bánh kiểu này không nên dùng khuôn có thành quá thấp. Ngoài ra, cần chống dính khuôn bằng cách phết một lớp bơ mỏng lên thành khuôn (nếu là khuôn silicon thì không cần chống dính).</p>
+            <p><span class = "text-pink-2"><strong>Cách làm</strong></span></p>
+            <p>1. <strong>Làm bột dầu:</strong></p>
+            <p>– Bơ cắt thành khối vuông nhỏ, to hơn hạt lựu một chút.</p>
+            <p>– Cho bơ và bột vào bát. Dùng đầu ngón tay trộn đều và nhanh tay đến khi bơ và bột quyện lại, không còn thấy bột và bơ rời rạc trong bát.</p>
+            <p>* Yêu cầu của quá trình này là bơ mềm ra và quyện với bột thành một khối nhưng bơ không được chảy. Sau khi làm xong, toàn bộ khối bơ và bột phải kết dính và vẫn còn lạnh. Vì lí do này nên khi làm mình chỉ dùng đầu ngón tay để hạn chế nhiệt từ tay làm bơ chảy. Và cố gắng thao tác thật nhanh, trong khoảng 1-2 phút.</p>
+            <p>– Nếu bơ và bột bị rời rạc thì các bạn có thể vẩy thêm chút nước (rất) lạnh vào và trộn đến khi bơ bột quyện thành khối. Để vào tủ lạnh khoảng 15-20 phút. Trong lúc này đi làm phần bột  nước.</p>
+            <p>2. <strong>Làm bột nước:</strong></p>
+            <p>– Cho các nguyên liệu trong phần bột nước vào âu. Trộn đều rồi dùng tay nhồi khoảng 2-3 phút đến khi bột quyện thành khối dẻo mịn. Không cần nhồi nhiều, chỉ cần đến khi bột thành một khối tương đối mịn là được. Nếu bột quá dính thì có thể cho thêm chút bột áo.</p>
+            <p>* Lưu ý: tùy theo loại bột mà lượng sữa trong công thức có thể thay đổi. Tỉ lệ sữa: bột trong công thức là dành cho bột mì có hàm lượng protein khoảng 11% (bột mì đa dụng, bột mì số 11). Nếu các bạn dùng bột có hàm lượng protein thấp hơn, ví dụ như cake flour hoặc bột mì số 8, thì nên giảm khoảng 5-10gram nước hoặc tăng 5-10 gram bột.</p>
+            <p>3. <strong>Cán bột:</strong></p>
+            <p>– Phủ một lớp mỏng bột khô lên mặt bàn và lên cây cán bột. Cán viên bột nước thành hình chữ nhật, độ dày của miếng bột sau cán khoảng 0.3 – 0.4cm</p>
+            <p>– Dàn mỏng phần bột dầu (đã để lạnh), đặt vào phần bột nước như trong hình 1, gấp lại & dính mép thật kĩ để phần bột nước hoàn toàn bọc kín phần bột dầu (hình 2).</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/pie_tart/tart_trung/8079217748_66f890a7af.jpg" width="50%"></a></p>
+            <p>– Cán bột thành hình chữ nhật, dày khoảng 0.3 – 0.4cm. Gập 1/3 miếng bột lại theo chiều dọc, rồi gập nốt 1/3 còn lại, giống như gập lá thư hay tờ giấy (hình 3 & 4). Xoay miếng bột 90 độ, tiếp tục cán và gập như trên. Lặp lại thêm 2 lần nữa. Tổng số lần cán và gập là 4 lần.</p>
+            <p>* Lưu ý:</p>
+            <p>– Cán bột kiểu này không khó và không sợ bơ chảy nhiều như cán bột ngàn lớp. Tuy nhiên, nếu nơi bạn ở nóng ẩm thì vẫn có khả năng bơ chảy. Cho nên lưu ý quan trọng nhất ở bước này là trong <strong>toàn bộ quá trình cán, bột cần phải lạnh.</strong>Nếu tốc độ cán chậm thì các bạn nên để bột vào tủ lạnh nghỉ khoảng 20-30 phút sau 1 hoặc 2 lần cán & gập. Đặc biệt là nếu trong quá trình cán thấy có dấu hiệu bột bị rách, bơ bị chảy thì lập tức cho vào tủ lạnh, kể cả là đang cán dở. <strong>Tuyệt đối không cố cán tiếp.</strong></p>
+            <p>– Bột này mềm, nhìn chung là rất dễ cán, không cần phải dùng nhiều sức, chỉ cần lăn cây bột đều là được. Trong quá trình cán các bạn có thể (và nên) dùng thêm ít bột áo để phủ mặt bàn và cây cán bột, sẽ đỡ bị dính và cán nhanh hơn.</p>
+            <p>4. Sau khi đã cán và gập đủ 4 lần thì cán bột thành hình chữ nhật rồi cuộn lại theo chiều dọc (giống như làm bánh cuộn – hình 1 ở dưới). Nếu cuộn bột quá mềm hoặc chảy nhão thì sau khi cuộn xong, cho cả cuộn bột vào ngăn đá khoảng 15-20 phút (nhưng đừng để bột đông đá luôn nhé).</p>
+            <p>5. Dùng dao sắc cắt bột thành 11 – 12 khối bằng nhau. Tốt nhất là các bạn dùng cân để chia cho chuẩn. Mỗi khối bột sẽ nặng khoảng 25-27 gram. Khuôn mình dùng là khuôn cupcake đường kính 6cm , cao 3cm. Nếu khuôn của các bạn có kích thước khác thì các bạn điều chỉnh khối lượng cho hợp lí, không nên làm phần đế quá dày, lớp vỏ sẽ dễ bị cứng.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/pie_tart/tart_trung/8079225235_558378669c.jpg" width="50%"></a></p>
+            <p>6. Ấn cho khối bột hơi dẹp xuống rồi cán mỏng. Độ dày khoanh bột khoảng 0.3cm. Lúc này miếng bột sẽ có hình tròn với nhiều vòng tròn đồng tâm. Đặt miếng bột vào khuôn. <strong>Ấn cho miếng bột ép sát với khuôn</strong>. Phần mép bột nên chừa ra ngoài một chút vì bột có thể sẽ co lại.</p>
+            <p>Lần lượt làm hết với các khoanh bột còn lại. Để bột vào tủ lạnh nghỉ tối thiểu 30 phút. Bắt buộc phải có bước này, nếu không bột sẽ co rất nhiều trong khi nướng.</p>
+            <p>7. Bật lò nướng 175 độ C – hai lửa – 15 phút trước khi nướng.</p>
+            <p>8. Trong lúc đợi lò nướng làm nóng thì đi làm nhân trứng.</p>
+            <ul>
+                <li><em>Đun kem và sữa tươi đến ấm nóng, khoảng 50-60 độ C, không nóng hơn và không được để sôi.</em></li>
+                <li><em>Cho trứng và đường vào âu, dùng phới lồng đánh tan nhẹ. Rây bột vào âu. Trộn đều. Hỗn hợp sẽ hơi đặc nhưng vẫn đánh tan được bột. Nếu hỗn hợp quá đặc đến mức vón cục thì có thể lòng đỏ trứng của bạn hơi nhỏ hoặc bạn cho nhiều bột hơn so với yêu cầu.</em></li>
+                <li><em>Từ từ đổ sữa kem vào âu, vừa đổ vừa khuấy đều đến khi hỗn hợp hòa quyện.</em></li>
+                <li><em>Cho toàn bộ hỗn hợp kem trứng sữa vào nồi. Đun lửa vừa, quấy đều tay đến khi bắt đầu có hơi/ khói bốc lên từ nồi, hỗn hợp hơi đặc lại (quấy thấy tạo thành vệt trên mặt hỗn hợp). Bắc nồi ra khỏi bếp, cho muối & vanilla, quấy đều. Đậy vung, giữ ấm. Hỗn hợp sẽ hơi sệt, nhưng vẫn loãng hơn nhân choux kem rất nhiều.</em></li>
+            </ul>
+            <p>* <strong>Lưu ý:</strong> bắt buộc phải có bước quấy kem để làm kem chín một phần này, nếu không khi nướng, bột sẽ bị lắng xuống đáy, tạo thành 1 lớp dày và dai ở đáy phần kem trứng. Nếu trong quá trình quấy có hiện tượng vón cục (thường là do đun lửa quá nóng) thì các bạn lập tức bắc nồi ra khỏi bếp và quấy thật mạnh & nhanh tay, hỗn hợp sẽ mượt trở lại.</p>
+            <p>9. Cho vỏ bánh vào lò, nướng 175 độ C trong 8-10 phút. Lấy vỏ bánh ra khỏi lò. Chia nhân kem trứng vào từng khuôn. Có thể lọc qua rây để lược các vụn trứng hoặc bột bị vón cục trong nhân.</p>
+            <p>10. Nướng bánh ở 175 độ C trong 30-35 phút (mình nướng ở rãnh thấp hơn rãnh giữa 1 nấc) đến khi vỏ bánh chín vàng, phần nhân còn hơi rung rinh là được. Thời gian và nhiệt độ nướng có thể sẽ thay đổi tùy theo lò (đặc biệt là các lò cỡ nhỏ, có thể sẽ cần nướng ở nhiệt độ thấp & thời gian dài hơn)</p>
+            <p>Phần vỏ tiếp xúc với nhân có thể hơi ẩm, nhưng vỏ vẫn giòn xốp, nhân mềm, thơm. Bánh không nên ăn ngay khi còn nóng, vì có thể vẫn còn mùi tanh của trứng và phần nhân chưa được đặc lại. Bánh ăn khi còn hơi ấm ấm sẽ giòn, để tủ lạnh thì sẽ bùi, dùng cách nào cũng ngon cả. Nên dùng ngay trong ngày hoặc sau 1 ngày.</p>
+            <p>Một lưu ý cuối cùng là vỏ bánh này không hoàn toàn là bột ngàn lớp (puff pastry) nên khi ăn các bạn có thể sẽ thấy khác khá nhiều, nếu muốn giống, hoặc muốn vỏ bánh ngậy bơ hơn thì các bạn có thể điều chỉnh nguyên liệu (tăng bơ) ở phần bột dầu nhé.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/pie_tart/tart_trung/8079225795_ab4fb7f399_z.jpg" width="50%"></a></p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

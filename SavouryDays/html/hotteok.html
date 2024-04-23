@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotteok</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item active">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('hotteok.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-5">CÁCH LÀM HOTTEOK – BÁNH PANCAKE KIỂU HÀN</h1>
+        <img src="../img/pancake_crepe/hotteok/hotteok-recipe-cách-lam-pancake-kiểu-Hàn-banner.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p>Tiếp tục sê-ri đồ Hàn Nhật nhé… :D</p>
+            <p>Mình thấy người Nhật và người Hàn đặc biệt giỏi trong việc quảng bá văn hoá, du lịch và ẩm thực qua các chương trình truyền hình của họ. Dạo trước có một thời gian mình xem khá nhiều chương trình truyền hình thực tế của Hàn Quốc, và nhờ vậy mà vô tình biết được thêm bao nhiêu món ăn ngon. Thực tình là chỉ cần nhìn cách người ta ăn uống, rồi cách người ta quay những món ăn nóng hổi trên bàn, trên bếp… là đã cảm thấy muốn lao ngay vào bếp để làm rồi ấy.</p>
+            <p>Món bánh này cũng là mình vô tình biết được từ một video của Hàn. Đó là một ngày trời rất lạnh, ai cũng khoác áo khoác dày sụ, xúm quanh một cái xe bán bánh rán, để chờ từng chiếc bánh nóng hổi vàng ươm, bốc khói nghi ngút đang được người bán thoăn thoắt tạo hình, ấn dẹt rồi rán trong một chiếc chảo lớn. Và cái bánh thành phẩm thì ôi chao là thích mắt, vàng ruộm, vỏ ngoài nhìn qua đã thấy là giòn, bên trong ứa ra nước đường mật sóng sánh với các loại hạt….</p>
+            <p>Từ lần ấy, bụng bảo dạ nhất định không thể ăn ngó thế này. Nhà mình đâu có thiếu đồ nghề cơ chứ :D Và thế là, chào mùa thu, tụi tớ có món bánh mới!</p>
+            <h2 class="text-pink-2">CÁCH LÀM HOTTEOK – BÁNH PANCAKE KIỂU HÀN QUỐC </h2>
+            <p class="text-pink"> <strong>Nguyên liệu(7-8 cái)</strong></p>
+            <p><strong>A. Vỏ bánh </strong></p>
+            <ul>
+                <li><em>200 gram bột làm bánh mì (bột mì số 13)</em></li>
+                <li><em>150 gram sữa tươi không đường</em></li>
+                <li><em>½ thìa canh (6 gram) đường bột</em></li>
+                <li><em>½ thìa cafe muối</em></li>
+                <li><em>½ thìa cafe men nở</em></li>
+            </ul>
+            <p><strong>B. Nhân bánh</strong></p>
+            <ul>
+                <li><em>40 gram đường nâu</em></li>
+                <li><em>¼ thìa cafe bột quế</em></li>
+                <li><em>5 gram hạt óc chó rang chín</em></li>
+                <li><em>5 gram hạt hạnh nhân rang chín</em></li>
+                <li><em>½ thìa canh vừng trắng rang chín</em></li>
+            </ul>
+            <p><strong>Lưu ý: Các loại hạt có thể thay đổi về loại hay định lượng tùy theo sở thích. Với các hạt to nên giã hay đập nhỏ. </strong></p>
+            <p class="text-pink"><strong> Cách làm</strong></p>
+            <div class="text-center">
+                <video width="620px"  class = "frame-video" height="350px" controls>
+                    <source type="video/mp4" src="../img/pancake_crepe/hotteok/y2mate.com - HOTTEOK recipe  PANCAKE kiểu Hàn_v144P.mp4">
+                </video>
+            </div>
+            <p>Nếu không xem được video ở trên, bạn có thể xem trực tiếp tại <a href="https://www.youtube.com/watch?v=iDnMOXe1unQ"><span class= "text-pink-2"><strong>link này </strong></span></a>nhé. </p>
+            <p>1. Rây bột mì, đường và muối vào âu, trộn đều. Tiếp tục cho men nở vào trộn đều, tạo một lỗ nhỏ ở giữa âu bột và cho sữa tươi vào. </p>
+            <p>2. Trộn từ từ đến khi bột thành một khối, dùng máy trộn từ tốc độ thấp rồi tăng dần tốc độ đến khi khối bột trở nên mịn màng. Ở bước này, nếu nhồi bột bằng tay thì cần lưu ý một chút vì bột khá dính nhưng không nên cho nhiều bột áo nếu không sẽ làm bột bị khô. </p>
+            <p>Bột sau khi nhồi không cần đến mức kéo màng mỏng không rách nhưng cần khá mịn màng. </p>
+            <p>Che kín mặt bột và ủ ở nơi ấm áp đến khi bột nở gấp đôi. </p>
+            <p>3. Nhân bánh: Trộn đều đường, bột quế và các loại hạt đã nghiền nhỏ với nhau.</p>
+            <p>4. Khi bột đã nở gấp đôi, dùng dầu ăn chống dính 2 tay, sau đó dùng tay túm một phần bột và ngắt dứt khoát cho phần bột ấy đứt. Bước này nếu không quen có thể dùng kéo để cắt bột hoặc cho bột ra mặt bàn rồi dùng miếng cắt bột để cắt hoặc các bạn có thể chia bột bánh thành 7 – 8 phần bằng nhau, chia nhân bánh với số lượng tương tự.</p>
+            <p>5. Dàn mỏng phần bột sau đó xúc một thìa nhân vào giữa, gói kín lại. Làm lần lượt cho đến hết.</p>
+            <p>Lưu ý: chỉ nên dùng một lượng dầu ăn rất vừa phải để chống dính cho tay vì quá nhiều dầu sẽ khiến cho vỏ bánh khó túm lại và dính vào với nhau. </p>
+            <p>6. Cho dầu vào một cái chảo chống dính tốt, đun ở lửa vừa đến khi dầu nóng thì cho bánh vào. Khi mặt bánh vàng thì lật bánh, sau đó dùng xẻng nấu ăn hoặc một cái thìa ấn cho bánh dẹt ra, tiếp tục rán đến khi 2 mặt bánh vàng. <strong>Lưu ý để lửa vừa cho bánh chín rám vàng bên ngoài và chín hết bên trong, rán lửa nhỏ quá sẽ làm vỏ bánh bị dày và dai, ruột bánh còn mùi men; còn nếu rán lửa quá lớn sẽ làm bánh cháy bên ngoài mà trong có thể chưa chín hết.</strong></p>
+            <p>Cụ thể thao tác tạo hình và rán bánh các bạn xem tại video giúp mình nhé. </p>
+            <p>Bánh nên ăn lúc còn nóng, khi vỏ bánh vẫn giòn và nhân đường mật vẫn còn chảy lỏng, nóng hổi, bốc khói :) </p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

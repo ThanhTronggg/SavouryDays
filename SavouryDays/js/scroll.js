@@ -52,7 +52,12 @@ function KiemTraDaDangNhap() {
     }
 }
 
-function DangXuat() {
+function DangXuat(link) {
     localStorage.removeItem("tkhientai");
-    window.location.href = "../html/home.html"
+    link1 = "../html/" + link; 
+    window.location.href = link
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    KiemTraDaDangNhap();
+});

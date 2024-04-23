@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách làm BÁNH QUY NHÂN SOCOLA TƯƠI (cho Valentine)</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item active">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('banh-quy-nhan-socola.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-3">Cách làm BÁNH QUY NHÂN SOCOLA TƯƠI (cho Valentine)</h1>
+        <img src="../img/cookies-bars-candy/banh-quy-nhan-socola/IMG_2064-1536x864.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p><span style="font-weight: 400;">Món ăn kinh điển, không thể thiếu được mỗi dịp Valentine nay đã được nâng lên một tầm cao mới, ngon hơn, xịn hơn và siêu dễ làm ạ</span></p>
+            <p><span style="font-weight: 400;">Công thức bánh quy socola này ngon cực luôn ấy, ngay từ lúc trộn bột đã thơm nức nở rùi, thêm nhân socola tươi đậm vị chocolate, mềm tan ngay trong miệng, nói chung là Perfect All-kill cho các tín đồ chocolate. Dù không có ai để tặng, thì với mình món bánh này xứng đáng làm đi làm lại nhiều lần, để “xoa dịu” tinh thần mỗi lúc stress, hay để kết thúc một bữa ăn mặn theo cách hoàn hảo và ngọt ngào nhất</span></p>
+            <h2 style="text-align: left;"><span class = "text-pink-2">Cách làm BÁNH QUY NHÂN SOCOLA TƯƠI (cho Valentine)</span></h2>
+            <p><strong><span class = "text-pink-2">Nguyên liệu (Cho khoảng 8 – 9 bánh kích thước 7x4cm)</span></strong></p>
+            <p><span style="font-weight: 400;">A. Phần nhân chocolate (cho khuôn vuông 16 – 18cm):</span></p>
+            <ul>
+            <li><em><span style="font-weight: 400;">100 gram chocolate nguyên chất 72% cacao, băm nhỏ</span></em></li>
+            <li><em><span style="font-weight: 400;">100 gram kem tươi (whipping cream)</span></em></li>
+            <li><em><span style="font-weight: 400;">20 gram bơ động vật không muối</span></em></li>
+            <li><em><span style="font-weight: 400;">½ thìa cafe rượu ruhm hoặc tinh chất vani (không bắt buộc)</span></em></li>
+            </ul>
+            <p><em><span style="font-weight: 400;">* Dùng khuôn 16cm thì phần nhân sẽ khá dày, nếu chỉ thích 1 lớp nhân mỏng thì dùng khuôn 18cm</span></em></p>
+            <p><span style="font-weight: 400;">B. Phần bánh quy chocolate (cho khoảng 16 – 18 bánh):</span></p>
+            <ul>
+            <li><em><span style="font-weight: 400;">90 gram bơ nhạt, để ở nhiệt độ phòng tới khi bơ mềm nhưng không chảy nước</span></em></li>
+            <li><em><span style="font-weight: 400;">30 gram đường nâu Hàn Quốc</span></em></li>
+            <li><em><span style="font-weight: 400;">40 gram đường vàng</span></em></li>
+            <li><em><span style="font-weight: 400;">25 gram trứng gà (đánh tan 1 quả và cân lấy 25 gram)</span></em></li>
+            <li><em><span style="font-weight: 400;">½ thìa cafe tinh chất vani</span></em></li>
+            <li><em><span style="font-weight: 400;">1 nhúm nhỏ muối</span></em></li>
+            <li><em><span style="font-weight: 400;">25 gram bột hạnh nhân</span></em></li>
+            <li><em><span style="font-weight: 400;">170 gram bột mì</span></em></li>
+            <li><em><span style="font-weight: 400;">7 gram bột cacao nguyên chất không đường</span></em></li>
+            <li><em><span style="font-weight: 400;">4 gram bột cà phê đen nguyên chất hòa tan (không bắt buộc)</span></em></li>
+            </ul>
+            <p><strong><span class = "text-pink-2">Lưu ý về nguyên liệu:</span></strong></p>
+            <p><span style="font-weight: 400;">– Bơ nhạt dùng bơ động vật không muối, KHÔNG dùng bơ thực vật (magarine) như Tường An hay Meizan.</span></p>
+            <p><span style="font-weight: 400;">– Nếu không có 1 trong 2 loại đường nâu hoặc đường vàng có thể thay toàn bộ bằng loại đường mà bạn có. Tuy nhiên nên làm đúng theo công thức để bánh có vị chocolate ngon nhất.</span></p>
+            <p><span style="font-weight: 400;">– Bột cafe không bắt buộc nhưng cafe rất hợp với chocolate. Nên chọn loại bột cà phê đen hòa tan nguyên chất không đường. Thường tụi mình sử dụng loại bột cà phê đen của G7, mỗi gói 2 gram.&nbsp;</span></p>
+            <p><span style="font-weight: 400;">– Nếu không sử dụng rượu ruhm ở phần nhân bánh, có thể thay thế bằng vanilla lượng tương đương.</span></p>
+            <p><span style="font-weight: 400;">– Chocolate sử dụng trong công thức là loại chocolate nguyên chất 72% cacao, dùng chocolate càng ngon thì bánh càng ngon. 72% là loại chocolate khá đắng, bạn có thể dùng loại 65, 55% cacao. Tuy nhiên cần lưu ý % cacao càng thấp thì sẽ càng khó xử lý, thành phẩm sẽ nhanh bị mềm ở nhiệt độ phòng.&nbsp;</span></p>
+            <p><strong><span class = "text-pink-2">Cách làm</span></strong></p>
+            <p><span style="font-weight: 400;">A. Phần nhân socola tươi (làm trước 1 ngày):</span></p>
+            <p><span style="font-weight: 400;">1. Lót giấy nến vào lòng khuôn sao cho giấy nến cao bằng hoặc hơn thành khuôn 1 chút (để khi lấy ra dễ hơn). Cho chocolate băm nhỏ vào bát.</span></p>
+            <p><span style="font-weight: 400;">2. Cho whipping cream và bơ vào nồi, đun ở lửa nhỏ nhất, vừa đun vừa khuấy đều tới cho đến khi bơ tan hết, hỗn hợp nóng lên ở khoảng 35-37 độ thì tắt bếp. Đổ phần kem vào âu chocolate trộn đều cho chocolate tan từ từ.</span></p>
+            <p><span style="font-weight: 400;">3. Khi bát chocolate hạ nhiêt và chocolate không thể tan được nữa, đặt bát chocolate cách thủy trên nồi nước ấm (không được sôi) để cho chocolate tiếp tục tan ra. Trong quá trình này cần đảm bảo nhiệt độ bát chocolate luôn dưới 40 độ, tốt nhất là ở trong khoảng 35-37 độ. Nếu thấy có dấu hiệu tăng nhiệt cần nhấc ngay bát chocolate ra và quấy ở bên ngoài.</span></p>
+            <p><span style="font-weight: 400;">Lặp lại thao tác này đến khi chocolate tan hết. Cho vani hoặc rượu Ruhm vào trộn đều.</span></p>
+            <p><strong><span class = "text-pink-2">*Lưu ý về nhiệt độ:&nbsp;</span></strong></p>
+            <p><span style="font-weight: 400;">Lý do cần kiểm soát nhiệt độ chảy của chocolate ở dưới 40 độ C là để sau khi đông lại, chocolate sẽ có độ cứng tốt, có thể để ở nhiệt độ phòng mát mà không bị chảy. Nếu làm chảy chocolate trên nhiệt quá cao thì sẽ luôn cần bảo quản ở trong tủ lạnh để chocolate không bị chảy.</span></p>
+            <p><span style="font-weight: 400;">Nếu thấy phần này quá phức tạp, có thể sử dụng chocolate compound (thành phần không có bơ cacao) thì không cần đảm bảo nhiệt độ nhân vẫn có độ cứng tốt nhưng vị sẽ bị ngọt quá và kém ngon hơn.</span></p>
+            <p><span style="font-weight: 400;">4. Đổ phần nhân chocolate vào khuôn đã chuẩn bị sẵn, dàn phẳng và để lạnh ít nhất 8 giờ cho hỗn hợp đông lại và ổn định hoàn toàn.</span></p>
+            <p>B. Phần bánh quy:</p>
+            <p><span style="font-weight: 400;">1. Bơ để mềm ở nhiệt độ phòng. Dùng phới dẹt miết đều cho bơ thật mịn.</span></p>
+            <p><span style="font-weight: 400;">2. Cho đường và muối và âu bơ, tiếp tục trộn bằng phới tới khi bơ và đường hòa quyện.</span></p>
+            <p><span style="font-weight: 400;"><strong><span class = "text-pink-2">*Lưu ý:</span> </strong>Chỉ trộn tới khi vừa hòa quyện, không đánh bông bơ bằng máy hay trộn quá nhiều làm bơ bông xốp chuyển màu. Đánh bơ quá nhiều sẽ khiến bánh bị nở và mất nét khi nướng.</span></p>
+            <p><span style="font-weight: 400;">3. Cho trứng và chiết xuất vani vào, trộn tới khi vừa hòa quyện thì dừng lại.&nbsp;</span></p>
+            <p><span style="font-weight: 400;">4. Trộn đều bột hạnh nhân, bột cacao, cà phê và bột mì, rây bột vào âu bơ, trộn tới khi bột gần như hòa quyện. Đeo găng tay nilon, bóp và nhào nhẹ nhàng khối bột cho đều hơn.</span></p>
+            <p><span style="font-weight: 400;">Bột trộn xong khô ráo có thể <strong>vo thành viên mà không chảy nhão, tuy nhiên vẫn mềm dẻo, ấn tay vào không bị nứt bở</strong>. Nếu bột bị nứt/bở là bột bị khô quá. Để hạn chế tình trạng này, bạn có thể bớt lại 10 gram bột mì, sau khi trộn nếu thấy khối bội ướt quá thì trộn thêm. Nếu rơi vào trường hợp bột khô, bạn đánh tan 1 lòng đỏ trứng, cho thêm từng chút 1 vào, bóp đều cho bột mềm hơn nhé.&nbsp;</span></p>
+            <p><span style="font-weight: 400;">5. Cán mỏng bột giữa 2 tờ giấy nến để chống dính, gập mép tờ giấy sao cho được hình chữ nhật kích thước khoảng 15×20. Cán bột mỏng trong khoảng hình chữ nhật sẽ cho khối bột phẳng mỏng 0,3 -0,4mm. Cất ngăn đá tủ lạnh khoảng 30 phút đến khi cứng hẳn lại.</span></p>
+            <p><span style="font-weight: 400;">6. Sau khi phần bột đã đủ lạnh, lấy ra cắt hình theo ý thích. Các phần bột thừa có thể bóp đều, cán mỏng và tiếp tục thao tác như bình thường.</span></p>
+            <p><span style="font-weight: 400;">7. Chuyển bột ra khay, nướng ở 180 độ khoảng 10-12 phút (làm nóng lò trước ít nhất 20 phút). Lấy bánh ra để nguội. Hạ nhiệt lò, sấy 100 độ 30-40 phút cho bánh khô ráo hoàn toàn và giòn lâu hơn.</span></p>
+            <p><span style="font-weight: 400;">8. Sau khi sấy bánh để nguội hẳn. Cắt nhân vừa theo hình của bánh rồi kẹp vào giữa. </span></p>
+            <p><span style="font-weight: 400;"><strong><span class = "text-pink-2">Bảo quản</span></strong>: Với thời tiết dưới 22 độ C, có thể để bánh ở nhiệt độ phòng mà nhân chocolate không bị chảy. Tuy nhiên, cần bảo quản bánh trong tủ lạnh vì thành phần nhân bánh có nhiều kem sữa, dễ bị hỏng. Bánh bảo quản trong tủ lạnh được 2 – 3 tuần, tuy nhiên nên ăn sớm vì để càng lâu bánh quy sẽ càng ỉu do hút ẩm từ nhân bánh.</span></p>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+     <!-- Start Footer -->
+     <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

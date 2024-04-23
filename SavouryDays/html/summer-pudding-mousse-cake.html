@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pudding xoài chocolate</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item active">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('summer-pudding-mousse-cake.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-3">Pudding xoài chocolate</h1>
+        <img src="../img/custard-pudding/summer-pudding/SummerPuddingMousse-600x345.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p>Bạn nào sở hữu cuốn Nhật ký học làm bánh tập 2 của mình hẳn sẽ biết mình mê mẩn và nghiện ngập các loại <em>Entremet </em>– bánh nhiều tầng với các lớp gateau, mousse, pudding… nhiều như thế nào. Nhất là vào mùa nóng thì các loại Entremet lại càng lên ngôi vì đa phần Entremet đều là đồ cần được bảo quản lạnh và ăn lạnh cả.</p>
+            <p>Loại Entremet của ngày hôm nay được đặt tên là <em>Summer Pudding Mousse Cake </em>bởi vì nó thực sự rất…. Mùa Hè. Cảm giác “Hè” có thể thấy từ màu sắc sáng bừng của món ăn, từ những nguyên liệu quen thuộc trong ngày nóng như sữa chua, chanh leo, từ cách làm cố gắng giản tiện hết mức bằng việc dùng nồi cơm điện để nướng bánh, và đặc biệt là từ hương vị của các lớp bánh: Gateau chocolate bao phủ bởi một lớp Pudding kem trứng ngọt ngào béo ngậy, hòa với Mousse sữa chua xốp mềm mịn tan cùng mùi thơm và vị chua dịu đặc trưng của chanh leo. Đơn giản, dễ làm nhưng ngon miệng và ngon mắt!</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/1.jpg" width="50%"></a></p>
+            <p><span class = "text-pink-2"><strong>Nguyên liệu</strong></span></p>
+            <p><strong>A. Gateau Sô-cô-la</strong></p>
+            <ul>
+            <li><em>3 lòng trắng trứng</em></li>
+            <li><em>70 gram đường – RÂY MỊN</em></li>
+            <li><em>1/4 thìa cafe (teaspoon) cream of tartar</em></li>
+            <li><em>3 lòng đỏ trứng</em></li>
+            <li><em>65 gram bột mì đa dụng (all purpose flour)</em></li>
+            <li><em>15 gram bột cacao nguyên chất</em></li>
+            <li><em>10 gram sữa tươi không đường (có thể thay bằng nước)</em></li>
+            <li><em>10 gram dầu ăn</em></li>
+            <li><em>1/2 thìa cafe (teaspoon) vani chiết xuất (vanilla extract)</em></li>
+            </ul>
+            <p><strong>B. Custard Pudding (Pudding kem trứng)</strong></p>
+            <ul>
+            <li><em>4 gram Gelatin (dạng lá hoặc bột)</em></li>
+            <li><em>2 lòng đỏ trứng (18 – 20 gram/ lòng đỏ)</em></li>
+            <li><em>50 gram đường – RÂY MỊN</em></li>
+            <li><em>5 gram bột ngô (corn starch)</em></li>
+            <li><em>200 gram sữa tươi không đường</em></li>
+            <li><em>100 gram kem tươi (30 – 40 % béo)</em></li>
+            <li><em>3/4 thìa cafe (teaspoon) vani chiết xuất (vanilla extract)</em></li>
+            </ul>
+            <p><strong>C. Mousse sữa chua</strong></p>
+            <ul>
+            <li><em>6 gram Gelatin (dạng lá hoặc bột)</em></li>
+            <li><em>150 gram sữa chua không đường (để ra ngoài trước khi làm 30 phút cho đỡ lạnh)<br>
+            </em></li>
+            <li><em>135 gram kem tươi (35% béo trở lên)</em></li>
+            <li><em>40 gram đường</em></li>
+            <li><em>3/4 thìa cafe vani chiết xuất (vanilla extract)</em></li>
+            </ul>
+            <p><strong>D. Thạch gương chanh leo</strong></p>
+            <ul>
+            <li><em>2 gram Gelatin (lá hoặc bột)</em></li>
+            <li><em>70 gram nước cốt chanh leo (3 quả to)</em></li>
+            <li><em>đường tùy khẩu vị</em></li>
+            </ul>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/2.jpg" width="50%"></a></p>
+            <p><span class = "text-pink-2"><strong>Cách làm</strong></span></p>
+            <p><strong>A. Gateau chocolate</strong></p>
+            <p>Phần bạt bánh này mình chọn công thức Gateau cơ bản bất bại vị cacao nhưng dùng nồi cơm điện để nướng. Thật ra thì trước đây mình không thích nướng bánh bằng nồi cơm điện tí nào cả, vì bánh dễ xẹp mà cũng không thơm được như khi dùng lò. Nhưng từ khi nồi cũ hỏng, đổi sang dùng nồi mới có chức năng Cake thì khác hẳn. Mình cực cực thích chức năng Cake của cái nồi mới này, bánh ra lúc nào cũng xốp mềm ẩm, không có cháy, không xẹp, mặt trên mặt dưới đều như một. Sướng nhất là trời nóng không phải giở lò ra.</p>
+            <p>Vì đã có nhiều bài hướng dẫn cụ thể rồi nên mình chỉ viết vắn tắt các bước làm tại đây thôi. Nếu bạn cần thêm thông tin và hướng dẫn chi tiết thì có thể xem <a href="http://www.savourydays.com/video-cach-lam-banh-ga-to-bang-noi-com-dien/" target="_blank">Video cách làm gateau cơ bản bằng nồi cơm điện</a> nhé.</p>
+            <p>1. Chuẩn bị nguyên liệu</p>
+            <p>– Tách riêng lòng trắng và lòng đỏ trứng. Cân đong đường. Trộn bột mì với bột cacao, để riêng. Đong dầu ăn, sữa và vanilla vào một bát riêng.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/3.jpg" width="50%"></a></p>
+            <p>2. Đánh bông lòng trắng trứng với đường và cream of tartar đến khi lòng trắng bông cứng.</p>
+            <p>* <em>Vì có nhiều đường nên có thể lòng trắng sẽ không có chóp cứng nhọn hoắt, nhưng cần phải đánh đến độ lòng trắng đặc, bóng, dẻo, khi đánh thấy nặng tay. Nếu lòng trắng không đánh đủ cứng thì sẽ ảnh hưởng rất nhiều đến các bước sau và thành phẩm. </em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/4.jpg" width="50%"></a></p>
+            <p>3. Để máy ở tốc độ thấp, cho từng lòng đỏ vào, đánh đều cho hòa quyện.</p>
+            <p>* <em>hỗn hợp khi cho lòng đỏ vào rất đặc, mịn và bông </em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/5.jpg" width="50%"></a></p>
+            <p style="text-align: center;">h<em>ỗn hợp sau khi đã cho hết lòng đỏ&nbsp;</em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/6.jpg" width="50%"></a></p>
+            <p>* <em>mình dùng thêm chiết xuất cafe nên hỗn hợp chất lỏng có màu sẫm một chút :) </em></p>
+            <p>* <em>Cho từ từ, từng chút một, đánh hòa quyện mới cho tiếp</em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/7.jpg" width="50%"></a></p>
+            <p style="text-align: center;"><em>hỗn hợp sau khi cho hết chất lỏng, vẫn đặc mịn và bông </em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/8.jpg" width="50%"></a></p>
+            <p>5. Rây 1/3 phần bột mì và bột cacao vào âu. <em>Nên rây sao cho bột phủ đều khắp mặt âu </em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/9.jpg" width="50%"></a></p>
+            <p>Đánh đều bằng máy ở tốc độ thấp nhất. Ngay khi bột vừa hòa quyện thì dừng lại. Cho phần bột tiếp theo.</p>
+            <p>* <em>Một số ý kiến cho rằng chỉ có thể trộn bằng tay theo kiểu fold ở bước này để tránh cho bọt khí trong trứng bị vỡ. Thực tế là nếu trứng đánh đủ bông đặc thì hoàn toàn có thể trộn bằng máy ở tốc độ chậm mà không có vấn đề gì cả. Thậm chí, với các bạn mới và chưa quen với kĩ thuật fold thì trộn bằng máy còn an toàn hơn trộn tay rất nhiều. </em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/10.jpg" width="50%"></a></p>
+            <p><em>hỗn hợp bạt bánh sau khi đã trộn xong hết bột – vẫn đặc, mịn, hầu như không có bọt khí lớn</em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/11.jpg" width="50%"></a></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/12.jpg" width="50%"></a></p>
+            <p>7. Đổ bột vào nồi hoặc khuôn (đường kính 20 cm) có lót một lớp giấy nến ở đáy khuôn.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/13.jpg" width="50%"></a></p>
+            <p>8. Cho vào nồi, bấm nút khởi động.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/14.jpg" width="50%"></a></p>
+            <p>Nếu nồi cơm không có chế độ Cake, các bạn xem hướng dẫn cách chỉnh nhiệt và thời gian trong bài viết dưới đây</p>
+            <ul>
+            <li>Hướng dẫn <a href="http://www.savourydays.com/lam-ga-co-ban-voi-noi-com-dien/" target="_blank">cách làm bánh với nồi cơm điện</a> (cách theo dõi thời gian và chỉnh nhiệt nướng)</li>
+            </ul>
+            <p>Nếu nướng bằng lò, xem thêm thông tin về cách chỉnh nhiệt độ và thời gian tại đây.</p>
+            <ul>
+            <li>Hướng dẫn <a href="http://www.savourydays.com/gateau-co-ban-bat-bai-no-fail-sponge-cake/" target="_blank">cách nướng bánh gateau cơ bản bằng lò nướng</a> để bánh không bị xẹp lõm…</li>
+            </ul>
+            <p>9. Bánh đã chín, lấy ra khỏi nồi, bóc bỏ lớp giấy ở đáy bánh, để nguội trên rack. Bánh mềm, ẩm, thơm, ấn vào thấy đàn hồi, không bị lõm mặt hay đáy.</p>
+            <p>* <em>với nồi Zojirushi mình thường để bánh trong nồi thêm khoảng 5 phút rồi mới lấy ra. </em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/15.jpg" width="50%"></a></p>
+            <p><strong>B. Pudding kem trứng</strong></p>
+            <p>1. Ngâm Gelatin với nước lạnh (nếu dùng Gelatin bột thì ngâm trong khoảng 30 ml nước/ tương đương 2 thìa canh).</p>
+            <p>2. Cho lòng đỏ và đường vào âu. Dùng phới đánh đến khi lòng đỏ chuyển màu vàng nhạt, bông mịn.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/16.jpg" width="50%"></a></p>
+            <p>3. Rây bột ngô vào, trộn đều cùng lòng đỏ.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/17.jpg" width="50%"></a></p>
+            <p>3. Đun ấm sữa và kem tươi. Từ từ đổ phần kem sữa này vào âu trứng,vừa đổ vừa quấy đều. Sau khi trộn hết kem sữa, lọc lại hỗn hợp qua rây, cho vào nồi.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/18.jpg" width="50%"></a></p>
+            <p>4. Bật bếp nấu hỗn hợp ở lửa vừa&nbsp; – to. Quấy đều tay và liên tục. Khi hỗn hợp có dấu hiệu đặc sánh, nếm thử thấy không còn vị bột sống thì tắt bếp.</p>
+            <p>* <em>Hỗn hợp sệt nhưng vẫn khá loãng, không đặc như kem trứng nhân bánh Su kem</em></p>
+            <p>5. Vắt lá Gelatin cho ráo nước, bỏ vào nồi, quấy đều và nhanh tay để Gelatin tan hết và hòa quyện. Nếu dùng Gelatin bột thì đổ cả Gelatin và nước ngâm vào nồi.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/19.jpg" width="50%"></a></p>
+            <p>Cho va-ni vào, quấy đều. Đổ hỗn hợp ra bát, để nguội. Thi thoảng quấy lại để tránh hỗn hợp đóng váng trên mặt.</p>
+            <p>6. Khi bạt bánh đã nguội hoàn toàn, đặt bạt bánh vào khuôn.</p>
+            <p>* <em>Mình dùng khuôn đế rời đường kính 18cm. Bánh khi nguội co lại một chút và cho vào vừa khít khuôn. </em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/20.jpg" width="50%"></a></p>
+            <p>7. Đổ phần pudding kem trứng (đã nguội) lên trên bạt bánh. Để khuôn vào tủ lạnh trong 2 – 3 giờ đến khi Pudding đông hoàn toàn (có thể để ngăn đá để Pudding đông nhanh hơn).</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/21.jpg" width="50%"></a></p>
+            <p><strong>C. Mousse sữa chua</strong></p>
+            <p>1. Ngâm Gelatin vào nước lạnh như phần (B). Khi Gelatin đã nở mềm. Chắt bớt nước ngâm (nếu dùng Gelatin lá). Để lại khoảng 30 – 40 ml nước. Cho bát đựng Gelatin vào lò vi sóng, quay khoảng 20 giây để Gelatin tan chảy. Nếu không có lò vi sóng, có thể chưng cách thủy để Gelatin chảy hết.</p>
+            <p>2. Trộn đều sữa chua với Gelatin. <em>Nên dùng sữa chua dạng lỏng mềm như sữa chua Vinamilk, không nên dùng sữa chua tự làm dạng đặc. </em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/22.jpg" width="50%"></a></p>
+            <p>3. Đánh kem tươi với đường và va-ni đến bông mềm: Kem tươi đặc, chạy máy có vân nhưng chưa đến mức bông cứng, nhấc que đánh lên thấy chóp.</p>
+            <p>4. Cho sữa chua vào âu đựng kem tươi, trộn đều theo kiểu fold (cắm phới xuống đáy rồi hất lên), không quấy, tránh trộn nhiều và mạnh tay sẽ dễ làm kem tươi bị tách nước.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/23.jpg" width="50%"></a></p>
+            <p>Mousse sau khi trộn xong nguyên liệu: vẫn hơi sệt, không loãng.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/24.jpg" width="50%"></a></p>
+            <p>6. Đổ Mousse lên trên lớp Pudding (đã đông hoàn toàn) Để tủ lạnh thêm 2 – 3 giờ cho Mousse đông hẳn.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/25.jpg" width="50%"></a></p>
+            <p><strong>D. Thạch gương chanh leo.</strong></p>
+            <p>1. Ngâm gelatin trong nước lạnh như phần (B) và (C).</p>
+            <p>2. Cho nước cốt chanh vào nồi, thêm khoảng 70 – 100 ml nước lọc. Thêm đường cho vừa ngọt. Quấy đều rồi đun ở lửa vừa (quấy trong quá trình đun), đến khi hỗn hợp bắt đầu sôi thì bắc khỏi bếp.</p>
+            <p>3. Cho Gelatin (đã ngâm nở) vào nồi. Trộn đều và nhanh tay đến khi nguyên liệu hòa quyện hoàn toàn. Để nguội bớt rồi đổ phần thạch này lên trên lớp Mousse</p>
+            <p>* <em>Không được đổ thạch khi thạch còn nóng vì sẽ làm Mousse bị tan chảy. </em></p>
+            <p>4. Khi dùng, nhúng một chiếc khăn vào nước sôi, vắt bớt nước rồi áp quanh thành khuôn. Để khoảng 1 phút rồi dùng dao mỏng lách quanh thành trong của khuông. Hơi nóng giúp Mousse tách khỏi thành khuôn dễ hơn, khi lấy ra sẽ đẹp hơn.</p>
+            <p>Bảo quản bánh trong tủ lạnh (bọc hoặc đậy kín). Dùng trong 1 – 2 ngày.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/26.jpg" width="50%"></a></p>
+            <p>Sau khi rút bánh khỏi khuôn</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/27.jpg" width="50%"></a></p>
+            <p>Và thưởng thức ^.^</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/summer-pudding/28.jpg" width="50%"></a></p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+     <!-- Start Footer -->
+     <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

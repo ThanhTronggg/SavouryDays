@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastry</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item active">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('pastry.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <div class="guide">
+            <h1><span class = "text-pink-2"><strong>Bánh Pastry</strong></span></h1>
+            <p>Có thể bạn chưa biết, tất cả sản phẩm liên quan đến việc sử dụng bột, trứng, chất béo và nướng lên đều được gọi chung là "Pastry".
+                Chính vì thế, thuật ngữ "Cake” chúng tôi vừa chia sẻ ở trên, thực chất là một mảng nhỏ trong Pastry. Ngoài ra, còn rất nhiều loại
+                Pastry khac như: Pie, Tart hay Cookies.
+                Trên thực tế, người ta dùng thuật ngữ "Pastry” để chi những món bánh bột nhào gồm: bột mì, nước và shortening (chất béo rắn,
+                kể cả bơ), chúng có thể có nhân ngọt hoặc mặn. Những nguyên liệu pho biến thường được dùng làm nhân cho bánh Pastry gồm
+                có: kem sữa trứng, mứt, trái cây hoặc phô mai.
+                Đặc điểm giúp phân biệt bánh Pastry với bánh mì, bánh bông lan là: chúng có hàm lượng chất béo cao hơn. Một chiếc bánh
+                Pastry lý tưởng có kết cấu nhẹ, thoáng và vị béo đặc trưng nhưng vẫn đủ chắc chắn để nâng đỡ trọng lượng của nhân bánh.</p>
+
+            <p>Tại châu Âu, công thức bánh Pastry đầu tiên được làm theo kiểu Filo của người dân Địa Trung Hải thời cổ đại. Trong tiếng Hi Lạp,
+                Filo có nghĩa là "chiếc lá". Những chiếc bánh Filo có bột được cán rất mong, có thể mong như giay hoặc chi dày vài mm. Bột Filo
+                chứa ít chất béo hơn các loại bột khác. Khi nấu, mỗi miếng bột được phết một lớp bơ tan chảy hoặc dầu ô liu. Người ta thường
+                nhồi thịt băm, khoai tây và rau thơm để làm nhân cho Filo Pastry. Gần đây, có một số loại nhân khác cũng rất được ưa chuộng
+                như: các loại phô mai, các loại hạt hoặc rau bina, thịt gà hoặc cá ít béo. Nếu bạn muốn chiếc bánh Filo của mình thành một món
+                tráng miệng có vị ngọt thì hãy thêm vào: kem, sữa trứng, táo hoặc phô mai.
+            </p>
+            <p>Trong ẩm thực thời Trung cổ ở Bắc Âu, các đầu bếp bánh pastry đã có thể tạo ra những chiếc bánh pastry đẹp và kết cấu chắc
+                chắn hơn vì họ biết áp dụng shortening và bơ.
+                Mãi đến khoảng giữa thế kỷ 16, các công thức làm bánh pastry mới được hoàn chinh. Những công thức này được áp dụng và điều
+                chinh, cải tiến theo thời gian tại châu u giúp cho Pastry ngày càng đa dạng, phong phú về hình dáng và hương vị.
+                Ở bên kia bán cầu, người dân Trung Quốc làm bánh pastry từ gạo (hoặc các loại bột khác nhau), kết hợp cùng trái cây, nhân đậu
+                ngọt hoặc vừng. Hàn Quốc nổi tiếng với các loại bánh pastry truyền thống như tteok, hangwa, yaksik được làm từ bột mì, gạo và
+                trái cây. Đất nước mặt trời mọc có mochi và manju là những loại bánh pastry nổi tiếng. Nhìn chung, các loại bánh pastry có
+                nguồn gốc châu Á thiên về vị ngọt nhiều hơn các loại bánh pastry của phương Tây.
+            </p>
+            <h1><span class = "text-pink-2 mt-4 mb-0"><strong>Một số bánh Pastry và công thức</strong></span></h1>
+            <!-- Tab Pastry --> 
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="recipe">
+                        <div class="recipe-item">
+                            <a class="recipe-hover" href="../html/su_kem_hong_tra.html">
+                                <div class="recipe-head">
+                                    <div class="headline">
+                                        Su kem hồng trà trân châu
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="mask">
+                                </div>
+                            </a>
+                            <img class="recipe-img" src="../img/pastry/cách-làm-su-kem-hong-tra-300x300 (1).jpg">
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">
+                                <a href="../html/su_kem_hong_tra.html">Su kem hồng trà trân châu</a>
+                                <div class="btn-book mt-2">
+                                    <a href="../html/su_kem_hong_tra.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                    <a href="../html/su_kem_hong_tra.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="recipe">
+                        <div class="recipe-item">
+                            <a class="recipe-hover" href="../html/su_kem_yen_mach.html">
+                                <div class="recipe-head">
+                                    <div class="headline">
+                                        Su kem vỏ xù yến mạch
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="mask">
+                                </div>
+                            </a>
+                            <img class="recipe-img" src="../img/pastry/cách-làm-su-kem-vỏ-giòn-yến-mạch-square-300x300.jpg">
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">
+                                <a href="../html/su_kem_yen_mach.html">Su kem vỏ xù yến mạch</a>
+                                <div class="btn-book mt-2">
+                                    <a href="../html/su_kem_yen_mach.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                    <a href="../html/su_kem_yen_mach.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="recipe">
+                        <div class="recipe-item">
+                            <a class="recipe-hover" href="../html/craquelin.html">
+                                <div class="recipe-head">
+                                    <div class="headline">
+                                        Su kem Craquelin
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="mask">
+                                </div>
+                            </a>
+                            <img class="recipe-img" src="../img/pastry/Craqueline-ml-150x150.jpg">
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">
+                                <a href="../html/craquelin.html">Su kem Craquelin</a>
+                                <div class="btn-book mt-2">
+                                    <a href="../html/craquelin.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                    <a href="../html/craquelin.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="recipe">
+                        <div class="recipe-item">
+                            <a class="recipe-hover" href="../html/eclair.html">
+                                <div class="recipe-head">
+                                    <div class="headline">
+                                        Eclair Mousse chanh leo
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="mask">
+                                </div>
+                            </a>
+                            <img class="recipe-img" src="../img/pastry/EclairMousseChanh1-150x150.jpg">
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">
+                                <a href="../html/eclair.html">Eclair Mousse chanh leo</a>
+                                <div class="btn-book mt-2">
+                                    <a href="../html/eclair.html" class = "d-block d-sm-block d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem công thức</a>
+                                    <a href="../html/eclair.html" class = "d-none d-sm-none d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-book-open text-light mr-2"></i>Xem</a>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab Pastry -->
+        </div>
+    </div>
+
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

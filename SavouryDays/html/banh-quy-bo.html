@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách làm bánh quy bơ (công thức "MASTER")</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item active">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('banh-quy-bo.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-3">Cách làm bánh quy bơ (công thức "MASTER")</h1>
+        <img src="../img/cookies-bars-candy/banh-quy-bo/cách-làm-bánh-quy-bơ-banner-768x441.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p><span style="color: #000000;">Đầu tiên chắc phải xin lỗi cả nhà vì bận nhiều việc quá nên không quay kịp video cho món này dù đã hứa từ trước. Mình cứ cố đợi để có video rồi mới đăng, nhưng quay đi quay lại đã gần sát Tết quá rồi nên đành viết bài vậy. Có điều mọi người đừng lo gì cả nhé vì cách làm món bánh này dễ vô cùng, khả năng hỏng rất thấp nên thật ra cũng chỉ cần bài viết và các lưu ý khi làm bánh thôi, còn video cũng không tạo ra nhiều khác biệt.&nbsp;</span></p>
+            <p><span style="color: #000000;">Công thức này mình mới tìm ra gần đây, và mình rất ưng nó. Công thức <a class = "text-pink-2" href="http://www.savourydays.com/banh-quy-bo/"><strong>Bánh quy bơ</strong></a> cũ tuy ngon nhưng có một vấn đề là nhanh bị chảy, nếu dùng đui bắt hình bông hoa thì khó giữ được nét. Và với mình thì công thức cũ cho bánh chưa đủ độ cứng giòn kiểu bánh quy mà mình thích. Công thức mới này khắc phục được tất cả các vấn đề vừa kể trên. Bánh dùng hoàn toàn bơ động vật nên rất thơm ngon, mùi thơm nguyên bản của bột, trứng, và bơ nướng, không phải mùi thơm kiểu hoá học như bánh quy sản xuất công nghiệp. Bánh vừa có độ xốp, vừa có độ giòn và có thể giữ được giòn khá lâu, nếu đảm bảo đủ nhiệt và thời gian nướng. Một ưu điểm nữa là công thức bánh này có thể biến tấu thành nhiều kiểu bánh với nhiều mùi vị khác nhau, có thể thêm bột ca cao hay bột trà xanh để làm bánh vị chocolate/ vị trà xanh, hoặc &nbsp;thêm các loại hạt và quả khô tuỳ thích… Ngày Tết bận rộn, chỉ cần một công thức này thôi là có thể làm được cả hộp bánh nhiều kiểu để biếu tặng và để mời khách rồi. Cũng vì lí do này mà mình đặt tên cho công thức này là “master cookie dough” (kiểu như là công thức bột “siêu nhân”, từ một công thức có thể làm được nhiều thứ).&nbsp;</span></p>
+            <p style="text-align: center;"><span style="color: #000000;"><em>6 loại bánh được làm từ 1 công thức: bánh quy bơ vừng, bánh quy bơ chocolate, bánh quy chocolate hạt và quả khô, bánh quy bơ hạnh nhân, bánh quy bơ nhân mứt dừa, bánh quy chocolate chip&nbsp;</em></span></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cookies-bars-candy/banh-quy-bo/1.jpg" width="50%"></a></p>
+            <h2>CÁCH LÀM BÁNH QUY BƠ (CÔNG THỨC MASTER)</h2>
+            <p><span style="color: #000000;"><strong><span class = "text-pink-2">Nguyên liệu</span> (</strong>làm được khoảng 50 cái bánh quy hình hoa – tương đương 0.5 kg bánh quy)</span></p>
+            </div>
+            <ul>
+            <li><em><span style="color: #000000;">120 gram bơ động vật</span></em></li>
+            <li><em><span style="color: #000000;">120 gram đường bột</span></em></li>
+            <li><em><span style="color: #000000;">1 trứng gà (60 – 65 g/ quả tính cả vỏ)</span></em></li>
+            <li><em><span style="color: #000000;">3 ml va-ni chiết xuất</span></em></li>
+            <li><em><span style="color: #000000;">200 gram bột làm bánh mì (số 13) hoặc bột mì đa dụng (số 11)</span></em><em><span style="color: #000000;">&nbsp;</span></em></li>
+            </ul>
+            <p><span style="color: #000000;"><strong>* LƯU Ý VỀ NGUYÊN LIỆU</strong></span></p>
+            <ol>
+            <li><span style="color: #000000;"><strong>Bơ</strong> giúp tạo nên hương vị của bánh. <strong>Bơ ngon cho bánh ngon</strong>. Nên chọn loại bơ tốt, mùi vị thơm ngon, ví dụ bơ Anchor, President… (không có muối). Không dùng bơ thực vật (magarine, vd bơ Tường An).</span></li>
+            <li><span style="color: #000000;"><strong>Đường bột</strong> là loại đường được xay mịn như bột và có thêm 1 tỉ lệ nhỏ bột ngô ở trong. Đường bột tan và hoà quyện với các nguyên liệu khác nhanh hơn. Ở Việt Nam có các loại đường bột của Biên Hoà, Farina, đường nhập khẩu từ Singapore….</span></li>
+            <li><span style="color: #000000;"><strong>Trứng gà</strong>: dùng trứng công nghiệp, trọng lượng (cân cả vỏ) khoảng 60 – 65 gram. Nếu dùng trứng gà ta, cần phải cân đủ lượng theo công thức: 1 quả trứng = 50 gram (không tính vỏ).</span></li>
+            <li><span style="color: #000000;"><strong>Vani: </strong>nên chọn mua va-ni chiết xuất tự nhiên, nhập khẩu từ nước ngoài (VD: va-ni Wilton nhập khẩu từ US). Không dùng va-ni hoá học dạng bột (thường bán trong các chợ truyền thống) vì có thể tạo vị đắng.</span></li>
+            <li><span style="color: #000000;"><strong>Bột mì</strong>: chọn mua bột làm bánh mì số 13 (vd cái cân). Nếu dùng bột mì đa dụng (số 11) như bột bông hồng xanh, Hoa Ngọc Lan, bột số 11 của Baker’s Choice… thì có thể sẽ cần tăng lượng bột lên một chút. Lưu ý rằng mỗi loại bột có độ hút nước khác nhau, nên khi dùng làm bánh, lượng bột trong thực tế có thể xê dịch từ 10 – 30 gram so với lượng ghi trong công thức.</span></li>
+            </ol>
+            <p><span style="color: #000000;"><span class = "text-pink-2"><strong>Dụng cụ</strong></span></span></p>
+            <ul>
+            <li><span style="color: #000000;">Âu trộn: 1 cái to, thành cao</span></li>
+            <li><span style="color: #000000;">Phới trộn: 1 cái phới dẹt</span></li>
+            <li><span style="color: #000000;">Rây bột: 1 cái</span></li>
+            <li><span style="color: #000000;">Khay nướng và giấy nến chống dính</span></li>
+            </ul>
+            <p><span class = "text-pink-2"><strong>Cách làm</strong></span></p>
+            <p><span style="color: #000000;">1. Cắt bơ thành miếng nhỏ, đun chảy bơ trên nồi nước đang sôi nhẹ, hoặc dùng lò vi sóng hay lò nướng. Để bơ nguội bớt và sệt hơn. Để dễ hình dung bơ nên sệt tới mức nào, các bạn có thể xem trong video <a class="text-pink-2" href="http://www.savourydays.com/banh-quy-chocolate-trai-tim-cho-ngay-valentine/"><strong>Bánh quy chocolate valentine</strong> </a>nhé. Bơ sệt tới mức đó là được.&nbsp;</span></p>
+            <p><span style="color: #000000;">2. Rây đường vào âu đựng bơ. Đập trứng. Cho va-ni. Trộn đều tới khi các nguyên liệu hoà quyện.</span></p>
+            <p><span style="color: #000000;">3. Rây 2/3 phần bột vào âu, trộn đều. Chỗ bột còn lại chia thành 2 – 3 phần, rây từng phần vào âu. Khi bột đã khá đặc và quyện thành một khối thì dừng lại. Vì độ hút nước của mỗi loại bột khác nhau nên cần phải tuỳ vào trạng thái của khối bột (khô hay ướt) mà tự điều chỉnh lượng bột. Có thể thử bằng cách cho bột vào túi bắt kem, bóp thử, nếu thấy bột có thể bóp xuống dễ dàng, các đường vân mịn màng, không bị rách hay răng cưa là bột vừa đạt. Không nên làm bột quá nhão, bánh sẽ dễ mất hình dạng khi nướng. Nếu lỡ làm bột quá khô thì đánh tan một quả trứng, cho thêm 1 – 2 thìa trứng nhỏ vào, trộn đều với bột cho tới khi bột mềm dẻo hơn. &nbsp;</span></p>
+            <p><span style="color: #000000;">4. Một số cách tạo hình:&nbsp;</span></p>
+            <p><span style="color: #000000;">– Bánh quy nhân mứt quả:&nbsp;</span></p>
+            <ul>
+            <li><span style="color: #000000;">Ngâm cranberry (nam việt quất) trong nước ấm khoảng 3 – 5 phút tới khi cranberry bắt đầu mềm thì chắt nước đi.&nbsp;</span></li>
+            <li><span style="color: #000000;">Cho bột vào túi bắt kem có lồng đui Wilton 1M (sò mở 6 cánh). Chỉ cho khoảng 200 gram bột vào túi, vì nếu cho quá nhiều, bột quá nặng khi bắt sẽ khó khăn hơn.&nbsp;</span></li>
+            <li><span style="color: #000000;">Giữ túi thẳng đứng, bóp kem thành một hình vòng tròn giống bông hoa. Dùng cranberry làm nhuỵ hoa. Có thể dùng mứt dứa theo <a class="text-pink-2" href="http://www.savourydays.com/cach-lam-mut-keo-deo-hoa-qua-dua-ca-rot-kiwi-dau-sau-rieng/"><strong>công thức này</strong></a> làm nhân bánh.&nbsp;</span></li>
+            </ul>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cookies-bars-candy/banh-quy-bo/2.jpg" width="50%"></a></p>
+            <p><span style="color: #000000;">– Bánh quy vừng (mè) đen:&nbsp;</span></p>
+            <ul>
+            <li><span style="color: #000000;">Nặn bột thành hình trụ tròn hoặc hình trụ chữ nhật. Để dễ nặn, nên để bột vào ngăn đá tủ lạnh khoảng 10 phút. Bột sẽ trở nên mềm dẻo và không dính tay, dễ tạo hình hơn.&nbsp;</span></li>
+            <li><span style="color: #000000;">Lăn khối bột này qua vừng/ mè đen để vừng bao kín bên ngoài khối bột. Riêng hai phần đầu khối bột không cần lăn vừng. Bọc kín bột bằng nilon bọc thực phẩm hoặc giấy nến, để tủ đá khoảng 10 phút tới khi bột cứng lại.&nbsp;</span></li>
+            <li><span style="color: #000000;">Dùng dao sắc cắt bột thành các lát bằng nhau. Xếp lên khay nướng có lót giấy nến.&nbsp;</span></li>
+            </ul>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cookies-bars-candy/banh-quy-bo/3.jpg" width="50%"></a></p>
+            <p><span style="color: #000000;">– Công thức này cũng có thể dùng để làm bánh cán và dùng khuôn cắt bánh quy, giống như <a class="text-pink-2" href="http://www.savourydays.com/banh-quy-chocolate-trai-tim-cho-ngay-valentine/"><strong>bánh quy chocolate Valentine</strong></a> hay <a class="text-pink-2" href="http://www.savourydays.com/cach-lam-banh-quy-hoa-anh-dao-video/"><strong>bánh quy hoa anh đào</strong></a>.&nbsp;</span></p>
+            <p>*<span class = "text-pink-2"><strong> Lưu ý khi tạo hình:</strong></span> <span style="color: #000000;">Bánh cần có kích thước và độ dày bằng nhau, nếu dùng đui bắt bông hoa thì rìa ngoài không được mỏng hơn quá nhiều so với phần giữa bánh. Nếu không, khi nướng bánh sẽ chín không đều, chiếc nhỏ, mỏng sẽ cháy trước trong khi chiếc to, dày sẽ chưa chín hết.&nbsp;</span></p>
+            <p><span style="color: #000000;">5. Trong khi tạo hình bánh, làm nóng lò nướng ở 200 độ C (thời gian làm nóng lò tối thiểu 15 phút).&nbsp;</span></p>
+            <p><span style="color: #000000;">6. Nướng bánh ở 190 độ C trong khoảng 10 phút (tuỳ kích thước bánh). Khi bánh hơi hanh vàng thì hạ nhiệt xuống 180 độ C, nướng thêm 3 – 5 phút tuỳ kích thước bánh. Tổng thời gian nướng bánh quy kích thước trung bình là khoảng 13 phút, khi rìa bánh hơi nâu vàng là được. Sau khi nướng đủ thời gian, nên tắt lò, mở hé cửa lò và để bánh trong lò khoảng 3 – 5 phút mới lấy ra. Bánh sẽ khô và giòn hẳn, giữ được lâu hơn.&nbsp;</span></p>
+            <p><span style="color: #000000;">Sau khi chín, lấy bánh ra khỏi lò, để nguyên bánh trên khay tới khi bánh cứng lại mới di chuyển sang rack (khay có khe hở) để bánh nguội trên khay này. Đợi bánh nguội hẳn mới bỏ bánh vào hộp hay túi kín, có túi hút ẩm đi kèm. Để ở nơi thoáng mát (nhiệt độ phòng), dùng trong 3 tuần.&nbsp;</span></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cookies-bars-candy/banh-quy-bo/4.jpg" width="50%"></a></p>
+            <p><span class = "text-pink-2"><strong>* CÁC LƯU Ý QUAN TRỌNG – THẤT BẠI THƯỜNG GẶP &amp; CÁCH KHẮC PHỤC&nbsp;</strong></span></p>
+            <p><span style="color: #000000;">1. Bánh quá cứng thường do nướng quá lửa, nhiệt quá cao hoặc thời gian nướng quá lâu. Khắc phuc bằng cách tạo hình bánh mỏng hơn, rút ngắn thời gian nướng lại&nbsp;</span></p>
+            <p><span style="color: #000000;">2. Nếu muốn bánh xốp hơn, có thể thêm vào công thức&nbsp;2 gram (1/4 tsp hay thìa cafe) bột nở (baking powder), rây bột nở trộn đều cùng bột mì rồi dùng.&nbsp;</span></p>
+            <p><span style="color: #000000;">Ngoài ra, sau khi đun chảy bơ, nếu để bơ càng sệt hơn thì bánh sẽ càng xốp, nhưng khả năng giữ vân bánh cũng ít hơn so với bơ để lỏng nhiều. Không nên để bơ quá lỏng hay loãng vì bánh có thể sẽ khá cứng.&nbsp;</span></p>
+            <p><span style="color: #000000;">3. Bánh bị mềm, ỉu hoặc dai ở chính giữa: do nướng chưa đủ thời gian, bánh chưa chín hoàn toàn. Nếu rìa bánh nâu vàng nhiều mà giữa bánh còn mềm thì có thể do nhiệt hơi cao quá, hoặc phần giữa bánh quá dày nên bánh bị cháy nhanh.&nbsp;</span></p>
+            <p><span style="color: #000000;">4. Bánh vẫn bị mất vân hoa hoặc hoa văn không rõ nét. Có thể do loại bột bạn dùng hút nước kém nên bột nhão, còn ướt nhiều, nên thêm một chút bột.&nbsp;</span></p>
+            <p><span style="color: #000000;">5. Nếu muốn làm bánh có vị trà xanh thì thêm 5 g bột trà xanh vào công thức. Nếu muốn làm bánh có vị chocolate thì bớt khoảng 5 gram bột mì và thêm 8 – 10 gram bột cacao vào công thức. Bột trà hay ca cao được rây và trộn đều cùng bột &nbsp;mì rồi dùng.&nbsp;</span></p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+     <!-- Start Footer -->
+     <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

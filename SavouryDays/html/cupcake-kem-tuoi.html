@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách làm cupcake kem tươi (kèm VIDEO)</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item active">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('cupcake-kem-tuoi.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-3">Cách làm cupcake kem tươi (kèm VIDEO)</h1>
+        <img src="../img/cupcake-muffin/cupcake-kem-tuoi/cách-làm-cupcake-kem-tươi-banner-768x441.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p><strong>Công thức&nbsp;<a href="http://www.savourydays.com/recipe/whipped-cream-cupcake-banh-bong-lan-kem-tuoi/comment-page-7/#comments">Cupcake kem tươi</a></strong> được giới thiệu tại SD từ tận 5 năm trước, nhưng cho tới giờ có lẽ vẫn là một trong những cốt bánh cupcake ngon nhất mà mình từng làm. So với cupcake dùng cốt bánh bông lan bơ (butter cake) thì bánh kem tươi nhẹ và ít ngấy hơn rất nhiều, mặc dù vẫn có vị ngậy béo nhờ kem tươi. Ngoài ra, bánh rất mềm và xốp, và cực kì cực kì thơm. Công thức đã giới thiệu tại blog và xuất hiện cả trong sách <a href="https://tiki.vn/author/linh-trang.html" target="_blank"><strong>Nhật ký học làm bánh</strong></a> tập 1 nữa, nên mình thêm video hướng dẫn nữa cho “đủ bộ” nhé :)</p>
+            <h3>CÁCH LÀM CUPCAKE KEM TƯƠI</h3>
+            <p><span class = "text-pink-2"><strong>Dụng cụ</strong></span>: 12 – 14 khuôn cupcake cỡ vừa và cốc giấy để lót khuôn</p>
+            <p><span class = "text-pink-2"><strong>Nguyên liệu</strong></span></p>
+            <ul>
+            <li><em>150 g bột mì đa dụng (1 cup + 3 tbsp all purpose flour)</em></li>
+            <li><em>7 g bột nở (1.5 tsp baking powder)</em></li>
+            <li><em>1/2 thìa cafe muối (1/2 tsp salt)</em></li>
+            <li><em>2 quả trứng gà, loại to 50 g/ quả không tính vỏ – ở nhiệt độ phòng (2 medium sized eggs, 50g each excluding shell, at room temp)</em></li>
+            <li><em>1/2 thìa cafe vani chiết xuất (1/2 tsp vanilla extract)</em></li>
+            <li><em>240 ml/ 232 g kem tươi lạnh 30 – 40% béo (1 cup/ 240ml/ 232 g cold whipping cream 30 – 40% fat)</em></li>
+            <li><em>120 g đường – xay hạt nhỏ mịn (1/2 cup + 1 tbsp caster sugar) –&nbsp;</em><strong><em>rây</em> mịn&nbsp;</strong></li>
+            </ul>
+            <p><strong>LƯU Ý:</strong></p>
+            <ul>
+            <li>Dùng <strong>trứng gà đủ trọng lượng</strong>, nếu trứng gà quá nhỏ (như trứng gà ta ở VN) thì sẽ ảnh hưởng tới chất lượng bánh</li>
+            <li><strong>Không thay bột nở</strong> (baking powder) bằng muối nở (baking soda) được</li>
+            <li>Nếu dùng <strong>va-ni hoá họ</strong>c dạng bột, chỉ dùng lượng nhỏ vì va-ni này thường có vị đắng</li>
+            <li><strong>Dùng topping thay cho whipping cream</strong> không làm hỏng bánh nhưng sẽ làm mất đi mùi vị thơm ngon của bánh do topping cream là kem dạng nhân tạo, không được làm từ sữa tươi như whipping cream</li>
+            <li>Cần <strong>dùng đường có hạt nhỏ mịn,</strong> nếu không hạt đường có thể sẽ không tan hết trong bạt bánh.</li>
+            <li>Công thức này <strong>chỉ nên làm trong các khuôn bánh nhỏ</strong>. Nếu muốn làm bánh to, cần dùng loại khuôn có lõi giữa như khuôn Bunt, nếu không phần giữa bánh sẽ rất dễ bị lõm hoặc xẹp.</li>
+            </ul>
+            <p><span class = "text-pink-2"><strong>Cách làm</strong></span></p>
+            <p>Video hướng dẫn cách làm cupcake kem tươi đã được đăng tại&nbsp;<a href="https://www.youtube.com/user/savourydayscom?sub_confirmation=1" target="_blank">kênh YouTube của Savoury Days.</a>&nbsp;Nếu không xem được tại website thì các bạn có thể xem trực tiếp trên YouTube theo&nbsp;<a href="https://youtu.be/P0Ml03V-eus" target="_blank"><strong>link này</strong></a>&nbsp;nhé. Video có chế độ HD, hướng dẫn cách bật HD ở cuối bài viết&nbsp;<strong><a href="http://www.savourydays.com/demo-flan-creme-caramel-kem-caramel/" target="_blank">cách làm bánh flan này.</a>&nbsp;</strong></p>
+            <div class="text-center">
+                <video width="620px"  class = "frame-video" height="350px" controls>
+                    <source type="video/mp4" src="../img/cupcake-muffin/cupcake-kem-tuoi/WHIPPED CREAM CUPCAKE recipe - Cách làm CUPCAKE KEM TƯƠI.mp4">
+                </video>
+            </div>
+            <p>&nbsp;</p>
+            <p><strong>TÓM TẮT CÁC BƯỚC</strong></p>
+            <p>Làm nóng lò nướng ở 165 độ C/ 330 độ F, hai lửa. Xếp cốc giấy vào các khuôn cupcake.</p>
+            <p>1. Rây bột mì, bột nở, muối vào bát, trộn đều, để qua một bên.</p>
+            <p>2. Trong một bát khác, đánh tan nhẹ 2 quả trứng với vani tới khi hoà quyện,&nbsp;không cần đánh bông<strong>.&nbsp;</strong></p>
+            <p>3. Cho kem tươi vào âu, đánh ở tốc độ cao tới khi kem bông đặc, nhấc que đánh lên thấy có chóp.</p>
+            <p>4. Từ từ cho trứng vào âu kem, đánh hoà quyện ở tốc độ thấp nhất. Tiếp theo, từ từ cho đường vào âu, đánh hoà quyện ở tốc độ thấp nhất.&nbsp;<em>Có thể chia trứng và đường thành 3 – 4 phần rồi cho vào âu, đánh hoà quyện rồi cho phần tiếp theo.&nbsp;</em></p>
+            <p>5. Rây 1/3 lượng bột vào âu, để máy ở tốc độ thấp nhất, đánh tới khi vừa hoà quyện thì rây phần bột tiếp theo, trộn tới khi hết bột. Lưu ý&nbsp;<em><strong>không trộn bột quá kĩ sẽ dễ làm mất tác dụng của bột nở, bánh &nbsp;nở kém hoặc bị chai.</strong>&nbsp;</em></p>
+            <p>6. Chia bột vào các khuôn, đổ đầy khoảng 3/4 khuôn để bánh có chỗ tiếp tục nở khi nướng (với khuôn mình dùng, mỗi khuôn đổ khoảng 40 g bột).</p>
+            <p>7. Nướng ở khay giữa lò, hai lửa, nhiệt 165 độ C trong khoảng 30 phút tới khi mặt bánh nở vàng sậm, ấn nhẹ lên thấy vết lõm phồng trở lại.</p>
+            <p>8. Lấy bánh ra khỏi lò, để nguội. Bánh rất ngon nên hoàn toàn có thể ăn vã, hoặc trang trí với kem tươi đánh bông và quả tươi theo khẩu vị. Tham khảo <strong><a href="http://www.savourydays.com/cach-lam-kem-tuoi-danh-bong-va-cach-chua-kem-tuoi-tach-nuoc/" target="_blank">cách làm kem tươi đánh bông tại ĐÂY</a></strong></p>
+            <p><span class = "text-pink-2"><strong>CÁC THẤT BẠI &amp; CÂU HỎI THƯỜNG GẶP – CÁC GIẢI PHÁP</strong></span></p>
+            <p>1. Hỗn hợp kem bị tách nước trong quá trình trộn</p>
+            <ul>
+            <li>Hiện tượng: kem không còn mịn mượt mà lổn nhổn và có nhiều vụn nhỏ vón cục li ti.</li>
+            <li>Nguyên nhân: do đánh kem ở tốc độ quá cao hoặc đánh kem quá kĩ.</li>
+            <li>Cách khắc phục: tiếp tục làm, bánh sẽ không đạt được độ xốp mềm tối đa nhưng vẫn mùi vị sẽ vẫn thơm ngon</li>
+            </ul>
+            <p>2. Bánh nở cao rồi xẹp trong lò hoặc bị lõm mặt sau khi lấy ra khỏi lò.</p>
+            <p>Bánh kem tươi theo công thức này rất mềm và nhẹ, đồng thời cũng có lượng ẩm khá lớn, cho nên khi lấy ra khỏi lò, bánh co lại một chút và xẹp mặt là bình thường. Tuy nhiên nếu bánh co hay lõm khá nhiều thì có thể là bánh chưa hoàn toàn chín hẳn, ruột bánh còn ẩm làm bánh bị xẹp. Việc này có thể do nướng bánh ở nhiệt độ quá cao hoặc thời gian nướng chưa đủ dài nên bánh chưa chín hẳn -&gt; Cách khắc phục là hạ thấp nhiệt độ 5 – 10 độ C, nướng lâu hơn một chút.</p>
+            <p>Xem thêm giải thích về <strong><a href="http://www.savourydays.com/lo-nuong-kinh-nghiem-nuong-banh/" target="_blank">cách chỉnh nhiệt độ và thời gian nướng để bánh không bị xẹp lõm tại ĐÂY</a>&nbsp;và <a href="http://www.savourydays.com/kinh-nghiem-nuong-banh-phan-2/" target="_blank">ĐÂY</a></strong>.</p>
+            <p>3. Bánh có vị mặn hoặc hơi chát, the: do dùng quá nhiều bột nở, lần tiếp theo khi đong giảm khoảng 1/4 thìa cafe bột nở.</p>
+            <p>4. Bánh nở lệch trong lò: do nhiệt tản trong lò không đều, có chỗ nóng hơn những chỗ khác.</p>
+            <p>5. Bánh bị nứt mặt, mặt bánh có màu nâu sậm: do nhiệt quá cao hoặc bánh quá gần với lửa trên của lò</p>
+            <p>6. Bánh nở kém hoặc không nở: kiểm tra lại chất lượng của bột nở, hoặc do dùng sai loại bột nở, hoặc trộn quá nhiều làm mất tác dụng của bột nở.</p>
+            <p>7. Mặt bánh có đốm vàng hay nâu sậm: do rây bột mì, bột nở hoặc đường chưa kĩ, hoặc do hạt đường hơi to quá.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/cupcake-muffin/cupcake-kem-tuoi/1.jpg" width="50%"></a></p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+     <!-- Start Footer -->
+     <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

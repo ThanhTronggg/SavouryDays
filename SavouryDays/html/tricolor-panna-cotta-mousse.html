@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricolor Panna Cotta Mousse (Panna cotta Sô-cô-la, Va-ni và xoài)</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item active">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('tricolor-panna-cotta-mousse.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-3">Tricolor Panna Cotta Mousse (Panna cotta Sô-cô-la, Va-ni và xoài)</h1>
+        <img src="../img/custard-pudding/tricolor-panna-cotta-mousse/TricolorPannaCotta-600x345.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p>Panna Cotta là một loại đồ tráng miệng rất dễ làm, đẹp mắt và có thể biến tấu theo nhiều kiểu để thay đổi mùi vị tùy theo sở thích nữa. Thành phần cơ bản của Panna Cotta thường gồm kem tươi, sữa tươi và Gelatin để tạo đông cho nên hương vị “điển hình” là mềm, mịn, thơm và hơi ngậy một chút. Panna Cotta cũng đông chắc như thạch nhưng nhờ Gelatin nên mềm dẻo chứ không giòn như thạch. Kiểu đông “mềm dẻo” này có lẽ cũng hợp hơn khi trong thành phần có kem sữa, bỏ vào miệng là cảm thấy vị thơm ngậy ngọt ngào tan chảy trên đầu lưỡi ngay :) Panna Cotta có thể tạo hình trong khuôn nhỏ, trang trí theo nhiều kiểu khác nhau. Nên nếu muốn gây ấn tượng với khách mời trong khi không có nhiều thời gian để chuẩn bị thì Panna Cotta, theo mình nghĩ, là một sự lựa chọn rất rất tốt.</p>
+            <p>Như đã nói ở trên, Panna Cotta là một loại tráng miệng có nhiều kiểu biến tấu đa dạng. Công thức cơ bản của Panna Cotta mà mình thấy rất nhiều đầu bếp nổi tiếng dùng có tỉ lệ các nguyên liệu là <em><strong>50% kem tươi, 50% sữa tươi và 25 gram Gelatin cho 1 lít chất lỏng</strong></em>. Càng nhiều Gelatin thì sản phẩm sẽ càng đông cứng và đặc hơn. Cá nhân mình thích Panna Cotta kiểu mềm mềm, cầm thìa ấn vào có cảm giác sóng sánh như nước nhưng vẫn đủ đông nên mình hay dùng ít Gelatin hơn tỉ lệ trên một chút. Từ công thức cơ bản này, các bạn có thể trộn thêm mùi vị tùy thích, ví dụ thêm bột trà xanh, bột ca cao hoặc các loại chiết xuất với nhiều mùi vị khác nhau.</p>
+            <p>Món mình làm ngày hôm nay gồm hai phần Panna Cotta vị va-ni, sô-cô-la với một lớp mousse xoài ở trên cùng. Mousse mềm thơm và nhuyễn mịn, ăn kèm với hai phần Panna Cotta còn lại rất hợp, mùi vị trung hòa, ngọt vừa đủ và chua cũng vừa đủ. Ăn rất thích :)</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/tricolor-panna-cotta-mousse/1.jpg" width="50%"></a></p>
+            <p><span class = "text-pink-2"><strong>Nguyên liệu</strong></span> (cho 4 cốc nhỏ)</p>
+            <p><strong>A. Panna Cotta vị Va-ni</strong></p>
+            <ul>
+            <li><em>60 ml sữa tươi không đường</em></li>
+            <li><em>60 ml kem tươi (hàm lượng béo từ 30% – 40%/ whipping cream)</em></li>
+            <li><em>15 gram đường</em></li>
+            <li><em>1/4 thìa cafe va-ni chiết xuất (vanilla extract)<br>
+            </em></li>
+            <li><em>3 gram Gelatin (dùng dạng lá thì tốt hơn là dạng bột)</em></li>
+            </ul>
+            <p><strong>B. Panna Cotta vị Sô-cô-la</strong></p>
+            <ul>
+            <li><em>40 ml sữa tươi không đường</em></li>
+            <li><em>40 ml kem tươi (hàm lượng béo từ 30% – 40%, whipping cream)</em></li>
+            <li><em>15 gram đường</em></li>
+            <li><em>3 – 5 gram bột ca-cao nguyên chất</em></li>
+            <li><em>2 gram Gelatin (dùng dạng lá thì tốt hơn là dạng bột)</em></li>
+            </ul>
+            <p><strong>C. Mousse xoài</strong></p>
+            <ul>
+            <li><em>70 gram thịt xoài chín</em></li>
+            <li><em>25 ml sữa tươi không đường</em></li>
+            <li><em>10 – 15 gram đường</em></li>
+            <li><em>35 ml kem tươi (hàm lượng béo từ 30% – 40%, whipping cream)</em></li>
+            </ul>
+            <p><span class = "text-pink-2"><strong>Cách làm</strong></span></p>
+            <p>Món Panna Cotta này mình có thay đổi cách trình bày một chút. Làm cho các lớp chéo nhau như trong hình. Nhưng các bạn hoàn toàn có thể đổ thành 3 lớp ngang trong 1 cốc nhé.</p>
+            <p>1. Vì loại cốc sử dụng có thể có kích thước khác nhau, nên để cân đong được định lượng nguyên liệu chính xác, các bạn có thể tự đong lượng nguyên liệu cần thiết bằng cách sau.</p>
+            <p>Đặt cốc lên cân, để cốc nghiêng như trong hình, đổ nước vào đầy đến mức mà bạn muốn (tượng trưng cho lớp Panna Cotta đầu tiên), rồi đong xem lượng nước này có thể tích/ khối lượng bao nhiêu.</p>
+            <p>Như trong hình thì mình đong được 30 gram/ 30 ml nước. Tức là, cho mỗi cốc, phần Panna Cotta vị va-ni cần dùng là 30 ml. Như vậy để đủ cho 4 cốc thì cần 30 x 4 = 120 ml chất lỏng. Dựa vào công thức Panna Cotta cơ bản (50% kem tươi, 50% sữa tươi, 25 gram Gelatin cho 1 lít chất lỏng) thì mình tính ra tỉ lệ công thức như ở đầu bài.</p>
+            <p>Phần Panna Cotta Chocolate thì mình tính bằng khoảng 2/3 lượng Panna cotta vanilla. Còn Mousse xoài mình áng chừng thôi, làm dư một chút cũng không sao :)</p>
+            <p>Nếu cốc của các bạn có kích thước khác hoặc các bạn muốn làm với số lượng nhiều hơn thì có thể tự điều chỉnh tỉ lệ này nhé.</p>
+            <p>2. Làm Panna Cotta vị Vanilla</p>
+            <p>– Ngâm Gelatin vào nước lạnh để Gelatin nở mềm. Nếu dùng Gelatin bột thì ngâm với khoảng 10 – 15 ml nước.</p>
+            <p style="text-align: center;"><em>Sau khi ngâm Gelatin sẽ mềm như thế này </em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/tricolor-panna-cotta-mousse/4.jpg" width="50%"></a></p>
+            <p>– Cho sữa, kem và đường vào nồi. Đun ở lửa vừa, quấy liên tục đến khi bắt đầu có hơi nước bốc lên từ nồi thì quấy thêm 1 phút rồi bắc khỏi bếp.</p>
+            <p>– Vắt lá Gelatin cho ráo nước rồi bỏ vào nồi quấy nhanh tay để Gelatin tan hết và hòa quyện. Nếu dùng Gelatin bột thì đổ cả Gelatin và nước ngâm vào nồi.</p>
+            <p>– Chia hỗn hợp vào các cốc như trong hình. Để nguội bớt rồi cho vào tủ lạnh cho đông hẳn .</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/tricolor-panna-cotta-mousse/5.jpg" width="50%"></a></p>
+            <p>3. Làm Panna Cotta vị Sô-cô-la (sau khi lớp Panna Cotta đầu tiên đã đông lại mới làm tiếp phần này)</p>
+            <p>– Ngâm Gelatin như bước (2)</p>
+            <p>– Cho sữa, kem, và đường vào nồi. Đun ở lửa vừa, quấy liên tục đến khi bắt đầu có hơi nước bốc lên từ nồi thì bắc khỏi bếp. Cho bột cacao vào, quấy cho tan hết rồi bắc lên bếp nấu thêm 1 phút (quấy liên tục).</p>
+            <p>(*) Lượng đường và lượng bột cacao có thể điều chỉnh theo khẩu vị. Các bạn có thể dùng chocolate thay cho bột cacao. Nếu chocolate có hàm lượng cacao lớn hơn 60% thì nên giảm lượng kem tươi và tăng lượng sữa tươi trong công thức (có thể dùng tỉ lệ 35% kem tươi, 65% sữa tươi rồi thêm chocolate để panna cotta không bị cứng).</p>
+            <p>– Vắt lá Gelatin cho ráo nước rồi bỏ vào nồi quấy nhanh tay để Gelatin tan hết và hòa quyện. Nếu dùng Gelatin bột thì đổ cả Gelatin và nước ngâm vào nồi. Để cho hỗn hợp nguội bớt. Thi thoảng quấy đều, tránh hỗn hợp đóng váng trên mặt. <em>Cần phải để nguội vì nếu hỗn hợp còn nóng, khi đổ vào cốc sẽ làm phần Panna Cotta va-ni trong cốc bị tan chảy. </em></p>
+            <p>– Chia hỗn hợp vào các cốc như trong hình. Cho vào tủ lạnh để đông hẳn.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/tricolor-panna-cotta-mousse/6.jpg" width="50%"></a></p>
+            <p>4. Làm Mousse Xoài (khi 2 phần Panna Cotta đã đông lại)</p>
+            <p>– Xay nhuyễn xoài với sữa, thêm đường cho vừa ngọt. Cho xoài vào nồi, đun ở lửa vừa, quấy&nbsp; liên tục đến khi hỗn hợp sôi nhẹ thì bắc khỏi bếp. Để nguội.</p>
+            <p>– Đánh kem tươi đến bông mềm (kem tươi đặc, chạy máy có vân, không đánh kem tươi quá nhiều, kem có thể bị tách nước, vữa).</p>
+            <p>– Nhẹ nhàng trộn&nbsp; phần kem tươi này với xoài (đã nguội).</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/tricolor-panna-cotta-mousse/7.jpg" width="50%"></a></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/tricolor-panna-cotta-mousse/8.jpg" width="50%"></a></p>
+            <p style="text-align: center;"><em>Chia vào các cốc. Để lạnh.</em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/tricolor-panna-cotta-mousse/9.jpg" width="50%"></a></p>
+            <p style="text-align: center;"><em>Có thể trang trí bằng lá bạc hà tươi :)</em></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/custard-pudding/tricolor-panna-cotta-mousse/10.jpg" width="50%"></a></p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+     <!-- Start Footer -->
+     <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

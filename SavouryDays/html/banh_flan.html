@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh flan</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item active">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('banh_flan.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-5">CÁCH LÀM BÁNH FLAN - CRÈME CARAMEL - KEM CARAMEL</h1>
+        <img src="../img/banhA_VN/banh_flan/cach-lam-banh-flan.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p>(*) <span class = "text-pink-2">Ghi chú bổ sung tháng 3/2016:</span>Vì <strong>cách làm bánh flan</strong> là một trong những bài viếtcó lượng bạn đọc hưởng ứng cao nhất tại SD nên mình đã quay video hướng dẫn chi tiết cách làm. Bên cạnh công thức cũ (giới thiệu năm 2011), trong video mình cũngchia sẻ một cách làm bánh flan mới sử dụng sữa đặc thay cho kem tươi, để dành tặng cho các bạn ở những nơi khó tìm mua được kem tươi nhé :)</p>
+            <p>Mời các bạn xem thêm các lưu ý để làm bánh Flan mềm, ngon, không bị rỗ <a href="#"><span class = "text-pink-2">trong bài viết này.</span></a></p>
+            <p>Có nhiều công thức làm bánh Flan, ngoại trừ việc tỉ lệ trứng : chất lỏng cần đủ cân đối để Flan có thể đông, thì còn lại mình nghĩ có lẽ phụ thuộc chủ yếu vào khẩu vị của các gia đình. Bản thân mình cũng thử nghiệm khá nhiều tỉ lệ khác nhau, thêm bớt trứng, thêm bớt lòng đỏ, điều chỉnh lượng kem tươi, sữa tươi ... và cuối cùng tạm “hạ cánh" ở công thức mà mình giới thiệu trong bài.</p>
+            <p>Cách làm bánh flan này mình điều chỉnh từ công thức Flan của Cook's Illustrated, sử dụng 3 quả trứng + 2 lòng đỏ (tức là tổng cộng 5 lòng đỏ : 3 lòng trắng). Mình cảm thấy tỉ lệ lòng trắng: lòng đỏ như thế này là vừa xinh, nhiều lòng trắng hơn thì không ngon, nhiều lòng đỏ hơn ăn cảm giác hơi ngấy và bứ. Lượng chất lỏng thì gồm 400ml sữa tươi & 150ml kem tươi, kem tươi giúp Flan mềm và ngậy hơn.</p>
+            <p>5 năm sau khi giới thiệu công thức dùng sữa tươi và kem tươi trên đây, với mình đây vẫn là cách làm bánh flan ngon nhất. Tỉ lệ nguyên liệu này cho mùi vị của bánh flan rất hoàn hảo và cân bằng, và không thể chỉnh sửa hay thêm bớt gì nữa. Tuy nhiên, vì ở Việt Nam có nhiều nơi mua kem tươi rất khó, nên bên cạnh công thức dùng kem tươi này, mình giới thiệu thêm với các bạn một công thức nữa không dùng kem tươi mà dùng sữa đặc có đường, sữa tươi và trứng. So với công thức có kem tươi thì công thức dùng sữa đặc kém ngậy hơn một tẹo, tuy nhiên vẫn rất ngon và đậm đà. Sữa đặc và lòng đỏ trứng là hai thứ nguyên liệu giúp cho flan có độ mềm mướt cũng như độ ngậy nhưng không quá nhiều. Nên bạn nào không quen ăn đồ nhiều béo thì dùng công thức này mình nghĩ là rất ổn.</p>
+            <p class="text-center">Bánh flan làm năm 2011</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_flan/6537585123_577a1cb549_z.jpg" width="50%"></a></p> 
+            <p>Video cách làm flan đã được đăng tại <a href="https://www.youtube.com/user/savourydayscom?sub_confirmation=1"><span class = "text-pink-2">kênh YouTube của Savoury Days.</span></a> Nếu không xem được tại website thì các bạn có thể xem trực tiếp trên YouTube theo <a href="https://www.youtube.com/watch?v=W0wKxCjTmmc"><span class = "text-pink-2">link này</span></a> nhé. Video có chế độ bản đẹp HD và phụ đề Anh và Việt. Hướng dẫn cách bật phụ đề tiếng Việt và chỉnh chế độ HD ở cuối bài viết này.</span></a></p>
+            <div class="text-center">
+                <video width="620px"  class = "frame-video" height="350px" controls>
+                    <source type="video/mp4" src="../img/banhA_VN/banh_flan/y2meta.net_144p-cach-lam-banh-flan-ngon-mem-min-how-to-make-flan-creme-caramel-recipe.mp4">
+                </video>
+            </div>
+            <br>
+            <h2 class = "text-center text-violet">CÁCH LÀM BÁNH FLAN THEO KIỂU PHÁP (CÔNG THỨC CŨ)</h2>
+            <p><strong>Nguyên liệu (8 - 10 bánh flan cỡ vừa)</strong></p>
+            <p><strong>* Phần Flan</strong></p>
+            <ul>
+                <li><em>3 quả trứng gà (50 gram/ quả không tính vỏ)</em></li>
+                <li><em>2 lòng đỏ trứng gà (20gram/ lòng đỏ)</em></li>
+                <li><em>70 gram đường (khoảng 1/3 cup)</em></li>
+                <li><em>400 ml (1-2/3 cup) sữa tươi không đường</em></li>
+                <li><em>150 ml (1/2 cup + 2 Tbsp) kem tươi (whipping cream, hàm lượng béo 30 - 35%)</em></li>
+                <li><em>1 thìa cafe/ teaspoon (5ml) vanilla extract (vani chiết xuất tự nhiên - không bắt buộc)</em></li>
+            </ul>
+            <p><strong>* Phần Caramel</strong></p>
+            <ul>
+                <li><em>70 gram đường (khoảng 1/3 cup)</em></li>
+                <li><em>Nước khoảng 30 - 40 ml (3 tbsp), đủ ngập đường</em></li>
+                <li><em>1 thìa cafe/ tsp/ 5 ml nước cốt chanh</em></li>
+            </ul>
+            <p>(*) <strong>Lưu ý:</strong> <span class = "text-pink-2">lòng đỏ trứng gà ở Việt Nam khá nhỏ, có thể chỉ khoảng 15 gram. Nếu lòng đỏ nhỏ, nên bổ sung thêm để tổng cộng lượng lòng đỏ có trong công thức là 5 lòng đỏ x 20 gram = 100 gram. Tổng lượng lòng trắng là 30 - 33 gram x 3 lòng trắng = 100 gram.</span></p>
+            <p><strong>Cách làm</strong></p>
+            <p><strong>1. Chuẩn bị khuôn làm Flan.</strong> <i>Thường thì mình làm trong ramekin (cốc sứ),</i> nếu các bạn làm bằng cốc kim loại thì nên có phương pháp cách nhiệt như mình đã nói trong bài trước, để hạn chế việc hỗn hợp trứng sữa bị sôi, làm cho Flan bị tổ ong. Công thức ở trên làm được 8-10 cốc tùy kích thước. Các bạn cũng có thể làm trong khuôn to hơn. Lưu ý điều chỉnh nhiệt độ cho phù hợp với kích thước và chiều cao của khuôn là được.</p>
+            <p>Quét một lớp bơ mỏng lên thành trong của khuôn, không quét bơ ở đáy khuôn. Mục đích của việc này là để lấy flan ra dễ dàng hơn.</p>
+            <p><strong>2. Chưng nước đường Caramel:</strong></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_flan/6537571999_04c52efc3d.jpg" width="50%"></a></p>
+            <p>- Cho đường vào nồi nhỏ (bạn nào chưa quen thì nên dùng nồi sáng màu, sẽ dễ nhìn màu của nước đường cháy hơn là nồi mình dùng trong hình). Đổ nước vừa ngập đường, lắc nhẹ nồi cho đường và nước dàn đều.</p>
+            <p>- Để lửa vừa - to, bắc nồi lên bếp và để nguyên, không cần đụng vào gì cả, thi thoảng có thể lắc nhẹ nồi cho nước và đường cháy đều thôi. Đầu tiên nước sẽ sôi, sủi bong bóng to, sau đấy nước sẽ bay hơi bớt. Cuối cùng là nước đường từ từ chuyển sang màu vàng nhạt, màu mật ong rồi đậm hơn thành màu cánh gián ...</p>
+            <p>- Nước đường chuyển màu rất nhanh. Nên chỉ cần đợi tới khi nước chuyển nâu vàng nhạt như màu mật ong là bạn có thể tắt bếp. Nhanh tay cho nước chanh vào, lắc hoặc khuấy đều rồi chia đều ra các khuôn. Không đợi quá lâu nước đường dễ bị đắng.</p>
+            <p>- Cần để cho nước đường này <strong><em>đông cứng hần lại </em></strong>rồi mới đổ phần sữa trứng cho Flan vào. Mùa đông trời hanh khô thì nước đường đông khá nhanh, những ngày trời nồm ẩm có thể sẽ phải để lâu hơn, tầm 5-10 phút. Nước đường không nhất thiết phải dàn được đều đáy khuôn, đóng thành một mảng cũng không sao. Sau này nó sẽ tự chảy ra và dàn đều, đẹp.</p>
+            <p>- Một vài chú ý nhỏ trong phần này là:</p>
+            <ul>
+                <li><em>Cách làm này lâu hơn cách cho thẳng đường vào nồi rồi đun chảy, nhưng an toàn và khó hỏng hơn nhiều. Vì đường có nước, cháy chậm hơn nên rất dễ điều chỉnh màu sắc và độ cháy theo ý muốn.</em></li>
+                <li><em>Thường thì mình không chưng đường quá đậm màu. Khi nước đường chuyển sang màu đậm hơn mật ong là mình dừng lại rồi. Lý do chính là do thói quen không thích ăn quá đắng và dù sao thì đường cháy cũng không tốt cho sức khỏe nên mình cũng muốn hạn chế. Các bạn có thể điều chỉnh tùy theo sở thích của gia đình, nhưng lưu ý là đường chưng non thì vị sẽ rất ngọt, cho nên có thể giảm bớt lượng đường trong công thức.</em></li>
+                <li><em>Nước đường chưng rất rất nóng, khi đổ thì đổ khéo, <em>cẩn thận bỏng</em></li>
+                <li><em>Nếu trong quá trình đổ nước đường ra khuôn mà nước đường bị đông lại thì đặt nồi lên bếp trở lại, đun vài giây là nó lại chảy ra.</em></li>
+            </ul>
+            <p>3. Làm Flan</p>
+            <p>– Cho 3 trứng + 2 lòng đỏ vào âu. Cho đường. Dùng phới lồng cầm tay  hoặc nĩa/ dĩa nhẹ nhàng đánh trứng và đường cho tan bớt. Lưu ý: chỉ đánh tan trứng, <strong>không đánh bông</strong></p>
+            <p>– Cho sữa & kem tươi vào nồi. Đun lửa vừa và khuấy đều tay. Đến khi kem sữa ấm nóng (nóng hơn nước dùng để tắm một chút) thì bắc xuống.</p>
+            <p>– Từ từ đổ kem sữa vào âu trứng đường, vừa đổ vừa nhẹ nhàng khuấy đều. Cho vani, quấy đều.</p>
+            <p>– Lọc hỗn hợp kem sữa qua rây để loại hết các lợn cợn trứng nếu có. Chia vào các khuôn Flan.</p>
+            <p>– Một vài chú ý trong phần này là</p>
+            <ul>
+                <li><em>Rất <em>nên đun kem sữa cho nóng rồi mới đổ vào trứng</em>. Lý do là giúp kem trứng hòa quyện, trứng bớt tanh, giúp hạn chế rỗ, tóm lại là giúp bánh thơm ngon và đẹp hơn ;)</em></li>
+                <li><em>Chỉ cần đun sữa tới ấm, không làm sữa quá nóng vì sẽ dễ làm trứng chín gây ra lợn cợn. Nếu lỡ đun quá nóng thì có thể quấy vài nhát cho sữa nguội bớt rồi mới đổ vào trứng.</em></li>
+            </ul>
+            <p>4. <strong>Nướng hoặc hấp Flan đến chín</strong>: Có rất nhiều lưu ý trong phần này, mình viết <a href="#"><span class = "text-pink-2">trong bài trước</span></a> rồi nên không nhắc lại, các bạn xem thêm ở bài trước nhé. Ở phần này mình chỉ viết các bước làm thôi</p>
+            <p>a. <strong>Nướng cách thủy </strong></p>
+            <p>– Vặn lò lên 150 độ trước 10 – 15 phút (hai lửa)</p>
+            <p>– Chuẩn bị khay để nướng cách thủy. Tốt nhất là <i>nên dùng khay riêng</i>, không dùng khay đen gắn trực tiếp với thành lò. Lót khăn ở đáy khay, giúp giảm nhiệt ở đáy flan và bánh không bị rỗ ở đáy.</p>
+            <p>– Cho khuôn Flan vào khay. Đổ <strong>nước sôi </strong> vào khay sao cho nước ngập khoảng 1/2 khuôn (không nên để mực nước thấp hơn).</p>
+            <p>– Nướng ở nhiệt độ 150 – 160 độ C đến khi Flan chín. Thời gian nướng dao động trong khoảng 25 – 40 phút tuỳ theo kích thước khuôn và nhiệt nướng. Sau khoảng 25 phút các bạn có thể thử flan bằng cách cắm một que tăm vào giữa bánh, rút lên không thấy nước chạy ra, tăm hơi ẩm, không quá ướt, khi lắc thử thấy mặt flan còn hơi sóng sánh thì tắt lò.</p>
+            <p>b. <strong>Hấp cách thủy</strong></p>
+            <p></p>
+            <p>– Dùng nồi hấp hai tầng hoặc xửng, chõ hấp. Nếu không có xửng thì hấp trực tiếp như trong video cũng không sao.</p>
+            <p>– Đun sôi một ít nước trong nồi. Khi nước sôi thì hạ lửa nhỏ, đủ để nước sôi lăn tăn (nếu hấp bằng xửng) hoặc để cho nước không sôi nữa, nhưng đủ nóng (khoảng 90 – 95 độ C) nếu hấp trực tiếp trong nồi như trong video.</p>
+            <p>– Sau khi chia flan vào các khuôn, dùng giấy bạc che kín khuôn flan hoặc đậy nắp khuôn. Nếu không có vật dụng gì để che thì cần chuẩn bị hai chiếc khăn sạch: 1 cái che mặt khuôn Flan, 1 cái phủ lên miệng nồi (để hứng hơi nước đọng lại ở nắp vung, tránh cho Flan bị rỗ mặt).</p>
+            <p>– Xếp flan vào nồi hấp như trong video hoặc dùng xửng hấp. Hấp trong khoảng 25 – 35 phút hoặc lâu hơn tuỳ kích thước khuôn. Sau khoảng 20 – 25 phút thì kiểm tra flan giống như khi nướng cách thuỷ: cắm một que tăm vào giữa bánh, rút lên không thấy nước chạy ra, tăm hơi ẩm, không quá ướt, khi lắc thử thấy mặt flan còn hơi sóng sánh là đã đạt.</p>
+            <p>5. Flan sau khi chín thì để nguội rồi <strong>cho vào tủ lạnh tối thiểu 2-3 tiếng đồng hồ</strong> để lớp đường Caramel ở đáy khuôn chảy ra. Tốt nhất là để qua đêm.</p>
+            <p>6. Khi ăn ngâm cốc đựng flan vào cốc nước nóng khoảng 10 – 20 giây (tuỳ kích thước khuôn flan). Dùng đầu mũi dao chạy quanh thành trong của cốc. Nước nóng làm cho bơ ở thành khuôn chảy, giúp flan tự tách khỏi thành khuôn. Cách này rất dễ làm và hạn chế việc lách dao quá sâu vào làm vỡ thành flan. Úp đĩa lên mặt khuôn rồi lật ngược lại để lấy bánh ra. Và măm măm thôi :)</p>
+            <h2 class = "text-center text-violet">CÁCH LÀM BÁNH FLAN THEO KIỂU VN (CÔNG THỨC MỚI)</h2>
+            <p><strong>Nguyên liệu (8 – 10 bánh flan cỡ vừa)</strong></p>
+            <p><strong>* Phần Flan</strong></p>
+            <ul>
+                <li><em>3 quả trứng gà (50 gram/ quả không tính vỏ)</em></li>
+                <li><em>2 lòng đỏ trứng gà (20gram/ lòng đỏ)</em></li>
+                <li><em>500 ml (2 cup + 4 tsp) sữa tươi không đường</em> </li>
+                <li><em>150 <strong>gram </strong>(5.3 oz) sữa đặc có đường (sweetened condense milk)</em></li>
+                <li><em>1 thìa cafe/ teaspoon (5ml) vanilla extract (vani chiết xuất tự nhiên – không bắt buộc)</em></li>
+            </ul>
+            <p><strong>* Phần Caramel</strong></p>
+            <ul>
+                <li><em>70 gram đường</em></li>
+                <li><em>Nước khoảng 30 – 40 ml, đủ ngập đường </em></li>
+                <li><em>1 thìa cafe/ tsp/ 5 ml nước cốt chanh</em></li>
+            </ul>
+            <p>* <strong>Lưu ý </strong><span class = "text-pink-2">lòng đỏ trứng gà ở Việt Nam khá nhỏ, có thể chỉ khoảng 15 gram. Nếu lòng đỏ nhỏ, nên bổ sung thêm để tổng cộng lượng lòng đỏ có trong công thức là 5 lòng đỏ x 20 gram = 100 gram. Tổng lượng lòng trắng là 30 – 33 gram x 3 lòng trắng = 100 gram. </span></p>
+            <p>Cách làm bánh flan kiểu Việt Nam giống với cách làm kiểu Pháp ở trên. Điểm khác biệt duy nhất là thay vì nấu kem tươi, sữa tươi và đường tới ấm nóng ở bước (3) thì ta pha sữa đặc có đường và sữa tươi, đun đến ấm nóng.</p>
+            <br>
+            <h2 class="text-center text-violet">CÁC VẤN ĐỀ THƯỜNG GẶP KHI LÀM BÁNH FLAN VÀ CÁCH KHẮC PHỤC</h2>
+            <p>– Vấn đề thường gặp nhất của <span class = "text-pink-2"><strong>flan là bị rỗ</strong></span></p>
+            <ul>
+                <li>Nếu là rỗ ở mặt flan: có thể do trứng đánh quá bông, hoặc trộn mạnh tay nên trong flan có nhiều bọt khí. Khi nướng các bọt khí này nổi lên trên gây rỗ mặt. Ngoài ra, nếu hấp flan trong nồi và không che mặt cốc flan thì nước từ nắp nồi nhỏ xuống cũng làm rỗ mặt flan.</li>
+                <li>Nếu là rỗ ở thành và đáy flan: nguyên nhân chính là do nướng ở nhiệt cao quá hoặc nướng lâu quá, việc đánh trứng không có liên quan gì nhiều. Cách khắc phục – mình đã nói rất đầy đủ trong video ở dưới – nhưng tóm tắt lại là <strong>nướng/ hấp ở lửa thấp, dùng khuôn sứ hoặc thuỷ tinh (vì khuôn kim loại dẫn nhiệt nhanh hơn), luôn lót khăn ở đáy khay/ nồi khi nướng hoặc hấp trực tiếp như trong video </strong> và <strong>lấy flan ra khi mặt flan còn hơi sóng sánh. </strong></li>
+            </ul>
+            <p>– Nếu <span class = "text-pink-2"><strong>mặt flan bị khô</strong></span>: chỉ cần che hoặc bọc kín mặt flan khi hấp/ nướng là được.</p>
+            <p>– Nếu <span class = "text-pink-2"><strong>flan không đông:</strong></span> khả năng xảy ra thấp, có thể do công thức không ổn (tỉ lệ sữa quá lớn so với trứng) hoặc do nướng ở nhiệt độ quá thấp.</p>
+            <p>– Flan <span class = "text-pink-2"><strong>có mùi trứng tanh</strong></span> : có thể gặp ở flan mới nướng xong hoặc nướng xong chưa lâu. Tuy nhiên, cũng có thể do công thức (tỉ lệ trứng/ sữa chưa phù hợp). Như mình làm thì có rất nhiều lần không dùng vani, nhưng chưa bao giờ flan có mùi trứng tanh cả.</p>
+            <p>– Flan <span class = "text-pink-2"><strong>bị vỡ khi lấy ra ngoài</strong></span> : do nướng/ hấp chưa đủ thời gian hoặc để lạnh trong thời gian quá ngắn. Hoặc do công thức có tỉ lệ chất lỏng quá nhiều so với trứng.</p>
+            <p>– Flan khi lấy ra ngoài không được đẹp, thành flan không được láng mịn, do bị dao rạch lẹm vào. Ở trong video dưới mình có nói về cách khắc phục việc này. Đó là quét một lớp bơ rất mỏng lên thành trong của khuôn. Khi lấy flan, chỉ cần ngâm khuôn trong nước nóng 15 – 20 giây, và dùng mũi dao lách nhẹ một chút xíu vào phần tiếp xúc giữa mặt flan với thành cốc. Nước nóng làm bơ chảy nên flan sẽ tự tách khỏi thành khuôn, rất đẹp và rất mịn :)</p>
+            <p>–<span class = "text-pink-2"><strong> Nước đường bị dính vào đáy cốc</strong></span>: có thể do nước đường chưng hơi quá già hoặc để trong tủ lạnh không đủ thời gian.</p>
+            <br>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

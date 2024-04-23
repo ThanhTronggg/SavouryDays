@@ -12,7 +12,7 @@
     <script src="../js/scroll.js"></script>
     <script src="../js/reg-courses.js"></script>
 </head>
-<body>
+<body onload = "KiemTraDaDangNhap()">
     <!-- Start Navbar -->
     <div class="container-fluid mx-md-0 px-md-0 bg-pink">
         <div class="container header">
@@ -94,6 +94,16 @@
                                 <li class="nav-item">
                                     <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
                                 </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('sponge_foam-cake.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -115,168 +125,338 @@
                 &#10146; Tiết kiệm thời gian khi vừa học vừa thực hành tại nhà.<br>
             -> Xem chương trình khóa SPONGE-FOAM CAKE kinh doanh <a href="../html/home.html" class = "text-pink-2">tại đây</a>.</p>
             <h1 class="text-center text-violet">MỘT SỐ LOẠI BÁNH ĐƯỢC YÊU THÍCH TRONG KHÓA HỌC</h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="recipe">
-                        <div class="recipe-item">
-                            <a class="recipe-hover" href="#">
-                                <div class="recipe-head">
-                                    <div class="headline">
-                                        Bánh cuộn cam
-                                        <div class="line"></div>
+            <div id="chua-mua">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="#nut">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn cam
+                                            <div class="line"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mask">
-                                </div>
-                            </a>
-                            <img class="recipe-img" src="../img/sponge_foam-cake/cach-lam-banh-cuon-cam-menu-300x300.jpg">
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/cach-lam-banh-cuon-cam-menu-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="#nut"> Bánh cuộn cam</a>
+                                </h3>
+                            </div>
                         </div>
-                        <div class="recipe-info">
-                            <h3 class="recipe-title">
-                                <a href="#"> Bánh cuộn cam</a>
-                            </h3>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="#nut">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn kem dâu
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/cách-làm-bánh-cuộn-kem-dâu-menu-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="#nut"> Bánh cuộn kem dâu</a>
+                                </h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="#nut">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn hoa anh đào
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/cách-làm-bánh-cuộn-kem-hoa-anh-đào-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="#nut"> Bánh cuộn hoa anh đào</a>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="recipe">
-                        <div class="recipe-item">
-                            <a class="recipe-hover" href="#">
-                                <div class="recipe-head">
-                                    <div class="headline">
-                                        Bánh cuộn kem dâu
-                                        <div class="line"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="#nut">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn Phú Sĩ
+                                            <div class="line"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mask">
-                                </div>
-                            </a>
-                            <img class="recipe-img" src="../img/sponge_foam-cake/cách-làm-bánh-cuộn-kem-dâu-menu-300x300.jpg">
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/IMG_8828-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="#nut"> Bánh cuộn Phú Sĩ</a>
+                                </h3>
+                            </div>
                         </div>
-                        <div class="recipe-info">
-                            <h3 class="recipe-title">
-                                <a href="#"> Bánh cuộn kem dâu</a>
-                            </h3>
-                        </div>  
+                    </div>
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="#nut">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn Raffaello
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/Foam-cake.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="#nut"> Bánh cuộn Raffaello</a>
+                                </h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="#nut">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn Chiffon
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/banhcuonChocolate1-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="#nut"> Bánh cuộn Chiffon</a>
+                                </h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="recipe">
-                        <div class="recipe-item">
-                            <a class="recipe-hover" href="#">
-                                <div class="recipe-head">
-                                    <div class="headline">
-                                        Bánh cuộn hoa anh đào
-                                        <div class="line"></div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="recipe">
+                            <div class="recipe-info mt-2 mt-lg-2 mt-md-2 mt-sm-2">
+                                <h3 class="recipe-title">
+                                    <div class="btn-book">
+                                        <a href = "#nut"type="button" onclick="KiemTraTaiKhoan()" class="book d-none d-sm-none d-md-block btn border text-center text-light bg-pink-bold">Giá 600.000đ &nbsp;<span class="nor2 text-light">720.000đ</span></a>
+                                        <a href = "#nut"type="button" onclick="KiemTraTaiKhoan()" class="book d-block d-sm-none btn border text-center text-light bg-pink-bold">600.000đ</a>
+                                        <a href = "#nut"type="button" onclick="KiemTraTaiKhoan()" class="book d-none d-sm-block d-md-none btn border text-center text-light bg-pink-bold">Giá 600.000đ</a>
                                     </div>
-                                </div>
-                                <div class="mask">
-                                </div>
-                            </a>
-                            <img class="recipe-img" src="../img/sponge_foam-cake/cách-làm-bánh-cuộn-kem-hoa-anh-đào-300x300.jpg">
+                                </h3>
+                            </div>
                         </div>
-                        <div class="recipe-info">
-                            <h3 class="recipe-title">
-                                <a href="#"> Bánh cuộn hoa anh đào</a>
-                            </h3>
+                    </div>
+                    <div class="col-4">
+                        
+                    </div>
+                    <div class="col-4">
+                        <div class="recipe">
+                            <div class="recipe-info mt-2 mt-lg-2 mt-md-2 mt-sm-2">
+                                <h3 class="recipe-title">
+                                    <div class="btn-book">
+                                        <a href="#nut" type="button" onclick="KiemTraTaiKhoan()" class="book d-none d-sm-none d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2 "></i>ĐĂNG KÝ KHÓA HỌC</a>
+                                        <a href="#nut" type="button" onclick="KiemTraTaiKhoan()" class="book d-block d-sm-block d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-1"></i>ĐĂNG KÝ</a>
+                                    </div>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="recipe">
-                        <div class="recipe-item">
-                            <a class="recipe-hover" href="#">
-                                <div class="recipe-head">
-                                    <div class="headline">
-                                        Bánh cuộn Phú Sĩ
-                                        <div class="line"></div>
+            <div id="da-mua">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh-cuon-cam.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn cam
+                                            <div class="line"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mask">
-                                </div>
-                            </a>
-                            <img class="recipe-img" src="../img/sponge_foam-cake/IMG_8828-300x300.jpg">
-                        </div>
-                        <div class="recipe-info">
-                            <h3 class="recipe-title">
-                                <a href="#"> Bánh cuộn Phú Sĩ</a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="recipe">
-                        <div class="recipe-item">
-                            <a class="recipe-hover" href="#">
-                                <div class="recipe-head">
-                                    <div class="headline">
-                                        Bánh cuộn Raffaello
-                                        <div class="line"></div>
+                                    <div class="mask">
                                     </div>
-                                </div>
-                                <div class="mask">
-                                </div>
-                            </a>
-                            <img class="recipe-img" src="../img/sponge_foam-cake/Foam-cake.jpg">
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/cach-lam-banh-cuon-cam-menu-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh-cuon-cam.html"> Bánh cuộn cam</a>
+                                </h3>
+                            </div>
                         </div>
-                        <div class="recipe-info">
-                            <h3 class="recipe-title">
-                                <a href="#"> Bánh cuộn Raffaello</a>
-                            </h3>
-                        </div>  
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="recipe">
-                        <div class="recipe-item">
-                            <a class="recipe-hover" href="#">
-                                <div class="recipe-head">
-                                    <div class="headline">
-                                        Bánh cuộn Chiffon
-                                        <div class="line"></div>
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh-cuon-kem-dau.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn kem dâu
+                                            <div class="line"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mask">
-                                </div>
-                            </a>
-                            <img class="recipe-img" src="../img/sponge_foam-cake/banhcuonChocolate1-150x150.jpg">
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/cách-làm-bánh-cuộn-kem-dâu-menu-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh-cuon-kem-dau.html"> Bánh cuộn kem dâu</a>
+                                </h3>
+                            </div>  
                         </div>
-                        <div class="recipe-info">
-                            <h3 class="recipe-title">
-                                <a href="#"> Bánh cuộn Chiffon</a>
-                            </h3>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh-cuon-hoa-anh-dao.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn hoa anh đào
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/cách-làm-bánh-cuộn-kem-hoa-anh-đào-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh-cuon-hoa-anh-dao.html"> Bánh cuộn hoa anh đào</a>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="recipe">
-                        <div class="recipe-info mt-2 mt-lg-2 mt-md-2 mt-sm-2">
-                            <h3 class="recipe-title">
-                                <div class="btn-book">
-                                    <a type="button" data-toggle="modal" data-target="#myModal" class="d-none d-sm-none d-md-block btn border text-center text-light bg-pink-bold">Giá 600.000đ &nbsp;<span class="nor2 text-light">720.000đ</span></a>
-                                    <a type="button" data-toggle="modal" data-target="#myModal" class="d-block d-sm-none btn border text-center text-light bg-pink-bold">600.000đ</a>
-                                    <a type="button" data-toggle="modal" data-target="#myModal" class="d-none d-sm-block d-md-none btn border text-center text-light bg-pink-bold">Giá 600.000đ</a>
-                                </div>
-                            </h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/banh-cuon-Phu-Si.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn Phú Sĩ
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/IMG_8828-300x300.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/banh-cuon-Phu-Si.html"> Bánh cuộn Phú Sĩ</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/raffaello.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn Raffaello
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/Foam-cake.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/raffaello.html"> Bánh cuộn Raffaello</a>
+                                </h3>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="recipe">
+                            <div class="recipe-item">
+                                <a class="recipe-hover" href="../html/chiffon.html">
+                                    <div class="recipe-head">
+                                        <div class="headline">
+                                            Bánh cuộn Chiffon
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <img class="recipe-img" src="../img/sponge_foam-cake/banhcuonChocolate1-150x150.jpg">
+                            </div>
+                            <div class="recipe-info">
+                                <h3 class="recipe-title">
+                                    <a href="../html/chiffon.html"> Bánh cuộn Chiffon</a>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    
-                </div>
-                <div class="col-4">
-                    <div class="recipe">
-                        <div class="recipe-info mt-2 mt-lg-2 mt-md-2 mt-sm-2">
-                            <h3 class="recipe-title">
-                                <div class="btn-book">
-                                    <a href="#" type="button" data-toggle="modal" data-target="#myModal" class="d-none d-sm-none d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2 "></i>ĐĂNG KÝ KHÓA HỌC</a>
-                                    <a href="#" type="button" data-toggle="modal" data-target="#myModal" class="d-block d-sm-block d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-1"></i>ĐĂNG KÝ</a>
-                                </div>
-                            </h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="recipe">
+                            <div class="recipe-info mt-2 mt-lg-2 mt-md-2 mt-sm-2">
+                                <h3 class="recipe-title">
+                                    <div class="btn-book">
+                                        <a href = "#nut"type="button" onclick="KiemTraTaiKhoan()" class="book d-none d-sm-none d-md-block btn border text-center text-light bg-pink-bold">Giá 600.000đ &nbsp;<span class="nor2 text-light">720.000đ</span></a>
+                                        <a href = "#nut"type="button" onclick="KiemTraTaiKhoan()" class="book d-block d-sm-none btn border text-center text-light bg-pink-bold">600.000đ</a>
+                                        <a href = "#nut"type="button" onclick="KiemTraTaiKhoan()" class="book d-none d-sm-block d-md-none btn border text-center text-light bg-pink-bold">Giá 600.000đ</a>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        
+                    </div>
+                    <div class="col-4">
+                        <div class="recipe">
+                            <div class="recipe-info mt-2 mt-lg-2 mt-md-2 mt-sm-2">
+                                <h3 class="recipe-title">
+                                    <div class="btn-book">
+                                        <a href="#nut" type="button" onclick="KiemTraTaiKhoan()" class="book d-none d-sm-none d-md-none d-lg-block d-xl-block btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-2 "></i>ĐĂNG KÝ KHÓA HỌC</a>
+                                        <a href="#nut" type="button" onclick="KiemTraTaiKhoan()" class="book d-block d-sm-block d-md-block d-lg-none d-xl-none btn border text-center text-light bg-pink-bold"><i class="fas fa-shopping-cart text-light mr-1"></i>ĐĂNG KÝ</a>
+                                    </div>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -308,7 +488,7 @@
                                         <label for="lblHT">Họ và tên</label>
                                     </div>
                                     <div class="col-7">
-                                        <input type="text" class="form-control" id="txtHT" onblur="ktraten()"  placeholder="">
+                                        <input type="text" class="form-control" id="txtHT" onblur="ktraten()"  placeholder="Nhập họ và tên">
                                         <span id="er1" class="text-danger">(*)</span>
                                     </div>
                                 </div>
@@ -319,7 +499,7 @@
                                         <label for="lblDT">Điện thoại</label>
                                     </div>
                                     <div class="col-7">
-                                        <input type="text" class="form-control" id="txtDT" onblur="ktraDT()" placeholder="">
+                                        <input type="text" class="form-control" id="txtDT" onblur="ktraDT()" placeholder="Nhập số điện thoại">
                                         <span id="er2" class="text-danger">(*)</span>
                                     </div>
                                 </div>
@@ -330,7 +510,7 @@
                                         <label for="lblEmail">Địa chỉ Email</label>
                                     </div>
                                     <div class="col-7">
-                                        <input type="text" class="form-control" id="txtEmail" onblur="ktraEmail()" placeholder="">
+                                        <input type="text" class="form-control" id="txtEmail" onblur="ktraEmail()" placeholder="Nhập địa chỉ email">
                                         <span id="er3" class="text-danger">(*)</span>
                                     </div>
                                 </div>
@@ -341,7 +521,7 @@
                                         <label for="lblLinkFB">Link Facebook cá nhân</label>
                                     </div>
                                     <div class="col-7">
-                                        <input type="text" class="form-control" id="txtLinkFB" onblur="ktralinkFB()" placeholder="">
+                                        <input type="text" class="form-control" id="txtLinkFB" onblur="ktralinkFB()" placeholder="Nhập link Facebook">
                                         <span id="er4" class="text-danger">(*)</span>
                                     </div>
                                 </div>
@@ -349,38 +529,20 @@
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-5">
-                                        <label for="lbKN">Đăng Ký Khóa Học</label>
+                                        <label for="name-course">Đăng Ký Khóa Học</label>
                                     </div>
                                     <div class="col-7">
-                                        <div class="row ml-1">
-                                            <input type="checkbox"  name="cupcate-muffin" id="cupcate-muffin"/>
-                                            <label for="cupcate-muffin">&nbsp;Cupcate-Muffin</label>
-                                        </div>
-                                        <div class="row ml-1">
-                                            <input type="checkbox"  name="custard-pudding" id="custard-pudding"/>
-                                            <label for="custard-pudding">&nbsp;Custard-Pudding</label>
-                                        </div>
-                                        <div class="row ml-1">
-                                            <input type="checkbox"  name="sponge-foamcake" id="sponge-foamcake"/>
-                                            <label for="sponge-foamcake">&nbsp;Sponge-Foam Cake</label>
-                                        </div>
-                                        <div class="row ml-1">
-                                            <input type="checkbox"  name="cookies-bars-candy" id="cookies-bars-candy"/>
-                                            <label for="cookies-bars-candy">&nbsp;Cookies-Bars-Candy</label>
-                                        </div>
+                                        <input type="text" id="name-course" value = "Sponge - Foam cake" disabled class = "form-control">
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mt-4">
                                 <div class="row">
                                     <div class="col-5">
-                                        <label for="lbHV">Bạn là học viên cũ hay mới</label>
+                                        <label for="lbHV">Tổng tiền</label>
                                     </div>
                                     <div class="col-7">
-                                        <select class="form-control" id="sel1">
-                                            <option value="hvc">Học viên cũ</option>
-                                            <option value="hvm">Học viên mới</option>
-                                        </select>
+                                        <input type="text" id="tien" disabled class = "form-control" value = "600.000đ"/>
                                     </div>
                                 </div>
                             </div>
@@ -388,11 +550,10 @@
                     </div> 
                         <!-- Modal footer -->
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
-                            <button type="button" class="btn btn-success" data-dismiss="modal" id="registerButton">Đăng ký</button>
+                            <button type="reset" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+                            <button type="button" onclick="DangKyKhoaHoc()" class="btn btn-success" id="registerButton">Đăng ký</button>
                         </div>
                     </div>
-                    <div id="successMessage" style="display: none;">Đăng ký thành công!</div>
                 </div>
             </div>
         </div>

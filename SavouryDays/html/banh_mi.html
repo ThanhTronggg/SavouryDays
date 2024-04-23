@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh mì</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item active">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('banh_mi.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-5">BÁNH MÌ VIỆT NAM VỎ GIÒN RUỘT XỐP</h1>
+        <img src="../img/banhA_VN/banh_mi/BanhMiVNPhan2.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <h4><a href="http://www.savourydays.com/banh-mi-viet-nam-p1-lam-nao-de-banh-mi-co-vo-gion-ruot-dai-xop/"><span class = "text-pink-2">Phần 1: Làm thế nào để bánh mì có vỏ giòn mỏng và ruột dai xốp</span></a></h4>
+            <p>Với bánh mì Việt Nam, <span class="text-pink-2"> <strong>kĩ năng và kinh nghiệm quan trọng hơn bản thân công thức rất nhiều</strong></span>Cho nên, có thể trong những lần thử đầu tiên, các bạn sẽ không hoàn toàn có chiếc bánh ưng ý 100%. Nhưng đừng vì vậy mà nản lòng. Bản thân mình cũng phải làm đến gần chục lần mới thấy tạm ổn. Mọi thứ đều cần quá trình, điều này đặc biệt đúng với bánh mì Việt Nam. Nên nếu các bạn chưa có nhiều kinh nghiệm làm bánh mì, thì với lần thử thứ 1, 2, thậm chí đến 3, 4, cứ xác định là có bánh ăn được đã nhé, rồi từ từ làm nhiều tự khắc bánh sẽ ngon và đẹp hơn.</p>
+            <p class="text-center">Bánh mì kẹp thịt kho và trứng ốp-la ^.^</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/1.jpg" width="50%"></a></p>
+            <p><span class="text-pink-2"><strong>Bài viết này sẽ rất dài, vì mình muốn mô tả lại cả quá trình làm kèm theo các chú thích tại sao lại nên làm như vậy.</strong></span>Cho nên cả nhà cố gắng đọc kĩ nhé. Tốt nhất là nên đọc một vài lần cho “ngấm” rồi mới làm, sẽ bớt bỡ ngỡ khi làm hơn (nhất là với những ai chưa làm bánh mì bao giờ).</p>
+            <p>Như mình có viết trong bài trước là có hai cách làm bánh mì Việt Nam (ở mức độ trung bình, không quá khó và không đòi hỏi rất nhiều kĩ năng) là công thức có và không dùng dấm. Mình sẽ giới thiệu cả hai công thức trong bài này để các bạn tùy chọn (ưu nhược điểm của từng công thức thì các bạn xem trong bài trước nhé).</p>
+            <br>
+            <h4 class=" text-center text-pink-2">BÁNH MÌ VIỆT NAM – CÔNG THỨC 1 (KHÔNG DÙNG DẤM)</h4>
+            <p><span class="text-pink-2"><strong>Nguyên liệu (cho 5 – 6 cái bánh dài 15 – 17 cm)</strong></span></p>
+            <ul>
+                <li><em>200 gr bột làm bánh mì</em></li>
+                <li><em>5 gr men instant</em></li>
+                <li><em>120 – 130 gr nước (mát)</em></li>
+                <li><em>8 gr đường</em></li>
+                <li><em>2 gr muối</em></li>
+            </ul>
+            <p><span class="text-pink-2"><strong>* Các lưu ý về nguyên liệu:</strong></span></p>
+            <p>1. <span class="text-pink-2"><strong>Nên dùng bột chuyên dụng làm bánh mì (bread flour) với hàm lượng protein nằm trong khoảng 11,5 – 12,5%.</strong></span>Bột có protein thấp hơn sẽ khó cho thớ bánh dai. Bột có protein cao hơn sẽ cần nhiều nước và thớ bánh có thể sẽ thô và cứng hơn.</p>
+            <p>2. Men instant là men không cần kích hoạt. Có thể dùng men tươi hoặc men khô (dry yeast), nhưng với men khô sẽ cần kích hoạt. Cách kích hoạt men khô và cách quy đổi lượng men tươi, các bạn xem tại <a href="http://www.savourydays.com/tu-hoc-lam-banh-can-ban-cac-chat-gay-no-men-no-bot-no-muoi-no-phan-loai-va-cac-luu-y-khi-su-dung/"><span class = "text-pink-2">bài viết này</span></a>. Men làm bánh mì khác với bột nở, muối nở, men rượu… không thay thế được cho nhau.</p>
+            <p>3. Với bánh mì Việt Nam, <span class="text-pink-2"><strong>dùng nhiều nước sẽ tốt hơn là ít nước</strong></span>. ỉ lệ nước thông thường trong các công thức bánh mì vỏ giòn nói chung là <span class="text-pink-2"><strong>nước = 60% bột</strong></span>. Tức là cứ 100 gr bột (12% protein) thì dùng 60 gr nước. Ít nước hơn thường sẽ làm cho bánh bị khô và không để được lâu, cũng không nở được nhiều và ruột kém xốp.</p>
+            <p>60% là tỉ lệ trung bình. Các bạn chưa có nhiều kinh nghiệm làm bánh mì, đặc biệt là chưa có kinh nghiệm nhồi bột nên dùng tỉ lệ này. Bột sẽ ướt vừa phải, dễ nhồi và không dính tay. Còn nếu bạn đã quen làm bánh mì, đã quen nhồi bột thì có thể tăng lên khoảng 63 – 65 %.</p>
+            <p>Tỉ lệ nước: bột mà mình thường dùng là trong khoảng 65 – 68%. Nước nhiều giúp bánh nở tốt hơn, để được lâu hơn, thớ bánh dai hơn và các lỗ khí cũng “đẹp” hơn. Tuy nhiên, <span class="text-pink-2"><strong>với bánh mì VN thì chỉ nên dùng nước trong khoảng 60 – 70% bột thôi</strong></span>. Nhiều nước hơn vẫn có thể cho bánh ngon nhưng vì bột nhão nên nhồi bột sẽ rất mệt, và bánh cũng khó giữ dáng, thường thì bột sẽ chảy bè ra.</p>
+            <p>Cần lưu ý là: <span class="text-pink-2"><strong>lượng nước có thể thay đổi tùy vào loại bột, độ cũ mới và hàm lượng protein trong bột</strong></span>: bột cũ hút nước nhiều hơn bột mới, bột có lượng protein cao hơn sẽ hút nước nhiều hơn. Vì vậy nên khi làm, các bạn cần linh hoạt trong việc điều chỉnh lượng nước cho hợp với loại bột mà bạn sử dụng nhé.</p>
+            <p>4. Đường, muối, dầu ăn đều ít nhiều ảnh hưởng đến độ dai của thớ bánh và độ xốp của bánh. Nếu muốn bánh nở tốt nhất, đạt mức tối đa thì có thể bỏ tất cả những nguyên liệu này. Nhưng như vậy bánh sẽ khá nhạt nhẽo nên trong công thức trên mình có cho ít muối và đường, không dùng dầu ăn hay bơ.</p>
+            <p><span class="text-pink-2"><strong>Cách làm</strong></span></p>
+            <p>1. Cho bột và men vào âu. Quấy cho men hòa lẫn vào bột. Cho đường, muối, nước. Dùng thìa hoặc đặt máy trộn ở tốc độ thấp nhất, trộn đến khi các nguyên liệu hòa quyện thành một khối và không còn thấy bột khô.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/2.jpg" width="50%"></a></p>
+            <p><strong>* Ghi chú:</strong></p>
+            <p>– Vì men là loại instant nên không cần kích hoạt trước. Nhưng nếu muốn thử men, các bạn có thể kích hoạt cũng không sao.</p>
+            <p>–<span class="text-pink-2"><strong> Nếu trộn bằng máy, nên dùng nước mát vì hoạt động nhồi của máy sẽ làm khối bột nóng lên.</strong></span> Nếu dùng nước ấm ngay từ đầu, sau một thời gian nhồi, bột có thể sẽ nóng hơn nhiều, làm ảnh hưởng đến hoạt động của men, tạo ra mùi vị không ngon hoặc men bị chết.</p>
+            <p>2. Để bột nghỉ trong khoảng 10 phút. Nếu thời tiết khô, có thể dùng một miếng nilon hoặc khăn vải đậy lên miệng âu để mặt bột không bị khô.</p>
+            <p>Việc để bột nghỉ sẽ giúp cho các sợi gluten tự hình thành và có thời gian “thư giãn”. Kết quả là khối bột sẽ bớt ướt dính, nhồi sẽ dễ dàng hơn (đặc biệt nếu nhồi bằng tay), không mất sức và không phải thêm quá nhiều bột áo. Kể cả dùng máy cũng nên để bột nghỉ, sẽ tránh được việc phải nhồi bột quá nhiều làm cho bột bị nóng lên.</p>
+            <p>3. Sau khi bột nghỉ 10 phút, nhồi bột đến khi mặt bột mịn hơn và có độ đàn hồi tốt hơn. Nếu nhồi tay sẽ mất khoảng 10 – 15 phút. Mình dùng que xoắn của máy Bosch cầm tay (công suất 550W) nhồi mất khoảng 5 – 7 phút ở tốc độ 2-3/5 (5 là cao nhất). Tiếp tục để bột nghỉ thêm 5 – 10 phút.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/3.jpg" width="50%"></a></p>
+            <p>4. Sau khi bột đã nghỉ, nhồi bột thêm 5 – 10 phút, đến khi bột rất dai và mịn (bước này mình nhồi tay). Lí tưởng nhất là có thể kéo màng mỏng như trong hình dưới. Nếu không kéo được màng cũng không sao, nhưng tối thiểu cần nhồi đến khi mặt bột mịn và có độ đàn hồi tốt (khi ấn ngón tay vào thấy vết lõm phồng trở lại).</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/4.jpg" width="50%"></a></p>
+            <p>Bột sau khi nhồi xong sẽ khô ráo, mịn, cầm khối bột lên thấy có độ dẻo dai và mềm. Khi sờ vào có cảm giác hơi dính nhưng khi nhấc ngón tay lên thì bột không dính theo tay. Bột như vậy là có lượng nước đủ chuẩn.</p>
+            <p>Nếu khối bột mịn, đàn hồi nhưng lại có cảm giác đặc và chắc, khi thử dính hai mép bột với nhau thấy bột khó dính liền thì nhiều khả năng là khối bột hơi khô quá (rút kinh nghiệm để lần sau cho nhiều nước hơn nhé :) )</p>
+            <p>Bột trong hình dưới mình dùng nước = 68% bột, vì nhiều nước nên bột khá mềm, đặt <br> <span class="text-center">trên tay có thể chảy xuống như vậy</span></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/5.jpg" width="50%"></a></p>
+            <p>5. Chuẩn bị một chiếc âu, nồi hoặc hộp lớn (tốt nhất là có nắp đậy). Cho một chút dầu ăn vào âu, xoa cho dầu bao quanh lòng âu. Đặt bột vào âu. Đậy nắp để ủ bột. Nếu không có nắp đậy thì có thể dùng nilon hoặc khăn phủ lên mặt âu.</p>
+            <p>Ủ ở nhiệt độ ấm (khoảng 30 – 35 độ C), thấp hơn cũng không sao, nhưng sẽ phải đợi lâu hơn (vì men hoạt động tốt nhất ở nhiệt độ ấm như trên)</p>
+            <p>6. Khi bột nở khoảng hơn gấp rưỡi một chút (mất khoảng 50 – 60 phút tùy vào nhiệt độ ủ) thì nhẹ nhàng lấy bột ra khỏi âu. Để bột lên mặt phẳng có phủ sẵn một lớp bột áo mỏng. Cố gắng nhẹ tay để bột xẹp ít nhất. Vì sau lần ủ 1, trong bột có rất nhiều không khí. Nếu có thể giữ lại được các phần khí này, thì bánh thành phẩm sẽ xốp hơn và các lỗ khí cũng to nhỏ khác nhau (giống kiểu bánh mì VN hơn).</p>
+            <p class="text-center">Bột sau khi ủ lần 1 và lấy ra khỏi âu</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/6.jpg" width="50%"></a></p>
+            <p>7. Dùng cân chia bột thành các phần bằng nhau. Với 1 công thức trên thì mình thường chia thành 5 phần bột nhỏ, mỗi phần nặng khoảng 65 gram.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/7.jpg" width="50%"></a></p>
+            <p>8. Chuẩn bị khay hoặc dụng cụ nướng. Như mình đã giải thích trong bài trước, <span class="text-pink-2"><strong>để bánh nở tốt và đế bánh giòn, các bạn nên chọn khay hoặc dụng cụ có thể truyền nhiệt nhanh</strong></span>và cao như <span class="text-pink-2"><strong>baking stone, pizza stone, hoặc khay đen đi kèm với lò (lót giấy nến chống dính). Nếu có khuôn chuyên dụng nướng baguette</strong></span>thì rất tốt vì khuôn có lỗ hở nên sẽ tạo điều kiện cho hơi nước từ dưới bốc lên, tác động lên vỏ bánh ở dưới đế, giúp bánh giòn đều hơn.</p>
+            <p>9. Dùng tay nhẹ nhàng dàn đều các phần bột thành hình chữ nhật. Nên <span class="text-pink-2"><strong>dùng tay thay vì cán bột</strong></span>vì động tác cán sẽ làm vỡ nhiều túi khí bên trong bột. Bột có thể sẽ rất đàn hồi và co lại rất nhiều, nên chỉ cần dàn thành một miếng bột có độ rộng khoảng 8 – 10 cm là được.</p>
+            <p>Làm hết cả 5 phần bột rồi quay lại phần đầu tiên. Như vậy, bột sẽ có một khoảng thời gian nghỉ, các thớ bột (sợi gluten) sẽ được “thư giãn” và bớt co hơn.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/8.jpg" width="50%"></a></p>
+            <p>10. Cuộn bột lại như sau:</p>
+            <p class="text-center">Đầu tiên là dàn bột cho mỏng hơn (dàn bằng tay nhé), độ dài miếng bột khoảng 12 – 14 cm</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/9.jpg" width="50%"></a></p>
+            <p class="text-center">tiếp theo, gấp hai mép trên của bột lại, để tạo ra một “chỏm” bột như trong hình</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/10.jpg" width="50%"></a></p>
+            <p class="text-center">rồi gấp phần “chỏm” bột này xuống </p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/11.jpg" width="50%"></a></p>
+            <p class="text-center">tiếp theo, từ từ cuộn bột lại </p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/12.jpg" width="50%"></a></p>
+            <p class="text-center">cố gắng cuộn chặt tay và mím các mép bột sau mỗi lần gấp </p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/13.jpg" width="50%"></a></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/14.jpg" width="50%"></a></p>
+            <p class="text-center">mím các mép bột lại với nhau</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/15.jpg" width="50%"></a></p>
+            <p>11. Làm lần lượt hết cả 5 miếng bột. Tiếp theo, dùng lòng bàn tay (cả hai tay) vê cho từng cuộn bột dài và thuôn hơn. Bột sẽ nở phình ra khá nhiều nên cuộn bột có dáng thuôn dài sẽ cho bánh thành phẩm đẹp hơn (nếu ngay từ bước này bột đã hơi béo mập thì bánh thành phẩm có thể sẽ hơi bè và phình theo chiều ngang).</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/16.jpg" width="50%"></a></p>
+            <p>12. Đặt bột lên khuôn. Bánh sẽ nở rất to nên cần chừa khoảng cách rộng giữa hai khối bột, tránh cho bánh bị dính vào nhau.</p>
+            <p class="text-center">Ngoài bánh mì ổ dài, các bạn cũng có thể vê bột làm bánh mì tròn nữa :) <br>
+                nếu dùng khay nướng thì nên lót giấy nến để chống dính </p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/17.jpg" width="50%"></a></p> 
+            <p class="text-center">hoặc có thể dùng khay nướng baguette</p>   
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/18.jpg" width="50%"></a></p> 
+            <p>13. <span class="text-pink-2"><strong>Ủ bột ở nơi ấm áp và ẩm.</strong></span>Cách tiện nhất là bật lò nướng ở khoảng 50 độ C trong khoảng 3 – 5 phút, để nhiệt độ trong lò đạt khoảng 30 – 40 độ C. Không được để nhiệt nóng hơn vì sẽ làm men yếu hoặc chết men, bánh nở kém. Đặt khay bánh vào lò, kèm theo một cốc nước sôi để giữ ẩm cho bánh. Hoặc có thể dùng bình xịt hơi nước lên thành lò để tạo hơi ẩm (không xịt lên mặt bánh).</p>   
+            <p>Không nên phủ khăn hay nilon lên mặt bột vì những thứ này có thể sẽ dính vào bột, khi kéo ra dễ làm bột bị xẹp.</p>
+            <p>14. Thông thường, sẽ cần làm nóng lò nướng đến khoảng 240 – 250 độ C. Với lò nhà mình thì để làm nóng đến mức này sẽ cần khoảng 25 phút. Nên mình ủ đến khi bánh nở khoảng gấp rưỡi (sau 30 – 40 phút) thì lấy bánh ra khỏi lò rồi bật lò ở mức cao nhất (250 độ C với lò nhà mình) – chế độ hai lửa.</p>
+            <p>Bánh sau khi lấy ra có thể tiếp tục ủ ở nhiệt độ phòng. Những phút gần cuối nên để mặt bánh hở, cho mặt bánh khô bớt, khi rạch bánh sẽ dễ hơn.</p>
+            <p>Trong khi đợi lò làm nóng, đun một ấm nước sôi để có nước tạo hơi khi nướng bánh. Cho nước vào bình xịt hoặc chuẩn bị chổi và 1 bát nước để quét nước lên mặt bánh.</p>
+            <p>15. Khi lò đã đủ nóng và bánh nở được gần gấp đôi thì rạch bánh để nướng. Dùng dao sắc rạch một đường dài dọc theo thân bánh. Có thể rạch nhẹ một lần để tạo vết nứt trên mặt bánh rồi lách dao vào rạch sâu hơn (độ sâu của vết rạch khoảng 5 – 7mm). Nên cầm dao để sao cho lưỡi dao nghiêng và tạo ra vết cắt xiên vào trong vỏ bánh, thay vì cầm dao thẳng đứng và tạo vết rạch thẳng từ trên xuống.</p>
+            <p>Về cách rạch bánh mình sẽ viết cụ thể hơn trong bài sau về các lỗi thường gặp khi làm bánh mì Việt Nam. Nhưng <span class="text-pink-2"><strong>để vết rạch đẹp thì cần ủ để bánh nở chỉ vừa đủ</strong></span>. Nếu bánh nở quá nhiều, khi rạch bánh có thể sẽ xẹp. Nếu ủ quá ít, bánh sẽ nở nhiều trong lò làm vết rạch kém sắc nét.</p>
+            <p class="text-center">Bánh sau khi ủ lần 2 (mình ủ hơi quá một chút, thành ra khi rạch bánh hơi xẹp tí tẹo)</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/19.jpg" width="50%"></a></p> 
+            <p class="text-center">rạch bằng dao rạch bánh mì (các bạn có thể dùng lưỡi dao lam thông thường, không nhất thiết phải có dao rạch chuyên dụng nhé) </p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/20.jpg" width="50%"></a></p> 
+            <p>16. Ngay sau khi rạch xong, xịt nước ướt đẫm mặt bánh, đặc biệt là các vết rạch (có thể quét nước ướt mặt bánh, nhưng xịt thì nhanh và tránh được việc bánh có thể bị xẹp hơn). Các bạn lưu ý khi xịt thì <span class="text-pink-2"><strong>để bình xịt cách xa mặt bánh một chút, tránh để hơi nước phun quá mạnh cũng có thể làm xẹp bánh.</strong></span></p>
+            <p>Đeo găng tay. Đặt một chiếc khay rộng lên sàn lò (hoặc lên thanh phía trên sàn lò). Cho bánh vào lò. Nhanh chóng đổ nước sôi vào khay. Tiếp theo xịt nước lên khắp thành lò phía trên khay bánh rồi nhanh chóng đóng cửa lò lại.</p>
+            <p class="text-center">mình đặt khay trên sàn lò, khay đựng bánh đặt trên rack, rack ở thấp hơn rãnh giữa 1 nấc (lò có 5 nấc đặt khay)</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/21.jpg" width="50%"></a></p> 
+            <p>Nhiệt độ nướng và thời gian nướng sẽ thay đổi tùy theo từng lò, nhưng quá trình nướng của mình thì cụ thể như sau:</p>
+            <p>– 5 phút đầu tiên nướng ở 240 – 250 độ C: bánh nở nhanh và to (có thể nhanh tay mở cửa lò và xịt nước lên mặt bánh từ 1-2 lần trong khoảng thời gian này).</p>
+            <p>– Khi bánh đã nở nhiều thì hạ xuống 220 – 230 độ C. Nướng thêm 2 – 3 phút, khi mặt bánh bắt đầu hanh vàng thì mở lò, quay ngược khay bánh (vì nhiệt trong lò không đều nên quay khay sẽ giúp bánh vàng đều).</p>
+            <p>– Nướng thêm khoảng 2- 3 phút nữa, khi mặt bánh đã tương đối vàng thì dùng giấy bạc đậy lên mặt bánh, hạ nhiệt xuống khoảng 200 độ C, nướng thêm 3 – 4 phút. Có thể rút khay nước ra ngoài để vỏ bánh giòn hơn. Giấy bạc sẽ giúp cho mặt bánh không bị cháy nếu nhiệt trên quá cao.</p>
+            <p>– Với bánh làm từ 65 gr bột thì thường sau khoảng 15 – 17 phút bánh sẽ chín. Khi bánh chín, các bạn có thể tắt lò, để bánh trong lò thêm khoảng 3 – 5 phút. Việc này sẽ giúp bánh giòn hơn. Nhưng không nên để quá lâu, vỏ bánh sẽ dễ bị dày và cứng.</p>
+            <p>Nếu bánh to hơn sẽ cần nướng lâu hơn, các khoảng thời gian ở từng bước trên cũng dài hơn.</p>
+            <p><strong>* Lưu ý:</strong><span class = "text-pink-2"> <strong>Hơi nước trong lò rất nóng, có thể gây bỏng, đặc biệt cho những phần nhạy cảm như mắt. Vì vậy nên trong quá trình nướng cần:</strong></span></p>
+            <ul>
+                <li><span class = "text-pink-2"><strong>Đeo găng tay</strong></span></li>
+                <li><span class = "text-pink-2"><strong>Đứng cách sang một bên khi mở cửa lò. Không để mặt ở ngay trước lò (tránh cho hơi nước bốc ra phả thẳng vào mặt)</strong></span></li>
+                <li><span class = "text-pink-2"><strong>Nếu trong nhà có trẻ nhỏ, cần giữ bé tránh xa lò khi đang nướng bánh</strong></span></li>
+            </ul>
+            <p class="text-center">Bánh nở trong lò :)</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/22.jpg" width="50%"></a></p>
+            <p>17. Bánh chín lấy ra khỏi lò. Để bánh bớt nóng. <span class="text-pink-2"><strong>Nên để bánh nguội trong tối thiểu 15 – 20 phút rồi mới dùng. Nếu cắt bánh quá sớm, hơi nước không kịp thoát ra ngoài sẽ làm phần ruột bánh bị bết và dính vào nhau.</strong></span></p>
+            <p>Bánh thành phẩm đạt sẽ có lớp vỏ vàng, mỏng, giòn tan. Ruột xốp, nhiều lỗ khí to nhỏ khác nhau và dai. Một vài công thức có yêu cầu vỏ bánh phải có vết rạn (để chứng tỏ là bánh giòn), nhưng mình không cho là như vậy. Thật ra thì để có vết rạn, cần vỏ bánh khô và lấy ra khỏi lò khi bánh đang rất nóng, gặp nhiệt độ thay đổi đột ngột, vỏ bánh sẽ tự nứt tạo ra các đường rạn này. Nhưng nếu các bạn để bánh trong lò thêm một vài phút sau khi nướng xong như mình thì khi lấy ra khỏi lò, vỏ bánh sẽ khó rạn. Mặc dù vậy, vỏ bánh vẫn rất giòn, nên không cần phải để ý đến vụ “rạn nứt” này quá nhé.</p>
+            <p>Bánh để nguội sẽ bớt giòn hơn tí tẹo nhưng vỏ sẽ mềm và dai chứ không bị cứng. Nên dùng bánh càng sớm càng tốt. Nếu muốn để qua ngày, nên bảo quản trong túi giấy (không dùng túi nilon). Khi dùng nướng bánh lại ở khoảng 160 – 170 độ C trong 3 – 4 phút tùy cỡ bánh. Bánh sau khi nướng sẽ giòn trở lại. Không để bánh lâu trên 2 ngày.</p>
+            <p class="text-center">bánh mới ra lò, đợi kẹp nhân ^.^</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/23.jpg" width="50%"></a></p>
+            <p class="text-center">vỏ giòn rụm, ruột mềm xốp, thịt kho thơm béo ngậy, thêm trứng và ít rau mùi </p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/24.jpg" width="50%"></a></p>
+            <p class="text-center">sơn hào hải vị cũng không so được đâu, đảm bảo đấy ;)</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_mi/25.jpg" width="50%"></a></p>
+            <br>
+            <h4 class=" text-center text-pink-2">BÁNH MÌ VIỆT NAM – CÔNG THỨC 2 (DÙNG DẤM)</h4>
+            <p><span class="text-pink-2"><strong>Nguyên liệu</strong></span></p>
+            <ul>
+                <li><em>200 gr bột làm bánh mì</em></li>
+                <li><em>110 – 120 gr nước</em></li>
+                <li><em>5gr men instant </em></li>
+                <li><em>7 gr dấm (5% acid)</em></li>
+                <li><em>2 gr muối </em></li>
+                <li><em>8 gr đường </em></li>
+            </ul>
+            <p><span class="text-pink-2"><strong>* Ghi chú:</strong></span></p>
+            <p>– Các ghi chú về cơ bản giống với ghi chú trong công thức 1. Riêng với dấm thì lượng trong công thức: 7 gr dấm (5% acid) là lượng tối đa nên cho vào bánh (cho nhiều hơn bánh sẽ chua). Nếu dấm của bạn có độ acid cao hay thấp hơn, cần thay đổi lượng dấm cho phù hợp.</p>
+            <p>– Nước nên giảm một chút vì mình cảm giác là khi có dấm, bột ướt hơn, vì vậy khi nhồi (tay) cũng khó hơn.</p>
+            <p><span class="text-pink-2"><strong>Cách làm</strong></span></p>
+            <p>1. Trộn bột như trong công thức 1. Tổng thời gian trộn bột (cả để nghỉ) cố gắng làm trong khoảng 25 – 30 phút.</p>
+            <p>2. Sau khi trộn xong, để bột nghỉ 10 – 15 phút rồi tạo hình và ủ để nướng. <span class="text-pink-2"><strong>Vì trong công thức có dấm nên cần rút ngắn thời gian ủ, nếu ủ lâu theo cách thông thường, bánh sẽ rất chua.</strong></span></p>
+            <p>3. Các thao tác tạo hình và nướng giống với công thức 1. Khi tạo hình cũng nên làm nhẹ nhàng và dùng tay thay cho cán bột, bánh sẽ nở xốp hơn. Thời gian ủ bánh có thể sẽ ngắn hơn trong công thức 1 vì dấm có tác động làm bánh nở nhanh hơn trong khi ủ.</p>
+            <p>Về cơ bản thì công thức này có thời gian làm ngắn hơn, dấm giúp bánh nở to và xốp nên có thể cán bột chứ không cần làm nhẹ tay như công thức 1. Nhưng về mùi vị mình thích bánh làm từ công thức 1 hơn vì bánh có mùi thơm rất tự nhiên từ bột mì, để qua ngày cũng không hề bị chua, không bị bở.</p>
+            <br>
+            <p><span class="text-pink-2"><strong>Phần công thức đến đây là hết. Mình nghĩ tất cả những gì các bạn cần để làm bánh mì vỏ giòn ruột xốp đều có đủ ở trên rồi. Cuối tuần mình sẽ viết thêm một bài nữa, chia sẻ về một vài kinh nghiệm của mình khi làm bánh, cách rạch bánh và tổng hợp  các lỗi/ khó khăn/ thất bại thường gặp khi làm bánh mì vỏ giòn và các cách khắc phục nhé.</strong></span></p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

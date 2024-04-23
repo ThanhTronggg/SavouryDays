@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh bò hấp lá dứa</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item active">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('banh_bo_hap_la_dua.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-5">CÁCH LÀM BÁNH BÒ HẤP LÁ DỨA (BẤT BẠI)</h1>
+        <img src="../img/banhA_VN/banh_bo/IMG_6935-2-2048x1152.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p>Công thức bánh bò (nhiều rễ tre) phiên bản không cần lò nướng đã được mong đợi rất rất lâu cuối cùng cũng đã có rùi đâyyyyyy ạ 🎉🎉</p>
+            <p>Bánh bò thơm mát mùi lá dứa, ngọt thanh vừa phải, kết hợp với cốt dừa béo béo, một combo mà chắc chắn người Việt nào cũng thích. Bạn nào thích ăn bánh bò thốt nốt thì cũng dùng công thức này luôn được nha, cụ thể biến tấu thế nào mình đã ghi tại công thức rùi nha.</p>
+            <p>Năm ngoái công thức bánh bò thốt nốt nướng của SD phủ sóng khắp nơi, thống trị mọi mặt trận, ảnh trả bài nhiều không đếm xuể, phiên bản bánh bò hấp lần này cũng dễ làm, dễ thành công, cũng thần thánh không kém đâu ạ, mọi người thử ngay cho “nóng” nha 😉</p>
+            <h1 class = "text-center text-violet ">Cách làm BÁNH BÒ HẤP LÁ DỨA (BẤT BẠI)</h1>
+            <p><span class="text-pink-2"><strong>Nguyên liệu</strong></span>(cho khoảng 6 – 7 cái bánh nhỏ và 1 bánh tròn đường kính 16cm)</p>
+            <ul>
+                <li><em>150 gram bột gạo</em></li>
+                <li><em>60 gram bột năng</em></li>
+                <li><em>1/4 thìa cafe muối tinh</em></li>
+                <li><em>1 + 1/8 thìa cafe men nở</em></li>
+                <li><em>165 gram nước cốt lá dứa (xay từ 250 gram nước lọc + 80 gram lá dứa tươi)</em></li>
+                <li><em>205 gram nước cốt dừa</em></li>
+                <li><em>140 gram đường</em></li>
+                <li><em>1 thìa cafe dầu dừa</em></li>
+                <li><em>1/4 thìa cafe tinh chất lá dứa (không bắt buộc)</em></li>
+            </ul>
+            <p>* Lưu ý về nguyên liệu:</p>
+            <p>– Nên xay lá dứa tươi và lọc lấy nước để bánh có mùi thơm mát tự nhiên nhất. Phần tinh chất lá dứa nếu bạn thích bánh có màu đậm hơn thì cho thêm nhưng không nên cho quá nhiều, tránh làm bánh bị quá xanh và nhiều mùi hương liệu.</p>
+            <p>– Nên dùng dầu dừa để bánh thơm hơn, nếu không có thì thay bằng dầu ăn thông thường.</p>
+            <p>– Cách làm bánh bò thốt nốt: Thay toàn bộ nước lá dứa bằng nước lọc, thay 140 gram đường trắng bằng 150  – 160 gram đường thốt nốt.</p>
+            <p class="text-pink-2"><strong>Cách làm</strong></p>
+            <p>1. Lá dứa rửa sạch, xay nhuyễn với 250 gram nước lọc. Lọc lấy phần nước cốt lá nếp. Để nguyên phần nước cốt này khoảng 15 phút cho cặn lá dứa còn sót lại lắng xuống (phần vụn này có thể làm bánh hơi đắng).</p>
+            <p>2. Trộn đều bột gạo, bột năng, muối. Cho men vào âu bột, trộn đều.</p>
+            <p>3. Cho nước lá dứa vào âu bột, trộn đều.</p>
+            <p>4. Nhào bột (thao tác kéo bột ra xa và gập lại giống như nhồi bột bánh mì) liên tục trong khoảng 15 – 20 phút. Thao tác nhào bột rất quan trọng, quyết định phần lớn đến việc bánh có rễ tre hay không. Bạn nhào tới khi nhấc tay lên thấy bột chảy xuống, mặt bột xuất hiện các bọt khí li ti (nếu nhồi liên tục khoảng 15 – 20 phút thì yên tâm là sẽ ổn).</p>
+            <p>5. Che đậy kín âu bột, ủ khoảng 45 – 50 phút tới khi thấy có rất nhiều bọt khí ở trong khối bột. Bột có thể nở lên khoảng 1.3 – 1.5 lần tùy vào nhiệt độ, nhưng chỉ cần thấy có nhiều bọt khí trong khối bột là được, không cần quá khắt khe ở lần ủ đầu tiên này.</p>
+            <p>6. Trong thời gian đợi ủ bột, đun nước cốt dừa với đường tới khi nước cốt dừa ấm nóng, đường tan hoàn toàn thì dừng lại. Để hỗn hợp này nguội hoàn toàn.</p>
+            <p>7. Sau khi ủ lần 1, cho từ từ hỗn hợp nước cốt dừa đã nguội vào, trộn đều tới khi hòa quyện hoàn toàn. </p>
+            <p>8. Cho dầu ăn vào trộn đều, lọc lại hỗn hợp qua rây.</p>
+            <p>9. Che kín âu, ủ lần 2 trong khoảng 2 giờ tới khi bột nở gấp 2.5 – 3 lần, thấy rất nhiều bọt khí nổi lên trên mặt bột. Dùng thìa múc nhẹ nhàng xuống dưới đáy âu để phần bột bị lắng xuống đáy hòa quyện lại.</p>
+            <p>10. Hấp bánh</p>
+            <p>– Quét dầu ăn khắp lòng khuôn để chống dính.</p>
+            <p>– Đun sôi nồi nước để hấp bánh, khi nước sôi thì hạ lửa vừa – cao. Dùng khăn để lót nắp vung tránh hơi nước rơi vào bánh khi hấp.</p>
+            <p>– Cho khuôn vào xửng, hấp khuôn trong khoảng 5 – 7 phút đến khi khuôn rất nóng thì mới đổ bánh vào. Phần bột bánh chưa hấp nên bọc kín và để tủ lạnh tránh việc bột nở quá nhiều có thể tạo ra mùi men rượu.</p>
+            <p>Lưu ý:</p>
+            <p>+ Bước hấp nóng khuôn rất quan trọng, không nóng giúp tạo ra rễ tre. </p>
+            <p>+ KHÔNG nên đổ bánh quá cao. Bánh sẽ chỉ tạo rễ tre ở khoảng 1/3 độ cao của bánh, đổ bánh càng cao thì phần bên trên bánh sẽ càng dễ bết hơn.</p>
+            <p>– Với bánh hấp trong khuôn tart nhỏ, hấp trên lửa vừa khoảng 12 phút. Với khuôn tròn 16cm, hấp bánh trong khoảng 22 – 25 phút. Thử bánh chín bằng cách xiên tăm vào giữa bánh, rút ra thấy tăm khô ráo là được.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_bo/A104_04031307_C035.mov.13_07_34_24.Still001-768x515.jpg" width="50%"></a></p> 
+            <p>11. Để bánh trong khuôn đến khi nguội hoàn toàn rồi mới gỡ khuôn.</p>
+            <p>12. Bánh có thể bảo quản trong ngăn mát tủ lạnh 3 – 5 ngày. Tuy nhiên khi để vào tủ bánh sẽ cứng lại, khi ăn có thể để ra ngoài nhiệt độ phòng cho bánh hết lạnh hoặc quay trong lò vi sóng khoảng 20 – 30 giây cho bánh ấm và mềm trở lại.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/banhA_VN/banh_bo/IMG_6949-768x514.jpg" width="50%"></a></p> 
+            <p>*Nước cốt dừa ăn kèm: </p>
+            <p>– Hòa tan khoảng 200 gram nước cốt dừa với sữa đặc và xíu muối, nếm lại cho vừa khẩu vị, khuấy hỗn hợp trên lửa nhỏ tới khi cốt dừa ấm nóng (KHÔNG đun sôi).</p>
+            <p>– Hòa tan khoảng 1 thìa cafe bột năng với 20 gram nước, cho từ từ bột năng vào nồi cốt dừa, vừa cho vừa khuấy đều, tiếp tục khuấy trên lửa nhỏ nhất tới khi hỗn hợp sánh đặc. Đổ cốt dừa ra bát, ăn kèm với bánh bò lá dứa.</p>
+            <br>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

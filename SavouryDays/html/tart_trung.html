@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tart trứng</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item active">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('tart_trung.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-5">TART TRỨNG HỒNG KÔNG</h1>
+        <img src="../img/pie_tart/cách-làm-tart-trứng-banner.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p>Thi thoảng mình có cảm giác là hình như ở Việt Nam tart trứng của KFC quá phổ biến nên “đè bẹp” một món “anh chị em họ” của nó là tart trứng Hồng Kông. Ít thấy các bạn làm món này mà trong cửa hàng cũng không thấy bán nhiều nữa.</p>
+            <p>Thật ra thì tart trứng Hồng Kông mình thấy ngon đâu hề kém tart trứng KFC nhỉ, hay một phần lí do cũng bởi vì mình không khoái tart trứng KFC lắm. Nhưng so với tart trứng KFC với lớp vỏ là bột ngàn lớp thì tart trứng HK có cách làm nhanh và đơn giản hơn nhiều. Đế tart chỉ là trộn rồi  nướng giống kiểu bánh quy bơ, còn nhân thì hệt như làm bánh flan vậy thôi.</p>
+            <p>Một ưu điểm khác nữa là món tart này có thể ăn nóng hay nguội đều hợp cả. Nếu là trời lạnh thì có thể quay vi sóng hay dùng lò nướng tầm 150 độ C trong 3 – 5 phút để bánh hơi âm ấm trở lại, dùng kèm bột quế rất ngon (vụ bột quế này là mình học từ món tart trứng Bồ Đào Nha – món tart trứng chuẩn mà phiên bản lỗi chính là tart KFC ý). Còn trời nóng thì có thể ăn bánh nguội hay lạnh cũng được. Phần đế bánh nếu nóng thì sẽ giòn bùi kiểu hơi giống bánh quy, còn lạnh thì chỉ bùi thôi, nhưng đều dễ ăn và ngon như nhau.</p>
+            <p>Công thức này thì phần vỏ tart mình dùng công thức vỏ của Gordon Ramsay còn nhân kem trứng thì mình dùng sữa và kem tươi thay cho chỉ sữa tươi với sữa đặc như một số công thức của Hồng Kông. Lý do là kem tươi cho nhân kem thơm ngậy và “mướt” hơn nhiều :) Và cách làm như sau nhé:</p>
+            <p><span style="text-decoration: underline;"><strong>CÁCH LÀM TART TRỨNG HỒNG KÔNG</strong></span></p>
+            <p><span class = "text-pink-2"><strong>Nguyên liệu (làm được 20 – 22 tart nhỏ)</strong></span></p>
+            <p><strong>A. Phần vỏ bánh</strong></p>
+            <ul>
+            <li><em>230 g bột mì đa dụng</em></li>
+            <li><em>60 g đường bột (hoặc đường kính trắng cũng được nhưng nên xay hạt nhỏ mịn)</em></li>
+            <li><em>1 trứng gà to (khoảng 60 g cân cả vỏ)</em></li>
+            <li><em>125 g bơ (nên dùng bơ động vật loại không có muối)</em></li>
+            <li><em>½ thìa cafe va-ni (không bắt buộc)</em></li>
+            </ul>
+            <p><strong>B. Phần kem trứng</strong></p>
+            <ul>
+                <li><em>3 trứng gà to</em></li>
+                <li><em>60 g đường</em></li>
+                <li><em>120 ml kem tươi</em></li>
+                <li><em>240 ml sữa tươi không đường</em></li>
+                <li><em>1 thìa cafe va-ni</em></li>
+            </ul>
+            <p><strong>Ghi chú:</strong></p>
+            <ul>
+                <li><em>Mùi vị của vỏ bánh được quyết định bởi bơ khá nhiều (cũng như khi mình làm bánh quy bơ). Bởi vậy nên các bạn chọn loại bơ có mùi vị thơm ngon một chút (hoặc là mùi vị mà bạn đã luôn thích, luôn quen). Như vậy khi ăn phần đế sẽ có cảm giác hài lòng hơn.</em></li>
+                <li><em>Nếu không có kem tươi, các bạn có thể dùng sữa tươi. Tuy nhiên dùng kem tươi sẽ cho phần kem trứng ngon hơn khá nhiều. KHÔNG dùng topping cream thay cho kem tươi.</em></li>
+            </ul>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/pie_tart/cách-làm-tart-trứng-menu-300x300.jpg" width="50%"></a></p>
+            <p><span class = "text-pink-2"><strong>Cách làm</strong></span></p>
+            <p>Video cách làm bánh tart trứng Hồng Kông đã được đăng tại <a href="#"><span class = "text-pink-2">kênh YouTube của Savoury Days.</span></a> Nếu không xem được tại website thì các bạn có thể xem trực tiếp trên YouTube theo <a href="#"><span class = "text-pink-2">link này</span></a> nhé. Video có chế độ HD, hướng dẫn cách bật HD ở cuối bài viết <a href="tart_trung.html"><span class = "text-pink-2">cách làm bánh flan này.</span></a></p>
+            <div class="text-center">
+                <video width="620px"  class = "frame-video" height="350px" controls>
+                    <source type="video/mp4" src="../img/pie_tart/y2meta.net_144p-hong-kong-egg-tart-recipe-cach-lam-tart-trung-hong-kong.mp4">
+                </video>
+            </div>
+            <p><strong>A. Phần vỏ bánh</strong></p>
+            <p>1. Trộn bơ và đường tới khi mịn mượt. Có thể trộn tay hoặc máy ở tốc độ thấp, không cần đánh bơ bông xốp. Lưu ý là bơ cần để hết lạnh và mềm.</p>
+            <p>2. Cho trứng và vanilla vào trộn đều.</p>
+            <p>3. Rây bột thành 2 – 3 phần, trộn đều trước khi thêm phần tiếp theo. Sau khi trộn hết bột thì dùng tay nhào thật nhanh tới khi bột quyện thành khối. Lưu ý dùng đầu ngón tay thay vì cả bàn tay, tránh hơi nóng từ lòng bàn tay làm bơ bị chảy.</p>
+            <p>4. Bọc kín cả khối bột, để ngăn mát tủ lạnh khoảng 30 phút tới khi bơ cứng và ít dính tay hơn.</p>
+            <p>5. Trong khi đợi bột thì chống dính khuôn tart bằng cách xịt chống dính khắp lòng khuôn hoặc bôi bơ mềm khắp lòng khuôn, rắc một lớp bột mỏng phủ đều khắp lòng khuôn rồi úp ngược, gõ cho bột thừa rơi ra hết. <strong>Cần chống dính khuôn cẩn thận, tránh để bánh dính vào khuôn, khi gỡ ra dễ bị vỡ bánh. </strong></p>
+            <p>6. Khi bột đã đủ lạnh thì chia thành nhiều phần nhỏ, khoảng 20 – 25 gram mỗi phần hoặc nhiều hay ít hơn tùy độ lớn của khuôn. Ấn dẹt từng phần bột rồi đặt vào khuôn (bột nên có độ dày khoảng 2  – 3 mm). Ấn cho bột ép sát khuôn, gạt bỏ các phần bột thừa ra ở riềm/ miệng khuôn. Nếu còn thừa bột thì bọc kín rồi để ngăn đá, khi nào dùng rã đông trong ngăn mát là được.</p>
+            <p>7. Làm nóng lò nướng ở 180 độ C (hai lửa). Cắt các miếng giấy nến nhỏ, lót giấy vào khuôn rồi đổ đầy gạo hoặc đậu để chặn không cho bột nở quá nhiều khi nướng (gạo sau khi nướng bánh xong có thể dùng làm nước gạo rang hoặc nấu cháo).</p>
+            <p>8. Khi lò đủ nóng thì nướng đế bánh trong 5 – 7 phút tới khi đế bánh cứng và hơi chuyển vàng nâu thì lấy ra ngoài, gỡ bỏ giấy nến và đậu/ gạo. Để nguội bớt. <strong>Hạ lò về 150 độ C để nướng bánh.</strong></p>
+            <p><strong>B. Phần nhân bánh (có thể làm phần này trong lúc chờ nướng bánh)</strong></p>
+            <p>1. Đánh tan trứng với đường</p>
+            <p>2. Cho sữa và kem tươi vào trộn đều, lọc lại hỗn hợp qua rây.</p>
+            <p><strong>C. Nướng bánh</strong></p>
+            <p>1. Đổ nhân kem trứng vào các khuôn. Nếu chưa dùng hết thì để hỗn hợp còn thừa vào tủ lạnh (phần nhân này đủ cho phần vỏ bánh, nhưng nếu lò nhỏ có thể sẽ cần nướng nhiều lần).</p>
+            <p>2. Nướng bánh ở nhiệt 150 độ C trong 20 – 25 phút. Để bánh nguội hoàn toàn trước khi gỡ bánh ra khỏi khuôn.</p>
+            <p>(*) <strong>Lưu ý về nhiệt độ nướng:</strong>Với món bánh này, khi nướng phần nhân bánh không nên để nhiệt độ quá cao. Nếu là lò nhỏ, nên nướng ở rãnh thấp nhất của lò và có thể tắt lửa trên, chỉ nướng lửa dưới. Tốt nhất là nướng tới khi mặt bánh se nhưng lắc thử còn hơi rung rinh một chút rồi các bạn tắt lò và để bánh trong lò thêm 5 – 10 phút. Như vậy bánh sẽ chín đúng độ, phần kem vừa mịn vừa mượt. Nếu nướng ở nhiệt độ quá cao, mặt bánh dễ bị phồng, cháy và khô, trong khi phần nhân có thể bị rỗ (do kem trứng sôi) và ăn hơi giống trứng nướng.</p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

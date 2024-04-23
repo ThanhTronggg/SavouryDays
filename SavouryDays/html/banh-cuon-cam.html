@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách làm BÁNH CUỘN CAM KEM TƯƠI</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.min.css">
+    <script src="../js/jquery-3.7.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scroll.js"></script>
+</head>
+<body onload = "KiemTraDaDangNhap()">
+    <!-- Start Navbar -->
+    <div class="container-fluid mx-md-0 px-md-0 bg-pink">
+        <div class="container header">
+            <a href="../html/home.html"><img src="../img/logo.png" alt="" id = "logo" class="pl-sm-0 ml-sm-0 ml-md-5"></a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse2"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse2">
+                            <ul class="navbar-nav collapse navbar-collapse" id = "contact">
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "sdt" href = "#" ><i class="fas fa-phone-alt"></i> 0328546227</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "mail" href = "#" ><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "fb" href = "#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "ytb" href = "#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "pt" href = "#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-light" id = "github" href = "https://github.com/ThanhTronggg"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group">
+                                        <input class = "form-control" type="search" name="" id="search" value placeholder="Tìm khóa học ...">
+                                        <div class="input-group-append">
+                                            <button type="button" class ="btn bg-violet bo-goc ml-sm-3"><i class="fas fa-search text-light"></i></button>
+                                        </div>      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-end text-right" id = "navbar1">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <button type="button" class = "navbar-toggler mx-0" data-toggle = "collapse" data-target = "#navbar-collapse1"><i class="fas fa-bars "></i></button>
+                        <div class="collapse navbar-collapse" id = "navbar-collapse1">
+                            <ul class="navbar-nav" id = "menu1">
+                                <li class="nav-item"><a href="../html/home.html" class="nav-link font-weight-bold text-dark link-1">Trang chủ</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href = "#"class="nav-link dropdown-toggle font-weight-bold text-dark link-1 active" data-toggle = "dropdown">Khóa học</a>
+                                    <div class="dropdown-menu" id = "menu2">
+                                        <a href="../html/cupcake_muffin.html" class="dropdown-item">Cupcake - Muffin</a>
+                                        <a href="../html/custard_pudding.html" class="dropdown-item">Custard - Pudding</a>
+                                        <a href="../html/sponge_foam-cake.html" class="dropdown-item active">Sponge - Foam cake</a>
+                                        <a href="../html/cookies_bars_candy.html" class="dropdown-item">Cookies - Bars - Candy</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle font-weight-bold text-dark link-1" data-toggle = "dropdown">Công thức</a>
+                                    <div class="dropdown-menu" id = "menu3">
+                                        <a href="../html/butter-cake.html" class="dropdown-item">Butter cake</a>
+                                        <a href="../html/pie_tart.html" class="dropdown-item">Pie - Tart</a>
+                                        <a href="../html/banhA_VN.html" class="dropdown-item">Bánh Á - Việt Nam</a>
+                                        <a href="../html/pastry.html" class="dropdown-item">Pastry</a>
+                                        <a href="../html/pancake_crepe.html" class="dropdown-item">Pancake - Crepe</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="../html/introduction.html" class="nav-link font-weight-bold text-dark link-1">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="../html/contact.html" class="nav-link font-weight-bold text-dark link-1">Liên hệ</a></li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-nhap" href = "../html/login.html" ><span><i class="fas fa-sign-in-alt mr-2"></i></span> Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('banh-cuon-cam.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <div class="container">
+        <h1 class = "text-center text-violet mt-3">Cách làm BÁNH CUỘN CAM KEM TƯƠI</h1>
+        <img src="../img/sponge_foam-cake/banh-cuon-cam/Cach-lam-banh-cuon-cam-banner.jpg" class = "title-img" alt="" width="100%">
+        <div class="guide">
+            <p><span style="color: #000000;">Làm món bánh này chỉ vì mua được túi cam xinh ơi là xinh, quả nào quả nấy tròn xoe căng mọng, giá lại “hạt dẻ”. Chỉ vắt nước uống thì tiếc quá nên quyết định phải làm gì đấy cho “xứng đáng với túi cam”.</span></p>
+            <p><span style="color: #000000;">Thật ra bánh cuộn mình vẫn làm đều cho gia đình và tặng bạn bè. Vì bánh cuộn cũng dễ làm, dễ ăn mà bánh cuộn ngon ở ngoài hàng, những quán bán bánh kiểu Hàn Quốc, thì đắt kinh khủng khiếp. Nên mình ban đầu cũng không định viết lại công thức này đâu. Nhưng xong làm xong thấy “ưng cả con mắt lẫn cái bụng quá”. Thế rồi hôm qua đăng ảnh vào group “Món ngon nhà làm” được các bạn quan tâm quá trời, nên hôm nay viết vào blog cho mọi người dễ xem và dễ lưu lại. May là lúc làm, mặc dù nghĩ là chỉ thử để ăn thôi, nhưng đội SD vẫn chụp mấy cái ảnh các bước để “lưu lại cho chắc” nên có đủ tư liệu để viết bài.&nbsp;</span></p>
+            <p><span style="color: #000000;">Cách làm cơ bản là giống với <strong><a href="http://www.savourydays.com/banh-bong-lan-cuon-kem-tuoi-hoa-qua-japanese-fruit-roll-cake/">món bánh cuộn hoa quả kiểu Nhật&nbsp;</a>&nbsp;</strong>này<strong>.&nbsp;</strong></span><span style="color: #000000;">Mình biến tấu một chút để bánh có vị cam tươi bằng cách thay sữa bằng nước cam, thêm vỏ cam bào nhỏ (vỏ cam làm tăng mùi thơm lên đáng kể, làm bánh rõ vị cam the mát, rất rất nên có nha). Bạt bánh cuộn mềm ẩm, bông xốp, vàng ươm với nhân kem tươi hợp với vị cam vô cùng tận, kiểu tươi mát ngọt ngào ấy. À và phần cam sau khi xử lí thì nướng lên mình cũng thấy không đắng tẹo nào, chỉ thơm thơm giòn giòn thôi. Cách làm như sau nhé:</span></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/sponge_foam-cake/banh-cuon-cam/1.jpg" width="50%"></a></p>
+            <h2><strong><span style="color: #000000;">CÁCH LÀM BÁNH CUỘN CAM KEM TƯƠI</span></strong></h2>
+            <p><strong><span style="color: #000000;">* Phần cam thái lát dưới bánh</span></strong></p>
+            <ul>
+            <li><em><span style="color: #000000;">Khoảng 3 quả cam cỡ trung bình</span></em></li>
+            <li><em><span style="color: #000000;">30 gram đường</span></em></li>
+            <li><em><span style="color: #000000;">Nước</span></em></li>
+            </ul>
+            <p><strong><span style="color: #000000;">* Phần bạt bánh (Khuôn 25cm x 35 cm)</span></strong></p>
+            <ul>
+            <li><em><span style="color: #000000;">5 quả trứng gà (50 gram/quả không vỏ hoặc 60 gram/quả cả vỏ)</span></em></li>
+            <li><em><span style="color: #000000;">15 gram đường (để đánh với lòng đỏ trứng)</span></em></li>
+            <li><em><span style="color: #000000;">50 gram nước cam tươi (vắt từ phần đầu cam còn thừa lúc thái lát)</span></em></li>
+            <li><em><span style="color: #000000;">50 gram dầu ăn</span></em></li>
+            <li><em><span style="color: #000000;">38 gram bột mì đa dụng</span></em></li>
+            <li><em><span style="color: #000000;">38 gram bột ngô</span></em></li>
+            <li><em><span style="color: #000000;">¼ thìa cafe hương cam (mình dùng của Rayner’s, nếu không có thì có thể bỏ qua)</span></em></li>
+            <li><em><span style="color: #000000;">¾ thìa cafe cream of tartar (có thể thay bằng chanh hoặc dấm)</span></em></li>
+            <li><em><span style="color: #000000;">60 gram đường (để đánh lòng trắng trứng)&nbsp;</span></em></li>
+            <li><em><span style="color: #000000;">1 thìa canh vỏ cam bào vụn</span></em></li>
+            </ul>
+            <p><strong><span style="color: #000000;">* Kem tươi vị cam</span></strong></p>
+            <ul>
+            <li><em><span style="color: #000000;">1 quả cam cỡ vừa (170 gram không tính vỏ)</span></em></li>
+            <li><em><span style="color: #000000;">30 gram đường</span></em></li>
+            <li><em><span style="color: #000000;">5 gram gelatin</span></em></li>
+            <li><em><span style="color: #000000;">350 gram whipping cream – kem tươi có hàm lượng béo khoảng 35%, để lạnh&nbsp;</span></em></li>
+            </ul>
+            <p><strong><span style="color: #000000;">Cách làm&nbsp;</span></strong></p>
+            <p><span style="color: #000000;">1. Cam rửa sạch, thái lát dày khoảng 5 mm (thái từ khoảng ¾ quả cam để các lát được bằng nhau tương đối), cho cam thái lát và đường vào nổi, đổ nước xăm xắp mặt cam. Cho nồi lên bếp, đun sôi thì hạ nhỏ lửa, để nước sôi liu riu trong khoảng 10 – 12 phút. Vớt các lát cam, đặt lên giấy thấm cho khô. Bước sên cam này sẽ giúp cam hết vị đắng khi nướng lên.</span></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/sponge_foam-cake/banh-cuon-cam/2.jpg" width="50%"></a></p>
+            <p>&nbsp;</p>
+            <p><span style="color: #000000;">2. Sau khi cam đã khô, xếp các lát cam so le vào trong khuôn bánh cuộn đã được lót giấy chống dính. Lưu ý chừa khoảng 2 cm mỗi cạnh vì sau này sẽ cắt bỏ phần riềm bánh đi.</span></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/sponge_foam-cake/banh-cuon-cam/3.jpg" width="50%"></a></p>
+            <p><span style="color: #000000;">3. Phần bạt bánh: Phần này các bạn xem cách làm trong video của&nbsp;<strong><a href="http://www.savourydays.com/banh-bong-lan-cuon-kem-tuoi-hoa-qua-japanese-fruit-roll-cake/">món bánh cuộn hoa quả kiểu Nhật</a></strong>&nbsp;sẽ hình dung được tốt hơn nhiều, mình chỉ tóm tắt các bước chính tại đây thôi nhé:&nbsp;</span></p>
+            <p><span style="color: #000000;">– Trộn hỗn hợp lòng đỏ, làm <strong>theo trình tự</strong>: </span></p>
+            <ul>
+            <li><span style="color: #000000;">Đánh 5 lòng đỏ với 15 đường đến khi lòng đỏ chuyển màu vàng nhạt. </span></li>
+            <li><span style="color: #000000;">Cho 50 g dầu ăn vào trộn đều</span></li>
+            <li><span style="color: #000000;">Cho 50 nước cam và 1 thìa vỏ cam bào vụn cùng hương cam hoặc vani (nếu dùng) vào trộn đều</span></li>
+            <li><span style="color: #000000;">Cuối cùng rây 38 g bột mì đa dụng và 38 g bột ngô vào trộn đều. </span></li>
+            </ul>
+            <p><span style="color: #000000;"><strong>Làm lần lượt theo đúng trình tự&nbsp;</strong>sẽ&nbsp;<strong>cho kết quả tốt hơn nhiều&nbsp;</strong>so với việc cho tất cả nguyên liệu vào âu rồi trộn lên. Và <strong>chỉ nên trộn tới khi bột khô hòa quyện hết, hỗn hợp vừa mịn mượt, không trộn quá nhiều sẽ làm gluten khỏe hơn, bánh kém xốp mềm</strong>.</span></p>
+            <p><span style="color: #000000;">– Đánh bông 5 lòng trắng trứng với cream of tartar và 60 gram đường đến khi trứng bông cứng nhưng không quá cứng, chóp trứng khi nhấc que đánh lên vẫn hơi cong xuống. Trứng như vậy khi trộn với lòng đỏ sẽ hòa quyện theo dạng sợi chứ không bị lổn nhổn, vón cục.</span></p>
+            <p><span style="color: #000000;">– Cho 1/3 lòng trắng đánh bông vào lòng đỏ, trộn đều. Cho tiếp từng phần nhỏ vào, <strong>fold&nbsp;</strong>bằng phới dẹt nhẹ tay để không làm vỡ bọt khí trong lòng trắng trứng. Bạt bánh sau khi trộn xong cần bông mịn như trong hình:&nbsp;</span></p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/sponge_foam-cake/banh-cuon-cam/4.jpg" width="50%"></a></p>
+            <p><span style="color: #000000;">– Nướng bánh ở 165 – 170 độ trong khoảng 30 – 35 phút. Lưu ý là nhiệt nướng này có thể thay đổi tuỳ theo lò nướng nhé. Các bạn có thể xem thêm cách chỉnh lò trong <a href="http://www.savourydays.com/lo-nuong-kinh-nghiem-nuong-banh/"><strong>bài viết này</strong></a>&nbsp;</span></p>
+            <p><span style="color: #000000;">– Lấy bánh ra, gỡ giấy nến, để bánh nguội trên giá có khe hở</span>.</p>
+            <p class = "text-center"><a href="#"><img class="component-img" src="../img/sponge_foam-cake/banh-cuon-cam/5.jpg" width="50%"></a></p>
+            <p><span style="color: #000000;">4. Làm kem tươi vị cam: Khi bạt bánh gần nguội hẳn thì làm phần kem này&nbsp;</span></p>
+            <p><span style="color: #000000;">– Mứt cam:</span></p>
+            <ul>
+            <li><span style="color: #000000;">1 quả cam cỡ lớn, cắt bỏ hết phần vỏ và cùi trắng, thái miếng nhỏ, bỏ hạt, cho vào máy xay mịn, sau đó cho vào rây lọc kĩ, ta thu được khoảng 170 gram sinh tố cam tươi</span></li>
+            <li><span style="color: #000000;">Cho phần sinh tố vừa lọc vào nồi với khoảng 30 gram đường, đun sôi rồi hạ nhỏ lửa đun liu riu trong khoảng 15 phút đến khi nước cạn bớt, hỗn hợp có độ đặc gần bằng mật ong, ta thu được khoảng 70 ml mứt.</span></li>
+            <li><span style="color: #000000;">Ngâm lá gelatin trong nước mát đến khi nở mềm, vắt sạch nước rồi cho vào mứt cam còn đang nóng ấm, khuấy tan, liên tục khuấy để hỗn hợp không bị đông. Để nguội bớt&nbsp;</span></li>
+            </ul>
+            <p><span style="color: #000000;">– Kem tươi vị cam</span></p>
+            <ul>
+            <li><span style="color: #000000;">Whipping cream (lạnh) đánh đến khi bông mềm, gần cứng từ từ đổ mứt cam <strong>đã nguội nhưng chưa đông lại</strong>&nbsp;vào, vừa đổ vừa đánh ở tốc độ thấp đến khi kem bông.</span></li>
+            <li><span style="color: #000000;">Lưu ý: <strong>Cần đánh kem tươi tới mức gần bông cứng, mới cho mứt vào. Nếu cho quá sớm, kem sẽ rất khó bông cứng lại. Nếu lỡ tay đánh tới mức kem bông lại thì nên trộn bằng với, dùng kĩ thuật fold để tránh kem bị tách nước.&nbsp;</strong>Trong trường hợp kem bị tách nước nhẹ, có thể cho thêm kem lỏng vào rồi đánh nhẹ nhàng bằng phới lồng tới khi kem mịn mượt trở lại.&nbsp;</span></li>
+            <li><span style="color: #000000;">Để kem vào tủ lạnh khoảng 10 – 15 phút cho kem đặc hơn rồi dùng (không để kem trong tủ lạnh quá lâu)&nbsp;</span></li>
+            </ul>
+            <p><span style="color: #000000;">5. Cuộn bánh: Thao tác cuộn bánh này các bạn xem trong video <a href="http://www.savourydays.com/video-banh-cuon-kem-dau/"><strong>cách làm “Bánh cuộn kem dâu”</strong></a> nhé, sẽ dễ hình dung hơn là mô tả.&nbsp;</span></p>
+        </div>
+    </div>
+    <!-- End Content -->
+
+     <!-- Start Footer -->
+     <div class="container-fluid footer1">
+        <div class="row text-light no-gutters">
+            <div class="col-md-3 pr-4 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <a href="../html/home.html"><img src="../img/logo.png" alt="" width="100%"></a>
+                <br>
+                <br>
+                <p>Savoury Days là đơn vị chuyên cung cấp các khóa học, công thức làm bánh</p>
+                <br>    
+                <p>Copyright © 2024 Woa Cake</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fas fa-home"></i> Số 12 Nguyễn Văn Bảo, Phường 4,
+                    <br>
+                <span>Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                <p><i class="fas fa-phone-alt"></i> 0328546227 - 0817883079</p>
+                <p><i class="fas fa-envelope"></i> 22642481.trong@student.iuh.edu.vn</p>
+                <p><i class="fas fa-envelope"></i> tomtep790@gmail.com</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Hỗ trợ khách hàng</h4>
+                <p>Thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div>
+            <div class="col-md-3 pt-4 pb-4 ml-sm-3 ml-md-0">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhập Email của bạn vào đây để nhận những thông tin về các khóa học và công thức mới nhất!</p>
+                <div class="input-group" id="send-email">
+                    <input type="email" id="input-send-email" class = "form-control" placeholder="Email của bạn ...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer2 mt-2" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 pl-5 col-lg-2">
+                <img src="../img/logo_bct.png" class ="mt-md-2"alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-8 mb-sm-2 col-lg-10">
+                <div class="b-text">
+                    <div><em><span style="color:#999999;">Mọi thông tin từ:</span> <a href="http://www.savourydays.com/" class = "text-pink-2"><strong>Savoury Days</strong></a> và <a href="http://woacake.vn/" class = "text-pink-2"><strong>Woa Cake</strong></a></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 1:</span><b class = "text-secondary">&nbsp;Nguyễn Thành Trọng, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22642481</b></em></div>
+                    <div><em><span style="color:#999999;">Thành viên 2:</span><b class = "text-secondary">&nbsp;Nguyễn Hải Tâm, </b><span style="color:#999999;">Mã số sinh viên:</span><b class = "text-secondary">&nbsp;22643391</b></em></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
+    <!-- End Footer -->
+</body>
+</html>

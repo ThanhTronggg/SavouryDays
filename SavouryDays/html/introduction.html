@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/scroll.js"></script>
 </head>
-<body>
+<body onload = "KiemTraDaDangNhap()">
     <!-- Start Navbar -->
     <div class="container-fluid mx-md-0 px-md-0 bg-pink">
         <div class="container header">
@@ -93,8 +93,15 @@
                                 <li class="nav-item">
                                     <a class= "nav-link text-dark font-weight-bold" id = "dang-ky" href = "../html/register.html" ><span><i class="fas fa-user-plus mr-2"></i></span> Đăng ký</a>
                                 </li>
+                                <li class="nav-item dropdown">
+                                    <a class= "nav-link text-dark font-weight-bold dropdown-toggle link-1 d-none" data-toggle="dropdown" id = "my-account" href = "#"><i class="fas fa-user"></i> Tài khoản</a>
+                                    <div class="dropdown-menu" id = "menu4">
+                                        <a href="../html/my-account.html" class="dropdown-item">Tài khoản</a>
+                                        <a href="#" class="dropdown-item" onclick="DangXuat('introduction.html')">Đăng xuất</a>
+                                    </div>
+                                </li>
                                 <li class="nav-item">
-                                    <a class= "nav-link text-dark font-weight-bold" id = "gio-hang" href = "../html/my-course.html" ><span><i class="fas fa-book mr-2"></i></span> Khóa học của tôi</a>
+                                    <a class= "nav-link text-dark font-weight-bold d-none" id = "my-course" href = "../html/my-course.html" ><i class="fas fa-book mr-2"></i> Khóa học của tôi</a>
                                 </li>
                             </ul>
                         </div>
