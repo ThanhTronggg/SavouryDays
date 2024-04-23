@@ -105,54 +105,56 @@
 
     <!-- Start Content -->
     <div class="container mb-4 px-0 pt-2">
-        <div class="frame-login pt-2">
-            <img src="../img/mat-troi.png" id = "sun" alt="">
-            <img src="../img/may.png" id = "cloud" alt="">
-            <img src="../img/cut-the-rope2.png" id = "cut-the-rope2"alt="">
-            <img src="../img/cut-the-rope.png" id = "cut-the-rope"alt="">
-            <h1 class = "text-dark text-center mb-5 mt-3">Đăng nhập</h1>
-            <form action="">
-                <div class="row">
-                    <div class="col-md-2">
-
+        <div class="row">
+            <div class="col-md-12 frame-login pt-2">
+                <img src="../img/mat-troi.png" class = "d-none d-sm-none d-md-block" id = "sun" alt="">
+                <img src="../img/may.png" class = "d-none d-sm-none d-md-block" id = "cloud" alt="">
+                <img src="../img/cut-the-rope2.png"class = "d-none d-sm-none d-md-block"  id = "cut-the-rope2"alt="">
+                <img src="../img/cut-the-rope.png" class = "d-none d-sm-none d-md-block" id = "cut-the-rope"alt="">
+                <h1 class = "text-dark text-center mb-5 mt-3">Đăng nhập</h1>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-2">
+    
+                        </div>
+                        <div class="col-md-3">
+                            <label for="txtUsername" class = "text-dark"><i class="fas fa-user"></i> Tên đăng nhập:</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" class = "form-control input1" onblur="return KiemTraUsername()" id="txtUsername">
+                            <span id="suggest-username" class = "text-dark"><br></span>
+                        </div>
+                        <div class="col-md-2">
+                            
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <label for="txtUsername" class = "text-dark"><i class="fas fa-user"></i> Tên đăng nhập:</label>
+                    <div class="row mt-4">
+                        <div class="col-md-2">
+    
+                        </div>
+                        <div class="col-md-3">
+                            <label for="txtPw" class = "text-dark"><i class="fas fa-lock"></i> Mật khẩu:</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="password" class = "form-control input1" onblur="return KiemTraPassword()" id="txtPw">
+                            <span id="suggest-password" class = "text-dark"><br></span>
+                        </div>
+                        <div class="col-md-2">
+                        </div>
                     </div>
-                    <div class="col-md-5">
-                        <input type="text" class = "form-control input1" onblur="return KiemTraUsername()" id="txtUsername">
-                        <span id="suggest-username" class = "text-dark"><br></span>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <p class = "text-center" id = "suggest">Bạn chưa có tài khoản? Đăng ký <strong><a class = "text-dark" id = "link-reg" href="../html/register.html">tại đây</a></strong></p>
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md-2">
-
-                    </div>
-                    <div class="col-md-3">
-                        <label for="txtPw" class = "text-dark"><i class="fas fa-lock"></i> Mật khẩu:</label>
-                    </div>
-                    <div class="col-md-5">
-                        <input type="password" class = "form-control input1" onblur="return KiemTraPassword()" id="txtPw">
-                        <span id="suggest-password" class = "text-dark"><br></span>
-                    </div>
-                    <div class="col-md-2">
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col">
-                        <p class = "text-center" id = "suggest">Bạn chưa có tài khoản? Đăng ký <strong><a class = "text-dark" id = "link-reg" href="../html/register.html">tại đây</a></strong></p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center">
-                        <button type="button" class="btn btn-custom" onclick="KiemTraDangNhap()"><span><i class="fas fa-sign-in-alt"></i></span> Đăng nhập</button>
-                        <!-- <span id="suggest-login" class = "text-dark"><br>aaaaaaa</span> -->
-                    </div>
-                </div>                
-            </form>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center">
+                            <button type="button" class="btn btn-custom" onclick="KiemTraDangNhap()"><span><i class="fas fa-sign-in-alt"></i></span> Đăng nhập</button>
+                            <!-- <span id="suggest-login" class = "text-dark"><br>aaaaaaa</span> -->
+                        </div>
+                    </div>                
+                </form>
+            </div>
         </div>
     </div>
     <!-- End Content -->
@@ -205,6 +207,21 @@
             </div>
         </div>
     </div>
+    <a href="#">
+        <div id="phone">
+            <i class="fas fa-phone-alt text-light" id = "phoneee"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="mess">
+            <i class="fab fa-facebook-messenger text-light"id = "messages"></i>
+        </div>
+    </a>
+    <a href="#">
+        <div id="back-top" onclick="BackTop()">
+            <i class="fas fa-arrow-up text-light" id = "arrow"></i>
+        </div>
+    </a>
     <!-- End Footer -->
 </body>
 </html>

@@ -557,7 +557,7 @@
 
 .frame-register {
     width: 1150px;
-    height: 890px;
+    height: 1220px;
     background-image: linear-gradient(#F6AAC4, #B799FF);
     box-shadow: 4px 5px 9px rgba(0,0,0,0.27);
     border-radius: 10px;
@@ -574,7 +574,7 @@
 
 .frame-login {
     width: 1150px;
-    height: 490px;
+    height: 590px;
     background-image: linear-gradient(#B799FF, #F6AAC4);
     box-shadow: 4px 5px 9px rgba(0,0,0,0.27);
     border-radius: 10px;
