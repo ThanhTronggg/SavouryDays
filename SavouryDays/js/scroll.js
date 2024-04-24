@@ -2,6 +2,8 @@ window.addEventListener("scroll", HideNav)
 window.addEventListener("scroll", HideArrow)
 let lastScroll = 0;
 function HideNav() {
+    document.getElementById("navbar1").classList.add("non-hidden");
+    document.getElementById("navbar1").classList.remove("hidden"); 
     if (document.documentElement.scrollTop > 57) {
         document.getElementById("navbar1").classList.add("fixed-top");
     }
