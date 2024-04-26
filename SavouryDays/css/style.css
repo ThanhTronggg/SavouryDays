@@ -756,3 +756,17 @@ text-align: center;
 #frmdk .form-control {
     width: 100% !important;
 }
+
+/* Page My-Account */
+#managed-account li {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#managed-account li a.active {
+    border-radius: 20px;
+}
+
+#managed-account li:hover a {
+    border-radius: 20px;
+}
